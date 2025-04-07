@@ -2,7 +2,6 @@
 Pagina web sudmedica
 
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
-![Badge Version](https://img.shields.io/badge/VERSION-1.0.0%-blue)
 
 
 ## Descripcion
