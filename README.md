@@ -11,5 +11,5 @@ Pagina web para la atraccion de clientes que quieran invertir en la compania sud
 - HTML
 - CSS3
 - Javascript
-- Sqlite
+- SQLite
 
