@@ -6,8 +6,8 @@ Pagina web sudmedica
 Pagina web para la atraccion de clientes que quieran invertir en la compania sudmedica ofreciendo un ambiente amigable tanto en escritorio como en mobile.
 
 ## Tecnologias utilizadas
-- Laravel
-- PHP12
+- Laravel 12
+- PHP
 - HTML
 - CSS3
 - Javascript
