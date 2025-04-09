@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{asset('css/style.css')}}">
     <title>Sudmedica</title>
 </head>
 <body>
-    <div class="container">
-        <nav class="nav__container">
+    <div class="main">
+        <nav class="nav container" id="nav">
             <div class="nav__logo">
-                Inversiones
+                <p>Inversiones</p>
                 <svg width="215" height="35" viewBox="0 0 215 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M28.6006 9.39014H35.4425C35.774 9.39014 36.0438 9.14667 36.0438 8.84536C36.0438 8.54406 35.774 8.30058 35.4425 8.30058H30.6464C29.8559 8.48725 29.1493 8.86971 28.6006 9.39014Z" fill="#114071"/>
                     <path d="M27.4326 11.5693H39.1244C39.4558 11.5693 39.7257 11.3248 39.7257 11.0245C39.7257 10.7242 39.4558 10.4797 39.1244 10.4797H27.7842C27.6118 10.8196 27.4908 11.1848 27.4337 11.5693" fill="#114071"/>
@@ -33,22 +34,46 @@
                     <path d="M183.858 25.4749C185.04 25.4749 186.046 25.1817 186.874 24.5933C187.703 24.0059 188.118 23.2583 188.118 22.3503V21.2343C186.871 20.9077 185.622 20.7433 184.375 20.7433C183.192 20.7433 182.277 20.9594 181.629 21.3906C180.981 21.8217 180.656 22.402 180.656 23.1304V23.1751C180.656 23.8741 180.964 24.432 181.58 24.849C182.196 25.2659 182.955 25.4739 183.858 25.4739M183.488 26.8364C182.207 26.8364 181.095 26.5168 180.151 25.8767C179.207 25.2375 178.736 24.359 178.736 23.243V23.1984C178.736 22.0084 179.228 21.0893 180.213 20.443C181.198 19.7958 182.519 19.4722 184.178 19.4722C185.508 19.4722 186.814 19.6355 188.094 19.9632V19.5615C188.094 18.5348 187.766 17.7536 187.108 17.218C186.451 16.6823 185.516 16.4145 184.3 16.4145C183.167 16.4145 182.067 16.6306 181 17.0617C180.884 17.1064 180.77 17.1287 180.655 17.1287C180.424 17.1287 180.227 17.0546 180.064 16.9055C179.899 16.7574 179.817 16.5859 179.817 16.3922C179.817 16.0351 179.99 15.7977 180.335 15.678C181.665 15.1575 183.052 14.8968 184.497 14.8968C186.303 14.8968 187.674 15.3209 188.611 16.169C189.481 16.9572 189.917 18.0803 189.917 19.5381V25.8533C189.917 26.0917 189.83 26.2926 189.658 26.4559C189.486 26.6193 189.267 26.7015 189.005 26.7015C188.743 26.7015 188.525 26.6233 188.352 26.4671C188.18 26.3109 188.094 26.1212 188.094 25.898V24.849C186.977 26.1729 185.442 26.8343 183.488 26.8343" fill="#114071"/>
                 </svg>
             </div>
-            <ul class="nav__list">
-                <li class="nav__item"><a href="">Inicio</a></li>
-                <li class="nav__item"><a href="">Nosotros</a></li>
-                <li class="nav__item"><a href="">Noticias</a></li>
-                <li class="nav__item"><a href="">Documentos</a></li>
-                <li class="nav__item"><a href="">Contacto</a></li>
-            </ul>
-            <ul class="nav__sociales">
-                <li class="nav_sociales_item"><a href=""></a></li>
-                <li class="nav_sociales_item"><a href=""></a></li>
-                <li class="nav_sociales_item"><a href=""></a></li>
-                <li class="nav_sociales_item"><a href=""></a></li>
-            </ul>
-            <div class="nav__idioma">
-                
-            </div>
+           <div class="nav__menu__data">
+                <ul class="nav__links">
+                    <li class="nav__list"><a href="" class="nav__link">Inicio</a></li>
+                    <li class="nav__list"><a href="" class="nav__link">Nosotros</a></li>
+                    <li class="nav__list"><a href="" class="nav__link">Noticias</a></li>
+                    <li class="nav__list"><a href="" class="nav__link">Documentos</a></li>
+                    <li class="nav__list"><a href="" class="nav__link">Contacto</a></li>
+                </ul>
+                <ul class="nav__sociales">
+                    <li class="nav__list">
+                        <a href="" class="nav__link">
+                            <img src="{{asset('img/instagram__icon.svg')}}" alt="">
+                        </a>
+                    </li>
+                    <li class="nav__list">
+                        <a href="" class="nav__link">
+                            <img src="{{asset('img/instagram__icon.svg')}}" alt="">
+                        </a>
+                    </li>
+                    <li class="nav__list">
+                        <a href="" class="nav__link">
+                            <img src="{{asset('img/instagram__icon.svg')}}" alt="">
+                        </a>
+                    </li>
+                    <li class="nav__list">
+                        <a href="" class="nav__link">
+                            <img src="{{asset('img/instagram__icon.svg')}}" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav__idioma">
+                    
+                </div>
+           </div>
+            <a href="#" class="nav__close">
+                <img src="{{asset('img/close__icon.svg')}}" width="50px" alt="" class="nav__img">
+            </a>
+            <a href="#nav" class="nav__hamburger">
+                <img src="{{asset('img/hamburger__icon.svg')}}" width="50px" alt="" class="nav__img">
+            </a>
         </nav>
         <picture class="carrusel__container">
                 
