@@ -1,0 +1,13 @@
+:root{
+    --sud-blue: #114071;
+    --sud-green: #8DC63F;
+    --sud-black: #000000;
+    --sud-gray: #808285;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
