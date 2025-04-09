@@ -17,10 +17,11 @@ body{
     margin: 0 auto;
     max-width: 1200px;
     padding: 80 0;
-    overflow: hidden;
 }
 
 .nav{
+    padding: 1.5rem 0;
+    min-height: 60px;
     --hamburger:block;
     --close:none;
     --transform:translate(-100%);
@@ -37,7 +38,19 @@ body{
 }
 
 .nav__logo{
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content max-content;
+    place-content: start;
+    place-items: end center;
     z-index: 1;
+}
+
+.nav__logo p{
+    margin: 0;
+    color: var(--sud-blue);
+    font-size: .9rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -97,6 +110,22 @@ body{
     font-size: 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: var(--sud-black);
+    color: var(--sud-blue);
 }
+
+
+.carrusel__img{
+    width: 100%;
+}
+
+.informacion__container{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--sud-blue);
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.video__video{
+    width: 100%;
+} 
 
