@@ -3,6 +3,8 @@
     --sud-green: #8DC63F;
     --sud-black: #000000;
     --sud-gray: #808285;
+    --sud-grayTwo: #ECEFF2;
+
 }
 
 body{
@@ -113,19 +115,67 @@ body{
     color: var(--sud-blue);
 }
 
-
 .carrusel__img{
+    padding:2rem 0;
     width: 100%;
 }
 
 .informacion__container{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: lato;
     color: var(--sud-blue);
-    text-align: center;
-    line-height: 1.2rem;
+    text-align:justify;
+    line-height: 1.5rem;
+    padding: 0 0 2rem 0;
 }
 
 .video__video{
     width: 100%;
 } 
 
+.contacto__container{
+    padding: 3rem 0;
+}
+
+.contacto__img{
+    width: 100%;
+}
+
+.contacto__form{
+    max-width: 25rem;
+    padding: 2rem 0;
+    display: grid;
+}
+
+.contacto__title{
+    background-color: var(--sud-green);
+    padding: .5rem 0;
+    display: grid;
+    gap:1rem;
+    grid-template-columns: min-content min-content;
+    place-content: center;
+    place-items: center;
+
+}
+
+.contacto__title p{
+    width: 100%;
+    margin: 0;
+    font-family: lato;
+    font-size: 1.5rem;
+    font-weight:800;
+    color: white;
+}
+
+.contacto__form form{
+    padding: 2rem 2rem;
+    background-color: var(--sud-grayTwo);
+    display: grid;
+    gap: 1rem;
+}
+
+.contacto__form form input{
+    height: 1rem;
+    border-radius: .5rem;
+    border: none;
+    padding: .5rem;
+}
