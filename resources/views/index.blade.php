@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3a008cc3c3.js" crossorigin="anonymous"></script>
     <title>Sudmedica</title>
 </head>
 <body>
@@ -111,12 +112,12 @@
                 <input type="text" placeholder="Email...">
                 <input type="submit" value="Enviar">
             </form>
-            <div class="__contacto_whatsapp">
+            <div class="contacto__whatsapp">
                 <p>
                     También puedes comunicarte
                     a través de Whatsapp:
                 </p>
-                <a href="" class="btn__enviar_whatsapp">Enviar mensaje</a>
+                <a href="" class="btn__enviar_whatsapp"><i class="fa-brands fa-whatsapp"></i> Enviar mensaje</a>
             </div>
         </div>
     </div>
