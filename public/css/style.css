@@ -236,9 +236,64 @@ input[type="submit"]{
 }
 
 
+
+
+
 @media screen and (max-width:836px){
     .contacto__container{
         place-items: center;
         
     }
+}
+
+.cards{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    place-items: start center;
+}
+
+.titulo{
+    font-family: lato;
+    color: var(--sud-blue);
+    font-weight: 800;
+}
+
+.card{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: max-content 15rem;
+}
+
+.card__img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.card__info{
+    font-family: lato;
+    color:var(--sud-blue);
+}
+
+.card__name{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.card__ocupation{
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.card__description{
+    font-weight: 300;
+}
+
+.card__button{
+    text-decoration: none;
+    color: var(--sud-blue);
+    font-weight: 800;
 }
