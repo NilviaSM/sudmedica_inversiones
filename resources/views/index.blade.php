@@ -48,22 +48,27 @@
             <ul class="nav__sociales">
                 <li class="nav__list">
                     <a href="" class="nav__link">
-                        <img src="{{asset('img/instagram__icon.svg')}}" alt="">
+                        <i class="fa-brands fa-linkedin-in nav__icons"></i>
                     </a>
                 </li>
                 <li class="nav__list">
                     <a href="" class="nav__link">
-                        <img src="{{asset('img/instagram__icon.svg')}}" alt="">
+                        <i class="fa-brands fa-instagram nav__icons"></i>
                     </a>
                 </li>
                 <li class="nav__list">
                     <a href="" class="nav__link">
-                        <img src="{{asset('img/instagram__icon.svg')}}" alt="">
+                        <i class="fa-brands fa-x-twitter nav__icons"></i>
                     </a>
                 </li>
                 <li class="nav__list">
                     <a href="" class="nav__link">
-                        <img src="{{asset('img/instagram__icon.svg')}}" alt="">
+                        <i class="fa-brands fa-facebook-f nav__icons"></i>
+                    </a>
+                </li>
+                <li class="nav__list">
+                    <a href="" class="nav__link">
+                        <i class="fa-brands fa-youtube nav__icons"></i>
                     </a>
                 </li>
             </ul>
