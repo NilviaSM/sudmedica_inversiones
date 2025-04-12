@@ -26,7 +26,7 @@
     </div>
     <div class="nav__menu__data">
         <ul class="nav__links">
-            <li class="nav__list"><a href="" class="nav__link">Inicio</a></li>
+            <li class="nav__list"><a href="{{url('')}}" class="nav__link">Inicio</a></li>
             <li class="nav__list"><a href="{{url('nosotros')}}" class="nav__link">Nosotros</a></li>
             <li class="nav__list"><a href="" class="nav__link">Noticias</a></li>
             <li class="nav__list"><a href="" class="nav__link">Documentos</a></li>

@@ -30,8 +30,8 @@
                 </div>
                 <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/woman01.jpg')}}" alt="">
-                   <div class="card__info">
-                    <h5 class="card__name">Ángel Trujillo López</h5>
+                    <div class="card__info">
+                        <h5 class="card__name">Ángel Trujillo López</h5>
                         <h5 class="card__ocupation">VICEPRESIDENTE</h5>
                         <p class="card__description">Andritz Certified Site Manager, Andritz Global Site Operations (GSO), Austria. 
                             Certificate Project Management Professional (PMP N°1930249), Project 
@@ -135,7 +135,46 @@
                 </div>
             </div>
         </div>
+        <div class="cards__details">
+            <p>Él equipo está integrado por ingenieros industriales, ingenieros comerciales, 
+                médicos, arquitectos, entre otros. La compañía cuenta con estudios de mercado
+                para construir en Chile y algunos países de América.Aunque Sudmédica está en 
+                su etapa de estudio y proyecto, ya está materializando un primer logro 
+                en él centro de la Región de Valparaíso, en la ciudad de Quillota. 
+                Se espera que esta clínica tendrá la categoría de mediana alta y alta 
+                complejidad, además, al momento de su apertura, se espera que tenga la mayor 
+                cantidad de médicos de planta de la región.Los médicos son accionistas de 
+                Sudmédica y además dueños de sus consultas. Las consultas sé vendieron 
+                por especialidades. El edificio cuenta con 73 consultas médicas , 
+                7 quirófanos imagenología completa, hospitalización, laboratorio y 
+                toma de muestra.
+            </p>
+        </div>
+        <div class="carrusel__container">
+            <img src="{{asset('img/clinica01.webp')}}" alt="" class="carrusel__img">
+        </div>
+        <div class="details__edificio">
+            <ul>
+                <li>Edificio de 6 pisos.</li>
+                <li>Médicos y profesionales de la salud de distintas especialidades dueños de sus consultas.</li>
+                <li>SUDMedica S.A. realiza las prestaciones que los médicos derivan.</li>
+                <li>Estacionamiento para pacientes.</li>
+                <li>Todos nuestros profesionales del área se encuentran inscritos en la Superintendencia de Salud.</li>
+                <li>Estándares de alta calidad.</li>
+            </ul>
+        </div>
+        <picture class="carrusel__container">
+            <img src="{{asset('img/mapa01.jpg')}}" alt="" class="carrusel__img">
+        </picture>
+        <div class="details__ubicacion">
+            <p>La clínica tendrá 3 accesos y vías de circulación expeditas. A 300 metros de 
+                la Avenida 21 de Mayo donde transita la mayor parte de la locomoción 
+                colectiva. A 350 metros del terminal de buses de Quillota para pacientes de 
+                otras ciudades. A 600 metros de autopista. A 
+                8 minutos del Hospital Bi provincial. 
+            </p>
+        </div>
+        @include("snipets.contacto")
     </div>
-    @include("snipets.contacto")
 </body>
 </html>
