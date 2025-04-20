@@ -28,7 +28,7 @@
         <ul class="nav__links">
             <li class="nav__list"><a href="{{url('')}}" class="nav__link">Inicio</a></li>
             <li class="nav__list"><a href="{{url('nosotros')}}" class="nav__link">Nosotros</a></li>
-            <li class="nav__list"><a href="" class="nav__link">Noticias</a></li>
+            <li class="nav__list"><a href="{{url('noticias')}}" class="nav__link">Noticias</a></li>
             <li class="nav__list"><a href="" class="nav__link">Documentos</a></li>
             <li class="nav__list"><a href="" class="nav__link">Contacto</a></li>
         </ul>
@@ -59,9 +59,6 @@
                 </a>
             </li>
         </ul>
-        <div class="nav__idioma">
-            
-        </div>
     </div>
     <a href="#" class="nav__close">
         <img src="{{asset('img/close__icon.svg')}}" width="50px" alt="" class="nav__img">

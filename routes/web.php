@@ -12,3 +12,4 @@ Route::get('/nosotros', function () {
 });
 
 Route::get('/noticias', [NoticiasController::class, 'index']);
+Route::get('/noticias/search', [NoticiasController::class, 'search'])->name("searchNoticias");

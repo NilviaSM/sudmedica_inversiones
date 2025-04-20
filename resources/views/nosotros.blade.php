@@ -174,7 +174,8 @@
                 8 minutos del Hospital Bi provincial. 
             </p>
         </div>
-        @include("snipets.contacto")
     </div>
+</div>
+    @include("snipets.contacto")
 </body>
 </html>

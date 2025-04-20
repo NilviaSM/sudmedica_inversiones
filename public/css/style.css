@@ -322,6 +322,135 @@ input[type="submit"]{
 }
 
 
+.noticias__title{
+    font-family: lato;
+    color: var(--sud-blue);
+}
+
+.noticias__container{
+    font-family: lato;
+    color: var(--sud-blue);
+}
+
+
+.noticias__imagen{
+    max-width:527px;
+    max-height: 596px;
+    overflow: hidden;
+    float: right;
+    padding:0 0 5px 20px;
+}
+
+.noticias__imagen img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.busqueda__container{
+    display: grid;
+    gap:2rem;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: minmax(350px, 1fr);
+    justify-items: center;
+    align-items: start;
+    margin-top: 5rem;
+}
+
+.busqueda__results{
+    min-height: 15rem;
+    min-width: 350px;
+    font-family: lato;
+    color: var(--sud-blue);
+}
+
+.txt__busqueda{
+    width: 90%;
+}
+
+.text__resultado__busqueda{
+    font-family: lato;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.noticias__list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: lato;
+    font-size: 1.2rem;
+}
+
+.noticias__list li{
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1200px){
+    .nav{
+        --hamburger:none;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav:target{
+        --close:none;
+        --hamburger:none;
+    }
+    
+    
+    .nav__logo p{
+        margin: 0;
+        color: var(--sud-blue);
+        font-size: .9rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        
+    .nav__menu__data{
+        padding:0;
+        position: unset;
+        background-color: white;
+        display: grid;
+        grid-auto-flow: column;
+        transform: unset;
+    }
+    
+    .nav__links{
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        place-content: left center;
+        gap:1.5rem;
+    }
+    
+    .nav__sociales{
+        display: grid;
+        gap:2rem;
+        grid-template-columns: repeat(5, max-content);
+        place-content: start center;
+    }
+    
+    .nav__list{
+        list-style: none;
+    }
+    
+    
+    .nav__link{
+        font-family: sans-serif;
+        font-size: 1.1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--sud-blue);
+        border-radius: 50%;
+    }
+    
+    .nav__icons{
+        cursor: pointer;
+    }
+    
+}
+
+
 @media screen and (max-width:836px){
     .contacto__container{
         place-items: center;
@@ -358,4 +487,15 @@ input[type="submit"]{
         padding: 0;
 }
 
+.noticias__imagen{
+    max-width:527px;
+    max-height: 596px;
+    overflow: hidden;
+    float: right;
+    padding:0 0 15px 0px;
 }
+
+
+
+}
+
