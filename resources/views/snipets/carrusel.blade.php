@@ -1,9 +1,9 @@
-<div class="main container">
+<div class="main">
     <picture class="carrusel__container">
             <img src="{{asset('img/sudmedica__edificio.png')}}" alt="" class="carrusel__img">
     </picture>
 
-    <div class="informacion__container">
+    <div class="informacion__container container">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eveniet 
             reprehenderit voluptatum voluptatem nihil neque totam quos dicta vel labore 
             ex quas molestiae, repudiandae ut, quibusdam minus soluta aspernatur libero. Lorem ipsum 
