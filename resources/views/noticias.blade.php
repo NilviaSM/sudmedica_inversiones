@@ -29,12 +29,12 @@
     <script>
         $(".noticias__list").empty();
         $("#search").keypress(()=>{
-            $(".noticias__list").empty();
             $.ajax({
                 url:"{{route('searchNoticias')}}",
                 dataType: 'json',
                 data: {q:$('#search').val()},
                 success:(result)=>{
+                    $(".noticias__list").empty();
                     result.forEach((data)=>{
                         element = $("<li></li>").attr("id", data).text(data.label)
                         $(".noticias__list").append(element);
