@@ -21,8 +21,15 @@ body{
     padding: 80 0;
 }
 
+.linea_azul{
+    width: 100%;
+    height: 40px;
+    background-color: #114071;
+}
+
+
 .nav{
-    padding: 1.5rem 0;
+    padding: 1.5rem 2rem;
     min-height: 60px;
     --hamburger:block;
     --close:none;
@@ -32,6 +39,7 @@ body{
     grid-template-areas: "logo active";
     justify-content: space-between;
 }
+
 
 .nav:target{
     --close:block;
@@ -79,20 +87,29 @@ body{
 
 .nav__menu__data{
     position: absolute;
-    padding: 6rem 0;
+    padding: 8rem 0;
     top:0;
     left: 0;
     bottom: 0;
     right: 0;
     background-color: white;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     transform: var(--transform);
     transition: transform .4s;
 }
 
+.nav__menu__data p{
+    font-family: lato;
+    color: #114071;
+    margin: 0;
+    text-align: center;
+    padding:1rem 0 0 2.5rem;
+}
+
 .nav__links{
     display: grid;
-    place-content: left center;
     gap:2rem;
 }
 
@@ -456,12 +473,23 @@ input[type="submit"]{
     }
         
     .nav__menu__data{
+        width: 100%;
         padding:0;
         position: unset;
         background-color: white;
-        display: grid;
-        grid-auto-flow: column;
         transform: unset;
+    }
+
+    .nav__menu__data p{
+        font-family: lato;
+        color: #114071;
+        margin: 0;
+        text-align: right;
+    }
+
+    .nav__opciones{
+        padding: 0;
+        display: flex;
     }
     
     .nav__links{
