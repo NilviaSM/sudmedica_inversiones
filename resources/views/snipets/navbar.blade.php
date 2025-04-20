@@ -31,11 +31,11 @@
             <p>Lenguaje: <b>Español</b></p>
             <div class="nav__opciones">
                 <ul class="nav__links">
-                    <li class="nav__list"><a href="{{url('')}}" class="nav__link">Inicio</a></li>
-                    <li class="nav__list"><a href="{{url('nosotros')}}" class="nav__link">Nosotros</a></li>
-                    <li class="nav__list"><a href="{{url('noticias')}}" class="nav__link">Noticias</a></li>
-                    <li class="nav__list"><a href="{{url('documentos')}}" class="nav__link">Documentos</a></li>
-                    <li class="nav__list"><a href="{{url('contacto')}}" class="nav__link">Contacto</a></li>
+                    <li class="nav__list"><a href="{{url('')}}" class="nav__link {{ Request::url() == url('') ? 'nav__link__active' : '' }}">Inicio</a></li>
+                    <li class="nav__list"><a href="{{url('nosotros')}}" class="nav__link {{ Request::url() == url('/nosotros') ? 'nav__link__active' : '' }}">Nosotros</a></li>
+                    <li class="nav__list"><a href="{{url('noticias')}}" class="nav__link {{ Request::url() == url('/noticias') ? 'nav__link__active' : '' }}">Noticias</a></li>
+                    <li class="nav__list"><a href="{{url('documentos')}}" class="nav__link {{ Request::url() == url ('/documentos')? 'nav__link__active' : '' }}">Documentos</a></li>
+                    <li class="nav__list"><a href="{{url('contacto')}}" class="nav__link {{ Request::url() == url('/contacto') ? 'nav__link__active' : '' }}">Contacto</a></li>
                 </ul>
                 <ul class="nav__sociales">
                     <li class="nav__list">
