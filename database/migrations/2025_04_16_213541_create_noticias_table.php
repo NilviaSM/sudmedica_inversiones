@@ -15,7 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('titulo');
             $table->text('contenido');
-            $table->date('creado');
             $table->string('image_path');
             $table->timestamps();
             

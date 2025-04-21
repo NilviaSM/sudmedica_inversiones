@@ -347,6 +347,11 @@ input[type="submit"]{
     column-gap: 4rem;
 }
 
+.noticias__info_error{
+    font-family: lato;
+    color: var(--sud-blue);
+    text-align:center;
+}
 
 .noticias__title{
     font-family: lato;

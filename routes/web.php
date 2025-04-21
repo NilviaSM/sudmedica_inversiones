@@ -38,5 +38,7 @@ Route::get('/documentos/consolidado', function () {
     return response()->download($filePath, "EEFF_consolidado.pdf", ['Content-Type'=>'application/pdf']);
 })->name("consolidadoPdf");
 
-Route::get('/noticias', [NoticiasController::class, 'index']);
+Route::get('/noticias', [NoticiasController::class, 'index'])->name('noticias.index');
+Route::get('/noticias/add', [NoticiasController::class, 'store_form'])->name('noticias.store');
+Route::post('/noticias/add', [NoticiasController::class, 'store'])->name('noticias.store');
 Route::get('/noticias/search', [NoticiasController::class, 'search'])->name("searchNoticias");

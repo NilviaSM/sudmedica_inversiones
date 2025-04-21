@@ -1,4 +1,5 @@
 <div class="container">
+    @if($noticias)
     <h2 class="noticias__title" id="noticias__titulo">{{$noticias->titulo}}</h2>
     <div class="noticias__container">
         <picture  class="noticias__imagen">
@@ -8,4 +9,7 @@
             {{$noticias->contenido}}
         </div>
     </div>
+    @else
+        <p class="noticias__info_error">No hay noticias disponibles en este momento.</p>
+    @endif
 </div>
