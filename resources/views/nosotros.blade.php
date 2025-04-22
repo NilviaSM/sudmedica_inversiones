@@ -9,6 +9,76 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3a008cc3c3.js" crossorigin="anonymous"></script>
     <title>Sudmedica</title>
+    <style>
+        /* Estilos del popup */
+        .popup {
+            display: none; /* Oculto por defecto */
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup__content {
+            position: relative;
+            font-family: lato;
+            color: #114071;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh; /* Limita la altura del popup al 80% del viewport */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            overflow-y: auto; /* Habilita el scroll vertical si el contenido excede el tamaño */
+        }
+
+        .popup__close {
+            position: absolute;
+            top: 10px; /* Espacio desde la parte superior */
+            right: 10px; /* Espacio desde la parte derecha */
+            font-size: 24px; /* Tamaño del botón */
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+            background: none;
+            border: none;
+            outline: none;
+            z-index: 10; /* Asegura que el botón esté por encima del contenido */
+            transition: transform 0.3s ease; /* Transición suave para efectos */
+        }
+
+        .popup__close:hover {
+            transform: scale(1.2); /* Efecto de agrandamiento al pasar el cursor */
+            color: #114071; /* Cambia el color al pasar el cursor */
+        }
+
+        .popup__title {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .popup__description {
+            font-size: 16px;
+            color: #114071;
+            text-align: justify; /* Justifica el texto para mejor legibilidad */
+            margin-top: 10px;
+        }
+
+        .popup__img {
+            width: 100%;
+            max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+            height: auto;
+            margin-bottom: 15px; /* Espacio debajo de la imagen */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+    </style>
 </head>
 <body>
     @include("snipets.navbar")
@@ -31,7 +101,10 @@
                             Controller; y tuvo una activa participación en el Comité de Financiamiento del Proyecto 
                             Los Pelambres. Fue responsable
                         </p>
-                        <a class="card__button" href="">Ver más...</a>
+                        <a class="card__button" href="#" 
+                           data-name="Freddy Hurtado" 
+                           data-ocupation="PRESIDENTE" 
+                           data-description="Ingeniero Comercial de la Universidad de Chile, y con dos MBA en la Pontificia Universidad Católica. En su dilatada trayectoria profesional ocupó altos cargos ejecutivos en Antofagasta Minerals: Finanzas, Control de Gestión y Controller; y tuvo una activa participación en el Comité de Financiamiento del Proyecto Los Pelambres. Fue responsable de dirigir la Gerencia General de ZOFRI S.A., empresa listada en la Bolsa de Valores y supervisada por la CMF, en donde desarrolló e implementó un nuevo plan estratégico posterior al retiro de las AFPs como accionistas por la Ley Arica. Siendo Gerente de Finanzas en CAPEL creó y fundó la Cooperativa de ahorro y Créditos Chilecoop, siendo su primer Gerente General y posteriormente Director y Presidente hasta su reciente retiro. Es CEO-Founder de As-Consulting.cl empresa enfocada en consultoría corporativa y financiera, con casi 30 años de trayectoria.">Ver más...</a>
                     </div>
                 </div>
                 <div class="directorio__card card">
@@ -45,7 +118,10 @@
                             Universidad Adolfo Ibañez, Chile. Ingeniero Mecánico, Universidad 
                             Nacional Experimental Politécnica 
                         </p>
-                        <a class="card__button" href="">Ver más...</a>
+                        <a class="card__button" href="#"
+                            data-name="Ángel Trujillo López" 
+                            data-ocupation="VICEPRESIDENTE" 
+                            data-description="Andritz Certified Site Manager, Andritz Global Site Operations (GSO), Austria. Certificate Project Management Professional (PMP N°1930249), Project Management Institute. Magister en gestión e Negocios, Universidad Adolfo Ibañez, Chile. Ingeniero Mecánico, Universidad Nacional Experimental Politécnica Antonio José de Sucre, Venezuela. Experiencia en Gerencia de Proyectos y Contratos para Empresas Transnacionales (Andritz Chile ltda, Tractebel Engineering Chile S.A., entre otras), en la industria de Generación de Energías Renovables en Venezuela, Brasil y Chile. Director de Constructora Red Médica SpA.">Ver más...</a>
                    </div>
                 </div>
                 <div class="directorio__card card">
@@ -59,7 +135,10 @@
                             investigación de delitos económicos, exoficial de la policía de 
                             investigaciones de Chile, Actualmente se 
                         </p>
-                        <a class="card__button" href="">Ver más...</a>
+                        <a class="card__button" href="#"
+                            data-name="María Soledad López Tapia" 
+                            data-ocupation="SECRETARIA" 
+                            data-description="Ingeniero Comercial de la Universidad Autónoma de Chile; Contador Auditor de la Universidad Tecnológica Metropolitana; Licenciatura en Educación de la Universidad Miguel de Cervantes. Especialista en investigación de delitos económicos, exoficial de la policía de investigaciones de Chile, Actualmente se desempeña como empresaria en el sector inmobiliario y en el sector educación. Fue Directora en Sociedad Educacional Camilo Henríquez S.S., El Almendral S.A., Sembrando Futuro S.A., Corporación Educacional Altos del Huerto S.A.. Educacional">Ver más...</a>
                     </div>
                 </div>
                 <div class="directorio__card card">
@@ -72,7 +151,10 @@
                             Innovación y Emprendimiento Deusto Business School, País Vasco, España. 
                             MBA de EGADE Business School del Tecnológico de Monterrey, Campus  
                         </p>
-                        <a class="card__button" href="">Ver más...</a>
+                        <a class="card__button" href="#"
+                            data-name="Felipe Oelckers Aljaro" 
+                            data-ocupation="DIRECTOR" 
+                            data-description="Ha desarrollado su carrera en Chile, Alemania, México, Estados Unidos, Ecuador, Israel, India y España. Empresario. Ph.D. en Competitividad, Innovación y Emprendimiento Deusto Business School, País Vasco, España. MBA de EGADE Business School del Tecnológico de Monterrey, Campus Monterrey y University of North Carolina at Chapel Hill, Kenan Flagler Business School, México/Estados Unidos. M.Sc. Máster of Science en Marketing, Ingeniero Comercial y Licenciado en Administración de Empresas de la Escuela de Negocios de la Universidad Adolfo Ibáñez.">Ver más...</a>
                     </div>
                 </div>
                 <div class="directorio__card card">
@@ -85,11 +167,24 @@
                             Ha desarrollado su carrera profesional en la gran minería del cobre 
                             principalmente en las áreas de planificación y operaciones mineras.  
                         </p>
-                        <a class="card__button" href="">Ver más...</a>
+                        <a class="card__button" href="#"
+                            data-name="Fernando Marcelo Aguiar Rosales" 
+                            data-ocupation="DIRECTOR" 
+                            data-description="Ingeniero Civil Químico de la Pontificia Universidad Católica de Valparaíso y Master of Business Administration de la Universidad Adolfo Ibañez. Ha desarrollado su carrera profesional en la gran minería del cobre principalmente en las áreas de planificación y operaciones mineras. Ha sido responsable de puestas en marcha de operaciones greenfield y también en negocios consolidados. Su conocimiento y trayectoria le permitió desempeñarse tanto en la industrial estatal Codelco Divisones El Salvador y Gabriela Mistral y privada SCMMLCC Caserones, AMSA y Glencore, desempeñando cargos ejecutivos y teniendo siempre el objetivo atender la seguridad de las personas y la creación de valor al accionista.">Ver más...</a>
+                    </div>
+                </div>
+                <div id="popup" class="popup">
+                    <div class="popup__content">
+                        <span class="popup__close" aria-label="Cerrar">&times;</span>
+                        <img id="popup-img" class="popup__img" src="" alt="Imagen del directorio">
+                        <h2 class="popup__title" id="popup-name">Nombre</h2>
+                        <h4 class="popup__ocupation" id="popup-ocupation">Ocupación</h4>
+                        <p class="popup__description" id="popup-description">Descripción</p>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-- <div class="gerencia">
             <h1 class="gerencia__titulo titulo">Gerencia</h1>
             <div class="gerencia__cards cards">
@@ -141,7 +236,7 @@
                 </div>
             </div>
         </div> -->
-        <div class="cards__details container">
+        <div class="cards__details container" style="margin-top:2rem;">
             <p>Él equipo está integrado por ingenieros industriales, ingenieros comerciales, 
                 médicos, arquitectos, entre otros. La compañía cuenta con estudios de mercado
                 para construir en Chile y algunos países de América.Aunque Sudmédica está en 
@@ -182,5 +277,52 @@
         </div>
 </div>
     @include("snipets.contacto")
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.card__button');
+            const popup = document.getElementById('popup');
+            const closePopup = document.querySelector('.popup__close');
+
+            // Elementos dinámicos del popup
+            const popupImg = document.getElementById('popup-img');
+            const popupName = document.getElementById('popup-name');
+            const popupOcupation = document.getElementById('popup-ocupation');
+            const popupDescription = document.getElementById('popup-description');
+
+            // Abrir el popup al hacer clic en cualquier botón
+            buttons.forEach(button => {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault(); // Evita el comportamiento predeterminado del enlace
+
+                    // Obtener los datos del botón clicado
+                    const imgSrc = button.closest('.card').querySelector('.card__img').getAttribute('src');
+                    const name = button.getAttribute('data-name');
+                    const ocupation = button.getAttribute('data-ocupation');
+                    const description = button.getAttribute('data-description');
+
+                    // Actualizar el contenido del popup
+                    popupImg.setAttribute('src', imgSrc);
+                    popupName.textContent = name;
+                    popupOcupation.textContent = ocupation;
+                    popupDescription.textContent = description;
+
+                    // Mostrar el popup
+                    popup.style.display = 'flex';
+                });
+            });
+
+            // Cerrar el popup al hacer clic en el botón de cierre
+            closePopup.addEventListener('click', function () {
+                popup.style.display = 'none'; // Oculta el popup
+            });
+
+            // Cerrar el popup al hacer clic fuera del contenido
+            popup.addEventListener('click', function (e) {
+                if (e.target === popup) {
+                    popup.style.display = 'none'; // Oculta el popup
+                }
+            });
+        });
+    </script>
 </body>
 </html>
