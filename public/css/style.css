@@ -15,7 +15,7 @@ body{
 
 
 .container{
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
     max-width: 1200px;
     padding: 80 0;
@@ -29,6 +29,7 @@ body{
 
 
 .nav{
+    position: relative;
     padding: 1.5rem 2rem;
     min-height: 60px;
     --hamburger:block;
@@ -86,9 +87,9 @@ body{
 }
 
 .nav__menu__data{
+    min-height: 30rem;
     position: absolute;
-    padding: 8rem 0;
-    top:0;
+    top:5rem;
     left: 0;
     bottom: 0;
     right: 0;
@@ -145,20 +146,17 @@ body{
 }
 
 
-.carrusel__img{
-    padding:2rem 0;
-    height: 451px;
-    width: 100%;
-    object-fit: cover;
-    aspect-ratio: 16 / 9;
-}
-
 .informacion__container{
     font-family: lato;
     color: var(--sud-blue);
     text-align:justify;
     line-height: 1.5rem;
     padding: 0 0 2rem 0;
+}
+
+.informacion__container h1{
+    text-align: left;
+    font-weight: 800;
 }
 
 
@@ -486,6 +484,7 @@ input[type="submit"]{
     }
         
     .nav__menu__data{
+        min-height: 60px;
         width: 100%;
         padding:0;
         position: unset;

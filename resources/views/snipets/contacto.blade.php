@@ -1,5 +1,5 @@
 <div class="contacto__container container">
-    <img class="contacto__img" src="{{asset('img/ejecutivas.webp')}}" alt="">
+    <img class="contacto__img" src="{{asset('img/contacto_sudmedica.png')}}" alt="">
     <div class="contacto__form">
         <div class="contacto__title">
             <img src="{{asset('img/asesora.png')}}" alt="">
