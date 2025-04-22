@@ -13,6 +13,9 @@
 </head>
 <body>
     @include('snipets.navbar')
+    <picture class="imagen__container">
+        <img src="{{asset('img/noticias.png')}}" alt="" class="imagen">
+    </picture>
     @include('snipets.noticias')
     <div class="busqueda__container container">
         <div class="busqueda__calendar">

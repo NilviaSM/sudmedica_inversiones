@@ -12,15 +12,17 @@
 </head>
 <body>
     @include("snipets.navbar")
-    @include("snipets.carrusel")
-    <div class="container">
+    <picture class="imagen__container">
+        <img src="{{asset('img/sudmedica01.png')}}" alt="" class="imagen">
+    </picture>
         <div class="directorio">
-            <h1 class="directorio__titulo titulo">
+            <p class="historia container">La creación de Sudmédica se remonta al año 2017, cuando el Médico Cirujano, Mauricio Cortés y él Ingeniero Comercial, César Mendoza, detectaron una falta de infraestructura creciente del área salud en regiones de Chile y América, por lo que propusieron construir una red de clínicas, idea que compartieron con el Ingeniero Civil Industrial Ian Couso (con amplia experiencia en el sector inmobiliario). En el año 2018, estos tres socios gestores constituyen la sociedad Sudmédica Quillota S.A.</p>
+            <h1 class="directorio__titulo titulo container">
                 Directorio
             </h1>
             <div class="directorio__cards cards">
                 <div class="directorio__card card">
-                    <img class="directorio__card__img card__img" src="{{asset('img/man.jpg')}}" alt="">
+                    <img class="directorio__card__img card__img" src="{{asset('img/Freddy_Hurtado_Presidente 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Freddy Hurtado</h5>
                         <h5 class="card__ocupation">PRESIDENTE</h5>
@@ -33,7 +35,7 @@
                     </div>
                 </div>
                 <div class="directorio__card card">
-                    <img class="directorio__card__img card__img" src="{{asset('img/woman01.jpg')}}" alt="">
+                    <img class="directorio__card__img card__img" src="{{asset('img/Ángel_Trujillo_López_Vicepresidente 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Ángel Trujillo López</h5>
                         <h5 class="card__ocupation">VICEPRESIDENTE</h5>
@@ -47,7 +49,7 @@
                    </div>
                 </div>
                 <div class="directorio__card card">
-                    <img class="directorio__card__img card__img" src="{{asset('img/woman02.jpg')}}" alt="">
+                    <img class="directorio__card__img card__img" src="{{asset('img/maria_soledad_Lopez_Secretaria 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">María Soledad López Tapia</h5>
                         <h5 class="card__ocupation">SECRETARIA</h5>
@@ -61,7 +63,7 @@
                     </div>
                 </div>
                 <div class="directorio__card card">
-                    <img class="directorio__card__img card__img" src="{{asset('img/man.jpg')}}" alt="">
+                    <img class="directorio__card__img card__img" src="{{asset('img/Felipe_Oelckers_Aljaro_Director 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Felipe Oelckers Aljaro</h5>
                         <h5 class="card__ocupation">DIRECTOR</h5>
@@ -74,7 +76,7 @@
                     </div>
                 </div>
                 <div class="directorio__card card">
-                    <img class="directorio__card__img card__img" src="{{asset('img/man.jpg')}}" alt="">
+                    <img class="directorio__card__img card__img" src="{{asset('img/Fernando_Marcelo_Aguiar_Rosales_Director 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Fernando Marcelo Aguiar Rosales</h5>
                         <h5 class="card__ocupation">DIRECTOR</h5>
@@ -88,7 +90,7 @@
                 </div>
             </div>
         </div>
-        <div class="gerencia">
+        <!-- <div class="gerencia">
             <h1 class="gerencia__titulo titulo">Gerencia</h1>
             <div class="gerencia__cards cards">
                 <div class="gerencia__card card">
@@ -138,8 +140,8 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="cards__details">
+        </div> -->
+        <div class="cards__details container">
             <p>Él equipo está integrado por ingenieros industriales, ingenieros comerciales, 
                 médicos, arquitectos, entre otros. La compañía cuenta con estudios de mercado
                 para construir en Chile y algunos países de América.Aunque Sudmédica está en 
@@ -155,7 +157,7 @@
             </p>
         </div>
         <div class="carrusel__container">
-            <img src="{{asset('img/clinica01.webp')}}" alt="" class="carrusel__img">
+            <img src="{{asset('img/clinica01.webp')}}" alt="" class="imagen">
         </div>
         <div class="details__edificio">
             <ul>
@@ -167,18 +169,17 @@
                 <li>Estándares de alta calidad.</li>
             </ul>
         </div>
-        <picture class="carrusel__container">
-            <img src="{{asset('img/mapa01.jpg')}}" alt="" class="carrusel__img">
+        <picture class="imagen__container">
+            <img src="{{asset('img/mapa01.jpg')}}" alt="" class="imagen">
         </picture>
         <div class="details__ubicacion">
-            <p>La clínica tendrá 3 accesos y vías de circulación expeditas. A 300 metros de 
+            <p class="container">La clínica tendrá 3 accesos y vías de circulación expeditas. A 300 metros de 
                 la Avenida 21 de Mayo donde transita la mayor parte de la locomoción 
                 colectiva. A 350 metros del terminal de buses de Quillota para pacientes de 
                 otras ciudades. A 600 metros de autopista. A 
                 8 minutos del Hospital Bi provincial. 
             </p>
         </div>
-    </div>
 </div>
     @include("snipets.contacto")
 </body>
