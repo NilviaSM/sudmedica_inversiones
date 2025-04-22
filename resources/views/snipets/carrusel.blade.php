@@ -188,7 +188,7 @@
         }
 
         .carrusel__img {
-            width: 100%;
+            width: 110%;
             height: auto; /* Mantén la proporción de la imagen */
         }
 
@@ -219,7 +219,7 @@
         }
 
         .carrusel__img {
-            width: 100%;
+            width: 150%;
             height: auto; /* Mantén la proporción de la imagen */
         }
 
@@ -241,6 +241,27 @@
         .carrusel__text__02 p,
         .carrusel__text__03 p {
             font-size: 4vw; /* Ajusta el tamaño del párrafo para pantallas muy pequeñas */
+        }
+
+        .carrusel__buttons {
+            margin-bottom:10px;
+            bottom: -5px; /* Separa los botones de la imagen */
+        }
+
+        .informacion__container {
+            text-align: center; /* Centra el texto horizontalmente */
+            padding: 20px;
+        }
+
+        .informacion__container h1 {
+            text-align:center;
+            font-size: 7vw; /* Ajusta el tamaño del título para pantallas pequeñas */
+            margin-bottom: 10px;
+        }
+
+        .informacion__container p {
+            font-size: 4vw; /* Ajusta el tamaño del párrafo para pantallas pequeñas */
+            line-height: 1.5; /* Mejora la legibilidad */
         }
     }
 </style>

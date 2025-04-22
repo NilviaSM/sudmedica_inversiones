@@ -14,8 +14,6 @@ body{
 }
 
 
-
-
 .container{
     width: 95%;
     margin: 0 auto;
@@ -89,7 +87,7 @@ body{
 }
 
 .nav__menu__data{
-    min-height: 30rem;
+    min-height: 40rem;
     position: absolute;
     top:5rem;
     left: 0;
