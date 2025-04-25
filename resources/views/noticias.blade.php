@@ -29,6 +29,7 @@
         </div>
     </div>
     @include('snipets.contacto')
+    @include('volver_inicio')
     <script>
         $(".noticias__list").empty();
         $("#search").keypress(()=>{

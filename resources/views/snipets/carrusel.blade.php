@@ -27,9 +27,8 @@
         </div>
     </div>
 
-    <div class="informacion__container">
-        <h1>Te contamos</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit magni voluptate, doloribus sapiente deleniti hic repellendus quidem aliquam veritatis nulla quaerat vel ex facere! Placeat natus numquam soluta ad quae!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum optio placeat quibusdam, saepe dolor molestias aut nostrum ipsam numquam blanditiis doloribus distinctio illo dicta! Ut nobis nisi laborum nesciunt quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eveniet reprehenderit voluptatum voluptatem nihil neque totam quos dicta vel labore ex quas molestiae, repudiandae ut, quibusdam minus soluta aspernatur libero.</p>
+    <div class="informacion__container container">
+        <h1>Conoce nuestra clínica</h1>
     </div>
 </div>
 

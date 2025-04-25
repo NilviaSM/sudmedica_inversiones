@@ -15,10 +15,15 @@ body{
 
 
 .container{
-    width: 95%;
+    width: 70%;
     margin: 0 auto;
     max-width: 1200px;
     padding: 80 0;
+}
+
+.container_dos{
+    width: 60%;
+    margin: 0 auto;
 }
 
 .linea_azul{
@@ -63,7 +68,14 @@ body{
     font-size: .9rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+.nav__logo svg{
+    background-color: white;
+}
 
+.nav__logo img{
+    width:250px;
+    height: 60px;
+}
 
 .nav__close,
 .nav__hamburger{
@@ -285,6 +297,8 @@ input[type="submit"]{
     font-family: lato;
     color: var(--sud-blue);
     font-weight: 800;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .card{
@@ -339,12 +353,16 @@ input[type="submit"]{
 }
 
 .details__edificio{
-    padding: 2rem 4rem;
+    padding: 2rem 0;
     font-size: 1rem;
     font-family: Lato;
     color: var(--sud-blue);
     column-count: 2;
-    column-gap: 4rem;
+    column-gap: 5rem;
+
+    ul{
+        padding-left: 1rem;
+    }
 }
 
 li{
@@ -352,7 +370,7 @@ li{
 }
 
 .details__ubicacion{
-    padding: 2rem 4rem;
+    padding: 2rem 0;
     font-size: 1rem;
     font-family: Lato;
     color: var(--sud-blue);
@@ -404,7 +422,7 @@ li{
     min-height: 15rem;
     min-width: 350px;
     font-family: lato;
-    color: var(--sud-blue);
+    color: var (--sud-blue);
 }
 
 .txt__busqueda{
@@ -471,7 +489,7 @@ li{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     color:#114071;
     text-decoration: none;
-    min-width: 250px;
+    min-width: 300px;
     border-radius: 1rem;
     text-align: center;
     padding: 1rem;
@@ -489,6 +507,29 @@ li{
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.btn__volver__inicio{
+    margin: 3rem auto;
+}
+
+.btn__volver__container{
+    width: 190px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #114071;
+
+}
+
+
+.btn__volver__container a{
+    font-family: lato;
+    text-decoration: none;
+    color: #114071;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 @media screen and (min-width: 1200px){
@@ -613,6 +654,14 @@ li{
         padding: 0;
 }
 
+.contacto__container{
+    width: 90%;
+}
+
+.directorio .historia{
+    column-count: 1;
+}
+
 .noticias__imagen{
     max-width:527px;
     max-height: 596px;
@@ -621,7 +670,6 @@ li{
     padding:0 0 15px 0px;
 }
 
-
-
 }
+
 
