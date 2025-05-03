@@ -279,10 +279,10 @@ input[type="submit"]{
 }
 
 .directorio .historia{
+    max-width: 80rem;
     font-family: lato;
     color:#114071;
     column-count: 2;
-    margin-bottom: 2rem;
 }
 
 
@@ -353,16 +353,16 @@ input[type="submit"]{
 }
 
 .details__edificio{
-    padding: 2rem 0;
+    padding: 4rem 0;
     font-size: 1rem;
     font-family: Lato;
     color: var(--sud-blue);
     column-count: 2;
-    column-gap: 5rem;
+    column-gap: 3rem;
+}
 
-    ul{
-        padding-left: 1rem;
-    }
+.details__edificio > *:first-child {
+    margin-top: 0; /* Elimina el margen superior del primer elemento */
 }
 
 li{
@@ -370,12 +370,15 @@ li{
 }
 
 .details__ubicacion{
-    padding: 2rem 0;
     font-size: 1rem;
     font-family: Lato;
     color: var(--sud-blue);
     column-count: 2;
     column-gap: 4rem;
+}
+
+.details__ubicacion > *:first-child {
+    margin-top: 0; /* Elimina el margen superior del primer elemento */
 }
 
 .noticias__info_error{
