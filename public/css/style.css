@@ -254,7 +254,7 @@ input[type="submit"]{
     color:var(--sud-blue)
 }
 
-.btn__enviar_whatsapp{
+.btn__form{
     display: block;
     padding: 1rem;
     background-color: var(--sud-green);
@@ -266,11 +266,17 @@ input[type="submit"]{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top:2rem;
 }
 
-.btn__enviar_whatsapp i{
+
+.btn__form i{
     margin-right: .8rem;
     font-size: 1.5rem;
+}
+
+.btn__form__call{
+    display: none;
 }
 
 
@@ -618,10 +624,20 @@ li{
         transform: translate(75%, -50%);
         overflow: hidden;
     }
+
 }
 
 
 @media screen and (max-width:836px){
+
+    .contacto__img{
+        display: none;
+    }
+
+    .btn__form__call{
+        display: block;
+    }
+
     .contacto__container{
         place-items: center;
         

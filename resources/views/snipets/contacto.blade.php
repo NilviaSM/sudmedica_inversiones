@@ -16,7 +16,9 @@
                 También puedes comunicarte
                 a través de Whatsapp:
             </p>
-            <a href="" class="btn__enviar_whatsapp"><i class="fa-brands fa-whatsapp"></i> Enviar mensaje</a>
+            <a href="" class="btn__form btn__form__whatssap"><i class="fa-brands fa-whatsapp"></i> Enviar mensaje</a>
+            <a href="" class="btn__form btn__form__call"><i class="fa fa-phone" aria-hidden="true"></i> Llamar</a>
         </div>
+        
     </div>
 </div>
