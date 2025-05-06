@@ -200,11 +200,7 @@
             </ul>
         </div>
         <div class="details__ubicacion container">
-            <p class="">La clínica tendrá 3 accesos y vías de circulación expeditas. A 300 metros de 
-                la Avenida 21 de Mayo donde transita la mayor parte de la locomoción 
-                colectiva. A 350 metros del terminal de buses de Quillota para pacientes de 
-                otras ciudades. A 600 metros de autopista. A 
-                8 minutos del Hospital Bi provincial. 
+            <p class="">El edificio clínico de SUDMÉDICA ubicado en Quillota, consideró en su construcción 73 oficinas médicas (box de atención), 7 quirófanos, espacios para servicios de imagenologías que incluirá resonador magnético, rayos X, mamografía, tomografía axial computarizada (TAC) y 4 ecógrafos. Además, dispondrá de 40 camas de hospitalización, áreas para toma de muestras, y laboratorio clínico propio, lo que permitirá entregar diagnósticos oportunos y tratamientos eficaces. Todo esto en una instalación moderna, diseñada para responder a las necesidades de salud de la comunidad con tecnología de última generación. 
             </p>
         </div>
 </div>
