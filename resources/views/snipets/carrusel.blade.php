@@ -2,10 +2,13 @@
     <div class="carrusel__container">
         <div class="carrusel__slides">
             <div class="carrusel__slide">
-                <img src="{{ asset('img/slider01.png') }}" alt="Slide 1" class="carrusel__img">
-                <div class="carrusel__text__01">
-                    <h2><b>SABÍAS QUE INVERTIR EN SALUD</b> PUEDE SER UNA DE LAS DECISIONES MÁS <b>RENTABLES?</b></h2>
+                <img src="{{ asset('img/slide01.png') }}" alt="Slide 2" class="carrusel__img">
+                <div class="carrusel__text__02 carrusel__text__left">
+                    <h2>NUESTRA PRIMERA CLÍNICA</h2>
                 </div>
+            </div>
+            <div class="carrusel__slide">
+                <img src="{{ asset('img/slide02.png') }}" alt="Slide 3" class="carrusel__img">
             </div>
             <div class="carrusel__slide">
                 <img src="{{ asset('img/slider02.png') }}" alt="Slide 2" class="carrusel__img">
@@ -14,8 +17,11 @@
                 </div>
             </div>
             <div class="carrusel__slide">
-                <img src="{{ asset('img/slider03.png') }}" alt="Slide 3" class="carrusel__img">
-                <div class="carrusel__text__03 carrusel__text__left">
+                <img src="{{ asset('img/slide04.png') }}" alt="Slide 3" class="carrusel__img">
+            </div>
+            <div class="carrusel__slide">
+                <img src="{{ asset('img/slide05.png') }}" alt="Slide 3" class="carrusel__img">
+                <div class="carrusel__text__03 carrusel__text__right">
                     <h2>EL ÉXITO SE CONSTRUYE CON BUENAS ACCIONES</h2>
                 </div>
             </div>
@@ -24,6 +30,8 @@
             <button class="carrusel__button" data-index="0"></button>
             <button class="carrusel__button" data-index="1"></button>
             <button class="carrusel__button" data-index="2"></button>
+            <button class="carrusel__button" data-index="3"></button>
+            <button class="carrusel__button" data-index="4"></button>
         </div>
     </div>
 
@@ -117,19 +125,19 @@
     .carrusel__text__02,
     .carrusel__text__03 {
         position: absolute;
-        top: 30%; /* Centra verticalmente */
+        top: 37%; /* Centra verticalmente */
         right: 10%; /* Posiciona el texto a la izquierda */
         transform: translateY(-50%); /* Ajusta el centrado vertical */
         color: #fff;
-        background-color: rgba(18, 64, 113, 0.6); /* Fondo semitransparente */
+        background-color: rgba(18, 64, 113, .7); /* Fondo semitransparente */
         backdrop-filter: blur(2px); /* Aplica el efecto de desenfoque */
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         padding: 15px;
         border-radius: 5px;
         max-width: 300px;
         display: flex; /* Flexbox para centrar el contenido */
         flex-direction: column; /* Asegura que el texto fluya verticalmente */
         justify-content: center; /* Centra el contenido verticalmente */
+        height:60%;
     }
 
     .carrusel__text__left{
@@ -139,7 +147,7 @@
     .carrusel__text__01 h2,
     .carrusel__text__02 h2,
     .carrusel__text__03 h2 {
-        font-size: 2.5vw; /* Tamaño de fuente relativo al ancho del viewport */
+        font-size: 3vw; /* Tamaño de fuente relativo al ancho del viewport */
         font-family: 'Lato', sans-serif;
         font-weight: 400;
         margin: 0 0 0;
@@ -194,9 +202,10 @@
         .carrusel__text__01,
         .carrusel__text__02,
         .carrusel__text__03 {
-            top: 35%; /* Ajusta la posición vertical */
+            top: 32%; /* Ajusta la posición vertical */
             left: 5%; /* Reduce el margen izquierdo */
-            max-width: 90%; /* Asegura que el texto no ocupe demasiado espacio */
+            max-width: 40%; /* Asegura que el texto no ocupe demasiado espacio */
+            height:40%;
         }
 
         .carrusel__text__01 h2,
@@ -227,13 +236,13 @@
         .carrusel__text__03 {
             top: 40%; /* Ajusta la posición vertical */
             left: 5%; /* Reduce aún más el margen izquierdo */
-            max-width: 100%; /* Permite que el texto ocupe todo el ancho disponible */
+            max-width: 40%; /* Permite que el texto ocupe todo el ancho disponible */
         }
 
         .carrusel__text__01 h2,
         .carrusel__text__02 h2,
         .carrusel__text__03 h2 {
-            font-size: 5vw; /* Ajusta el tamaño del texto para pantallas muy pequeñas */
+            font-size: 4.5vw; /* Ajusta el tamaño del texto para pantallas muy pequeñas */
         }
 
         .carrusel__text__01 p,
