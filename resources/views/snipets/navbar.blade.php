@@ -17,27 +17,27 @@
                 </ul>
                 <ul class="nav__sociales">
                     <li class="nav__list">
-                        <a href="" class="nav__link">
+                        <a href="https://cl.linkedin.com/company/sudmedicainversiones?trk=public_post_feed-actor-name" class="nav__link" target="_blank">
                             <i class="fa-brands fa-linkedin-in nav__icons"></i>
                         </a>
                     </li>
                     <li class="nav__list">
-                        <a href="" class="nav__link">
+                        <a href="https://www.instagram.com/sudmedicainversiones/" class="nav__link" target="_blank">
                             <i class="fa-brands fa-instagram nav__icons"></i>
                         </a>
                     </li>
                     <li class="nav__list">
-                        <a href="" class="nav__link">
+                        <a href="" class="nav__link" target="_blank">
                             <i class="fa-brands fa-x-twitter nav__icons"></i>
                         </a>
                     </li>
                     <li class="nav__list">
-                        <a href="" class="nav__link">
+                        <a href="https://www.facebook.com/sudmedicainversiones/?_rdr" class="nav__link" target="_blank">
                             <i class="fa-brands fa-facebook-f nav__icons"></i>
                         </a>
                     </li>
                     <li class="nav__list">
-                        <a href="" class="nav__link">
+                        <a href="https://www.youtube.com/@clinicasudmedica3388" class="nav__link" target="_blank">
                             <i class="fa-brands fa-youtube nav__icons"></i>
                         </a>
                     </li>
