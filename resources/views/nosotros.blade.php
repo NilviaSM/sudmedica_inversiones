@@ -21,27 +21,11 @@
                 Directorio
             </h1>
             <div class="directorio__cards cards container">
-                <div class="directorio__card card">
-                    <img class="directorio__card__img card__img" src="{{asset('img/Freddy_Hurtado_Presidente 1.png')}}" alt="">
-                    <div class="card__info">
-                        <h5 class="card__name">Freddy Hurtado</h5>
-                        <h5 class="card__ocupation">PRESIDENTE</h5>
-                        <p class="card__description">Ingeniero Comercial de la Universidad de Chile, y con dos MBA en la Pontificia Universidad Católica. En su dilatada trayectoria profesional 
-                            ocupó altos cargos ejecutivos en Antofagasta Minerals: Finanzas, Control de Gestión y 
-                            Controller; y tuvo una activa participación en el Comité de Financiamiento del Proyecto 
-                            Los Pelambres. Fue responsable
-                        </p>
-                        <a class="card__button" href="#" 
-                           data-name="Freddy Hurtado" 
-                           data-ocupation="PRESIDENTE" 
-                           data-description="Ingeniero Comercial de la Universidad de Chile, y con dos MBA en la Pontificia Universidad Católica. En su dilatada trayectoria profesional ocupó altos cargos ejecutivos en Antofagasta Minerals: Finanzas, Control de Gestión y Controller; y tuvo una activa participación en el Comité de Financiamiento del Proyecto Los Pelambres.<br><br> Fue responsable de dirigir la Gerencia General de ZOFRI S.A., empresa listada en la Bolsa de Valores y supervisada por la CMF, en donde desarrolló e implementó un nuevo plan estratégico posterior al retiro de las AFPs como accionistas por la Ley Arica.<br><br> Siendo Gerente de Finanzas en CAPEL creó y fundó la Cooperativa de ahorro y Créditos Chilecoop, siendo su primer Gerente General y posteriormente Director y Presidente hasta su reciente retiro. Es CEO-Founder de As-Consulting.cl empresa enfocada en consultoría corporativa y financiera, con casi 30 años de trayectoria.">Ver más...</a>
-                    </div>
-                </div>
-                <div class="directorio__card card">
+            <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/Ángel_Trujillo_López_Vicepresidente 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Ángel Trujillo López</h5>
-                        <h5 class="card__ocupation">VICEPRESIDENTE</h5>
+                        <h5 class="card__ocupation">PRESIDENTE</h5>
                         <p class="card__description">Andritz Certified Site Manager, Andritz Global Site Operations (GSO), Austria. 
                             Certificate Project Management Professional (PMP N°1930249), Project 
                             Management Institute. Magister en gestión e Negocios, 
@@ -50,15 +34,32 @@
                         </p>
                         <a class="card__button" href="#"
                             data-name="Ángel Trujillo López" 
-                            data-ocupation="VICEPRESIDENTE" 
+                            data-ocupation="PRESIDENTE" 
                             data-description="Andritz Certified Site Manager, Andritz Global Site Operations (GSO), Austria. Certificate Project Management Professional (PMP N°1930249), Project Management Institute.<br><br> Magister en gestión e Negocios, Universidad Adolfo Ibañez, Chile. Ingeniero Mecánico, Universidad Nacional Experimental Politécnica Antonio José de Sucre, Venezuela. Experiencia en Gerencia de Proyectos y Contratos para Empresas Transnacionales (Andritz Chile ltda, Tractebel Engineering Chile S.A., entre otras), en la industria de Generación de Energías Renovables en Venezuela, Brasil y Chile. Director de Constructora Red Médica SpA.">Ver más...</a>
                    </div>
                 </div>
                 <div class="directorio__card card">
+                    <img class="directorio__card__img card__img" src="{{asset('img/Freddy_Hurtado_Presidente 1.png')}}" alt="">
+                    <div class="card__info">
+                        <h5 class="card__name">Freddy Hurtado</h5>
+                        <h5 class="card__ocupation">DIRECTOR</h5>
+                        <p class="card__description">Ingeniero Comercial de la Universidad de Chile, y con dos MBA en la Pontificia Universidad Católica. En su dilatada trayectoria profesional 
+                            ocupó altos cargos ejecutivos en Antofagasta Minerals: Finanzas, Control de Gestión y 
+                            Controller; y tuvo una activa participación en el Comité de Financiamiento del Proyecto 
+                            Los Pelambres. Fue responsable
+                        </p>
+                        <a class="card__button" href="#" 
+                           data-name="Freddy Hurtado" 
+                           data-ocupation="DIRECTOR" 
+                           data-description="Ingeniero Comercial de la Universidad de Chile, y con dos MBA en la Pontificia Universidad Católica. En su dilatada trayectoria profesional ocupó altos cargos ejecutivos en Antofagasta Minerals: Finanzas, Control de Gestión y Controller; y tuvo una activa participación en el Comité de Financiamiento del Proyecto Los Pelambres.<br><br> Fue responsable de dirigir la Gerencia General de ZOFRI S.A., empresa listada en la Bolsa de Valores y supervisada por la CMF, en donde desarrolló e implementó un nuevo plan estratégico posterior al retiro de las AFPs como accionistas por la Ley Arica.<br><br> Siendo Gerente de Finanzas en CAPEL creó y fundó la Cooperativa de ahorro y Créditos Chilecoop, siendo su primer Gerente General y posteriormente Director y Presidente hasta su reciente retiro. Es CEO-Founder de As-Consulting.cl empresa enfocada en consultoría corporativa y financiera, con casi 30 años de trayectoria.">Ver más...</a>
+                    </div>
+                </div>
+                
+                <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/maria_soledad_Lopez_Secretaria 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">María Soledad López Tapia</h5>
-                        <h5 class="card__ocupation">SECRETARIA</h5>
+                        <h5 class="card__ocupation">DIRECTORA</h5>
                         <p class="card__description">Ingeniero Comercial de la Universidad Autónoma de Chile; Contador Auditor 
                             de la Universidad Tecnológica Metropolitana; Licenciatura en 
                             Educación de la Universidad Miguel de Cervantes. Especialista en 
@@ -67,7 +68,7 @@
                         </p>
                         <a class="card__button" href="#"
                             data-name="María Soledad López Tapia" 
-                            data-ocupation="SECRETARIA" 
+                            data-ocupation="DIRECTORA" 
                             data-description="Ingeniero Comercial de la Universidad Autónoma de Chile; Contador Auditor de la Universidad Tecnológica Metropolitana; Licenciatura en Educación de la Universidad Miguel de Cervantes. <br><br>Especialista en investigación de delitos económicos, exoficial de la policía de investigaciones de Chile, Actualmente se desempeña como empresaria en el sector inmobiliario y en el sector educación. Fue Directora en Sociedad Educacional Camilo Henríquez S.S., El Almendral S.A., Sembrando Futuro S.A., Corporación Educacional Altos del Huerto S.A.. Educacional">Ver más...</a>
                     </div>
                 </div>
