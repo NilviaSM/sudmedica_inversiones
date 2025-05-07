@@ -24,21 +24,21 @@
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
                 <h1 class="documentos__texto__titulo">REPORTE DE OPERACIONES CON PARTES RELACIONADAS 2024</h1>
-                <a href="{{route('consolidadoPdf')}}" class="boton__documentos">Descargar</a>
+                <a href="{{route('operacionesxlsx')}}" class="boton__documentos">Descargar</a>
             </div>
         </picture>
         <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
                 <h1 class="documentos__texto__titulo">EEFF Consolidado pdf</h1>
-                <a href="{{route('memoriaPdf')}}" class="boton__documentos">Descargar</a>
+                <a href="{{route('consolidadoPdf')}}" class="boton__documentos">Descargar</a>
             </div>
         </picture>
         <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
                 <h1 class="documentos__texto__titulo">Memoria 2023 pdf</h1>
-                <a href="{{route('consolidadoPdf')}}" class="boton__documentos">Descargar</a>
+                <a href="{{route('memoria2023Pdf')}}" class="boton__documentos">Descargar</a>
             </div>
         </picture>
     </div>
