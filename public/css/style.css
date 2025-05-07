@@ -407,6 +407,7 @@ li{
 .noticias__container{
     font-family: lato;
     color: var(--sud-blue);
+    margin-top: 5rem;
 }
 
 
