@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NoticiasController;
+use App\Http\Controllers\ContactanosController;
+use App\Mail\ContactanosMailable;
 
 Route::get('/', function () {
     return view('index');
@@ -56,6 +58,13 @@ Route::get('/documentos/reporte_operaciones', function () {
 
     return response()->download($filePath, "REPORTE_DE_OPERACIONES_CON_PARTES_RELACIONADAS_II_2024.xlsx", ['Content-Type'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet']);
 })->name("operacionesxlsx");
+
+Route::get('/contactanos', function(){
+    Mail::to('contacto@sudmedica.com')->send(new ContactanosMailable);
+    return "Mensaje enviado";
+});
+
+Route::post('/contactanos', [ContactanosController::class, 'store'])->name('contactanos.store');
 
 Route::get('/noticias', [NoticiasController::class, 'index'])->name('noticias.index');
 Route::get('/noticias/add', [NoticiasController::class, 'store_form'])->name('noticias.store');

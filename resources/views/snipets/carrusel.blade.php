@@ -35,8 +35,8 @@
         </div>
     </div>
 
-    <div class="informacion__container container">
-        <h1>Conoce nuestra clínica</h1>
+    <div class="informacion__container">
+        <h1>Conviértete en Socio, conoce <br>nuestro modelo de negocio</h1>
     </div>
 </div>
 
