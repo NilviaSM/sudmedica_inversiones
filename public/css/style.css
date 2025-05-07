@@ -172,6 +172,9 @@ body{
 }
 
 
+.video__container{
+    width: 100%;
+}
 
 .video__video{
     width: 100%;
