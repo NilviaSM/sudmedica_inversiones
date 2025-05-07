@@ -27,7 +27,7 @@
                         </a>
                     </li>
                     <li class="nav__list">
-                        <a href="" class="nav__link" target="_blank">
+                        <a href="https://x.com/SUDMedica_Q" class="nav__link" target="_blank">
                             <i class="fa-brands fa-x-twitter nav__icons"></i>
                         </a>
                     </li>
