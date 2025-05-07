@@ -172,18 +172,9 @@
             </div>
         </div> -->
         <div class="cards__details container" style="margin-top:2rem;">
-            <p>Él equipo está integrado por ingenieros industriales, ingenieros comerciales, 
-                médicos, arquitectos, entre otros. La compañía cuenta con estudios de mercado
-                para construir en Chile y algunos países de América.<br><br> Aunque Sudmédica está en 
-                su etapa de estudio y proyecto, ya está materializando un primer logro 
-                en él centro de la Región de Valparaíso, en la ciudad de Quillota. 
-                Se espera que esta clínica tendrá la categoría de mediana alta y alta 
-                complejidad, además, al momento de su apertura, se espera que tenga la mayor 
-                cantidad de médicos de planta de la región.<br><br>Los médicos son accionistas de 
-                Sudmédica y además dueños de sus consultas. Las consultas sé vendieron 
-                por especialidades. El edificio cuenta con 73 consultas médicas , 
-                7 quirófanos imagenología completa, hospitalización, laboratorio y 
-                toma de muestra.
+            <p>El equipo de Sudmédica está compuesto por un grupo multidisciplinario de profesionales, entre los que se incluyen ingenieros industriales, ingenieros comerciales, médicos, arquitectos, entre otros. La compañía respalda su expansión mediante estudios de mercado que avalan su capacidad para construir en Chile y en varios países de América.<br><br>
+                Aunque actualmente se encuentra en una fase de estudio y planificación, Sudmédica ya ha alcanzado un importante avance con la materialización de su primer proyecto en la región de Valparaíso, específicamente en la ciudad de Quillota. Esta clínica, que se proyecta como un centro de mediana-alta y alta complejidad, tendrá un impacto significativo en la región, con la meta de contar con la 
+                mayor cantidad de médicos de planta al momento de su apertura.<br><br>Un aspecto clave de este modelo es que los médicos, además de ser accionistas de la compañía, son propietarios de sus consultas, las cuales se adquirieron por especialidades. El edificio contará con 73 consultas médicas, 7 quirófanos, una infraestructura de imagenología completa, servicios de hospitalización, laboratorio clínico y áreas dedicadas a la toma de muestras. Este enfoque innovador no solo garantiza un servicio de alta calidad, sino que también presenta una oportunidad atractiva para los inversionistas que busquen participar en el crecimiento de un proyecto con gran potencial en el sector de la salud.
             </p>
         </div>
         <div class="carrusel__container">
