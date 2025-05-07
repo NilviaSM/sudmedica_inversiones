@@ -7,7 +7,7 @@
             <img src="{{asset('img/asesora.png')}}" alt="">
             <p>Contáctanos y te asesoramos</p>
         </div>
-        <form action="{{route('contactanos.store')}}" method="post">
+        <form id="contact-form" action="{{route('contactanos.store')}}" method="post">
             @csrf
             <input type="text" placeholder="Nombre..." name="nombre">
             <input type="text" placeholder="Telefono..." name="telefono">
@@ -77,14 +77,14 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         max-width: 400px;
         width: 90%;
-        font-family: "Azeret mono";
+        font-family:lato;
     }
 
     .loading-content .spinner {
         width: 40px;
         height: 40px;
         border: 4px solid #ccc;
-        border-top: 4px solid var(--black);
+        border-top: 4px solid #114071;
         border-radius: 50%;
         animation: spin 1s linear infinite;
         margin: 0 auto 10px auto;
@@ -119,7 +119,7 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         max-width: 400px;
         width: 90%;
-        font-family: "Azeret mono";
+        font-family: lato;
     }
 
     .popup-content h2 {
@@ -135,7 +135,7 @@
     }
 
     .popup-close {
-        background-color: var(--black);
+        background-color: #114071;
         color: white;
         border: none;
         padding: 10px 20px;
@@ -188,6 +188,6 @@
             popup.classList.remove("show");
         });
     }
-}
+})
     </script>
 </div>
