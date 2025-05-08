@@ -180,6 +180,10 @@ body{
     cursor: pointer;
 }
 
+#language-label{
+    cursor: pointer;
+}
+
 
 .informacion__container{
     font-family: lato;

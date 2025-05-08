@@ -6,7 +6,7 @@
         <img src="{{asset('img/logo_sudmedica_inversiones.svg')}}" alt="">
     </div>
         <div class="nav__menu__data">
-            <p>Lenguaje: <b>Español</b></p>
+            <p>Lenguaje: <b id="language-label">Español</b></p>
             <div class="nav__opciones">
                 <ul class="nav__links">
                     <li class="nav__list"><a href="{{url('')}}" class="nav__link {{ Request::url() == url('') ? 'nav__link__active' : '' }}">Inicio</a></li>
@@ -50,4 +50,21 @@
     <a href="#nav" class="nav__hamburger">
         <img src="{{asset('img/hamburger__icon.svg')}}" width="50px" alt="" class="nav__img">
     </a>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const languageLabel = document.getElementById('language-label');
+
+    languageLabel.addEventListener('click', () => {
+        if (languageLabel.textContent === 'Español') {
+            languageLabel.textContent = 'Inglés';
+            // Aquí puedes agregar lógica adicional para cambiar el contenido al inglés
+        } else {
+            languageLabel.textContent = 'Español';
+            // Aquí puedes agregar lógica adicional para cambiar el contenido al español
+        }
+        });
+    });
+</script>
 </nav>
