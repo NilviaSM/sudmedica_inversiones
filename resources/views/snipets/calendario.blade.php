@@ -88,7 +88,7 @@
 
 #currentMonth{
     font-family: 'lato';
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
 }
 
 @media screen and (max-width:600px){
