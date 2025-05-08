@@ -92,8 +92,13 @@
 }
 
 @media screen and (max-width:600px){
+    .busqueda__container{
+        width: 100%;
+        justify-content:center;
+    }
+
     .calendar{
-    max-width: 300px;
+    max-width: 320px;
     padding:.5rem;
     }
     
