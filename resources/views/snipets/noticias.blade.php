@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container noticias">
     @if($noticias)
     <div class="noticias__container">
         <picture  class="noticias__imagen">

@@ -44,5 +44,6 @@
     </div>
     @include('snipets.contacto')
     @include('volver_inicio')
+    <script src="{{asset('js/script.js')}}"></script>
 </body>
 </html>

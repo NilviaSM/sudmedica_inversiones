@@ -13,5 +13,6 @@
 <body>
     @include('snipets.navbar')
     @include('snipets.contacto')
+    <script src="{{asset('js/script.js')}}"></script>
 </body>
 </html>

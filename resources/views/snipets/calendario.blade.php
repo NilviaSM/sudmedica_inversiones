@@ -98,8 +98,7 @@
     }
 
     .calendar{
-    max-width: 320px;
-    padding:.5rem;
+    max-width: 300px;
     }
     
     .calendar-header button{
