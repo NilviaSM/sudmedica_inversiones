@@ -36,7 +36,7 @@
     </div>
 
     <div class="informacion__container">
-        <h1>Conviértete en Socio, conoce <br>nuestro modelo de negocio</h1>
+        <h1>Conviértete en Socio, conoce nuestro modelo de negocio</h1>
     </div>
 </div>
 
@@ -126,7 +126,7 @@
     .carrusel__text__03 {
         position: absolute;
         top: 37%; /* Centra verticalmente */
-        right: 10%; /* Posiciona el texto a la izquierda */
+        right: 3%; /* Posiciona el texto a la izquierda */
         transform: translateY(-50%); /* Ajusta el centrado vertical */
         color: #fff;
         background-color: rgba(3, 29, 56, 0.7); /* Fondo semitransparente */
@@ -143,7 +143,7 @@
     }
 
     .carrusel__text__left{
-        left:10%;
+        left:3%;
     }
 
     .carrusel__text__01 h2,
@@ -186,9 +186,10 @@
     }
 
     .informacion__container {
+        max-width:800px;
         text-align: center;
+        line-height:4rem;
         padding: 20px;
-
         h1{
             font-size:clamp(30px, 5vw ,50px);
         }
@@ -259,7 +260,7 @@
 
         .carrusel__buttons {
             margin-bottom:10px;
-            bottom: -5px; /* Separa los botones de la imagen */
+            bottom: -10px; /* Separa los botones de la imagen */
         }
 
         .informacion__container {
@@ -268,9 +269,9 @@
         }
 
         .informacion__container h1 {
-            text-align:center;
+            text-align:left;
             font-size: 7vw; /* Ajusta el tamaño del título para pantallas pequeñas */
-            margin-bottom: 10px;
+            margin:2rem 0;
         }
 
         .informacion__container p {
