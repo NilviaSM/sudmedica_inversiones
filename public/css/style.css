@@ -28,6 +28,16 @@ body{
     margin: 0 auto;
 }
 
+/* Ocultar el banner superior de Google Translate */
+.goog-te-banner-frame {
+    display: none !important;
+}
+
+/* Ajustar el tamaño del selector */
+#google_translate_element {
+    font-size: 14px;
+}
+
 .linea_azul{
     width: 100%;
     height: 40px;

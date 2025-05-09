@@ -48,4 +48,5 @@
     <a href="#nav" class="nav__hamburger">
         <img src="{{asset('img/hamburger__icon.svg')}}" width="50px" alt="" class="nav__img">
     </a>
+  
 </nav>
