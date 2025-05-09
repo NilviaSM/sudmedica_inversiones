@@ -129,11 +129,13 @@
         right: 10%; /* Posiciona el texto a la izquierda */
         transform: translateY(-50%); /* Ajusta el centrado vertical */
         color: #fff;
-        background-color: rgba(18, 64, 113, .7); /* Fondo semitransparente */
+        background-color: rgba(3, 29, 56, 0.7); /* Fondo semitransparente */
+        background-blend-mode:multiply;
         backdrop-filter: blur(2px); /* Aplica el efecto de desenfoque */
+        box-shadow: 0px 4px 4px rgba(152, 56, 68, 0.25);
         padding: 15px;
         border-radius: 5px;
-        max-width: 300px;
+        max-width: 350px;
         display: flex; /* Flexbox para centrar el contenido */
         flex-direction: column; /* Asegura que el texto fluya verticalmente */
         justify-content: center; /* Centra el contenido verticalmente */
@@ -147,9 +149,9 @@
     .carrusel__text__01 h2,
     .carrusel__text__02 h2,
     .carrusel__text__03 h2 {
-        font-size: 3vw; /* Tamaño de fuente relativo al ancho del viewport */
+        font-size: 50px; /* Tamaño de fuente relativo al ancho del viewport */
         font-family: 'Lato', sans-serif;
-        font-weight: 400;
+        font-weight: 800;
         margin: 0 0 0;
     }
 
@@ -186,6 +188,10 @@
     .informacion__container {
         text-align: center;
         padding: 20px;
+
+        h1{
+            font-size:clamp(30px, 5vw ,50px);
+        }
     }
 
     /* Media Queries para pantallas más pequeñas */
