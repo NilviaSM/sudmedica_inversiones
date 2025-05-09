@@ -20,7 +20,7 @@
             <h1 class="directorio__titulo titulo container">
                 Directorio
             </h1>
-            <div class="directorio__cards cards container">
+            <div class="directorio__cards cards">
             <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/Ángel_Trujillo_López_Vicepresidente 1.png')}}" alt="">
                     <div class="card__info">

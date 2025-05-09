@@ -17,7 +17,7 @@ body{
 
 
 .container{
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     max-width: 1200px;
     padding: 80 0;
@@ -317,7 +317,7 @@ input[type="submit"]{
 }
 
 .directorio .historia{
-    max-width: 80rem;
+    font-size: 21px;
     font-family: lato;
     color:#114071;
     column-count: 2;
@@ -325,9 +325,10 @@ input[type="submit"]{
 
 
 .cards{
+    font-size: 20px;
     display: grid;
     gap:2rem;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
     place-items: start center;
 }
 
@@ -342,7 +343,7 @@ input[type="submit"]{
 .card{
     display: grid;
     gap:2rem;
-    grid-template-columns: min-content minmax(5rem, 15rem);
+    grid-template-columns: min-content minmax(5rem, 340px);
 }
 
 .card__img{
@@ -358,12 +359,12 @@ input[type="submit"]{
 }
 
 .card__name{
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: 800;
 }
 
 .card__ocupation{
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -383,7 +384,7 @@ input[type="submit"]{
 }
 
 .cards__details p{
-    font-size: 1rem;
+    font-size: 21px;
     font-family: Lato;
     color: var(--sud-blue);
     column-count: 2;
@@ -392,7 +393,7 @@ input[type="submit"]{
 
 .details__edificio{
     padding: 4rem 0;
-    font-size: 1rem;
+    font-size: 21px;
     font-family: Lato;
     color: var(--sud-blue);
     column-count: 2;
@@ -408,7 +409,7 @@ li{
 }
 
 .details__ubicacion{
-    font-size: 1rem;
+    font-size: 21px;
     font-family: Lato;
     color: var(--sud-blue);
     column-count: 2;
