@@ -5,25 +5,25 @@
     <div class="contacto__form">
         <div class="contacto__title">
             <img src="{{asset('img/asesora.png')}}" alt="">
-            <p>Contáctanos y te asesoramos</p>
+            <p>{{ __('messages.Contacto_Titulo') }}</p>
         </div>
         <form id="contact-form" action="{{route('contactanos.store')}}" method="post">
             @csrf
-            <input type="text" placeholder="Nombre..." name="nombre">
-            <input type="text" placeholder="Telefono..." name="telefono">
-            <input type="text" placeholder="Email..." name="email">
-            <input type="submit" value="Enviar">
+            <input type="text" placeholder="{{ __('messages.Contacto_Nombre') }}" name="nombre">
+            <input type="text" placeholder="{{ __('messages.Contacto_Telefono') }}" name="telefono">
+            <input type="text" placeholder="{{ __('messages.Contacto_Email') }}" name="email">
+            <input type="submit" value="{{ __('messages.Contacto_Enviar') }}">
         </form>
         <div class="loading-popup" id="loading-popup">
             <div class="loading-content">
                 <div class="spinner"></div>
-                <p>Enviando tu mensaje, por favor espera...</p>
+                <p>{{ __('messages.Contacto_Enviando') }}</p>
             </div>
         </div>
         @if ($errors->has('error'))
         <div class="custom-popup" id="custom-popup">
             <div class="popup-content">
-                <h2>Error</h2>
+                <h2>{{ __('messages.Contacto_Error') }}</h2>
                 <p>{{ $errors->first('error') }}</p>
                 <button class="popup-close" id="popup-close">Cerrar</button>
             </div>
@@ -32,7 +32,7 @@
         @if (session('info'))
             <div class="custom-popup" id="custom-popup">
                 <div class="popup-content">
-                    <h2>Confirmación</h2>
+                    <h2>{{ __('messages.Contacto_Confirmacion') }}</h2>
                     <p>{{session('info')}}</p>
                     <button class="popup-close" id="popup-close">Cerrar</button>
                 </div>
@@ -40,11 +40,10 @@
         @endif
         <div class="contacto__whatsapp">
             <p>
-                También puedes comunicarte
-                a través de Whatsapp:
+                {{ __('messages.Contacto_Whatsapp') }}
             </p>
-            <a href="https://wa.me/56979622807" class="btn__form btn__form__whatssap"><i class="fa-brands fa-whatsapp"></i> Enviar mensaje</a>
-            <a href="tel:+56322186995" class="btn__form btn__form__call"><i class="fa fa-phone" aria-hidden="true"></i> Llamar</a>
+            <a href="https://wa.me/56979622807" class="btn__form btn__form__whatssap"><i class="fa-brands fa-whatsapp"></i> {{ __('messages.Contacto_Enviar_Mensaje') }}</a>
+            <a href="tel:+56322186995" class="btn__form btn__form__call"><i class="fa fa-phone" aria-hidden="true"></i> {{ __('messages.Contacto_Llamar') }}</a>
         </div>
     </div>
     <style>

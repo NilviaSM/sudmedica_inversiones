@@ -76,10 +76,21 @@
         <label for="contenido">Contenido:</label>
         <textarea name="contenido" id="contenido" rows="5" placeholder="Ingrese el contenido de la noticia" required></textarea>
     </div>
+    <div class="form-group">
+        <label for="titulo_ingles">Título en Inglés:</label>
+        <input type="text" name="titulo_ingles" id="titulo_ingles" class="form-control" value="{{ old('titulo_ingles') }}">
+    </div>
+
+    <div class="form-group">
+        <label for="contenido_ingles">Contenido en Inglés:</label>
+        <textarea name="contenido_ingles" id="contenido_ingles" class="form-control">{{ old('contenido_ingles') }}</textarea>
+    </div>
+
     <div>
         <label for="image_path">Imagen:</label>
         <input type="file" name="image_path" id="image_path" required>
     </div>
+
     <button type="submit">Agregar Noticia</button>
 </form>
 

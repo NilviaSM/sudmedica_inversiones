@@ -14,6 +14,7 @@
     @include('snipets.carrusel')
     @include('snipets.video')
     @include('snipets.contacto')
+    @include('volver_inicio')
 <script src="{{asset('js/script.js')}}"></script>
     
 </body>

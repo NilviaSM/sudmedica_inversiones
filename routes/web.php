@@ -4,23 +4,47 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NoticiasController;
 use App\Http\Controllers\ContactanosController;
 use App\Mail\ContactanosMailable;
+use Illuminate\Support\Facades\App;
+use App\Http\Middleware\SetLocale;
 
-Route::get('/', function () {
-    return view('index');
+Route::get('/change-language/{locale}', function (string $locale) {
+    if (!in_array($locale, ['en', 'es'])) {
+        abort(400);
+    }
+
+    // Guardar el idioma en la sesión
+    session(['locale' => $locale]);
+
+    // Establecer el idioma para la solicitud actual
+    App::setLocale($locale);
+
+    // Redirigir a la página anterior
+    return redirect()->back();
+})->name('change-language');
+
+Route::middleware([SetLocale::class])->group(function () {
+    Route::get('/', function () {
+        return view('index');
+    });
+
+    Route::get('/nosotros', function () {
+        return view('nosotros');
+    });
+
+    Route::get('/noticias', function () {
+        return view('noticias.index');
+    });
+
+    Route::get('/documentos', function () {
+        return view('documentos');
+    });
+
+    Route::get('/contacto', function () {
+        return view('contacto');
+    });
+
+    Route::get('/noticias', [NoticiasController::class, 'index'])->name('noticias.index');
 });
-
-Route::get('/nosotros', function () {
-    return view('nosotros');
-});
-
-Route::get('/documentos', function () {
-    return view('documentos');
-});
-
-Route::get('/contacto', function () {
-    return view('contacto');
-});
-
 
 Route::get('/documentos/memoria', function () {
     $filePath = public_path('documents/MEMORIA_2024_10.04.pdf');
@@ -66,7 +90,7 @@ Route::get('/contactanos', function(){
 
 Route::post('/contactanos', [ContactanosController::class, 'store'])->name('contactanos.store');
 
-Route::get('/noticias', [NoticiasController::class, 'index'])->name('noticias.index');
+
 Route::get('/noticias/add', [NoticiasController::class, 'store_form'])->name('noticias.store');
 Route::post('/noticias/add', [NoticiasController::class, 'store'])->name('noticias.store');
 Route::get('/noticias/search', [NoticiasController::class, 'search'])->name("searchNoticias");

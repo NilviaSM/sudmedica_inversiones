@@ -2,27 +2,27 @@
     <div class="carrusel__container">
         <div class="carrusel__slides">
             <div class="carrusel__slide">
-                <img src="{{ asset('img/slide01.png') }}" alt="Slide 2" class="carrusel__img">
+                <img src="{{ asset('img/slide01.png') }}" alt="Slide 1" class="carrusel__img">
                 <div class="carrusel__text__02 carrusel__text__left">
-                    <h2>NUESTRA PRIMERA CLÍNICA</h2>
+                    <h2>{{ __('messages.Carrusel_Primera_Clinica') }}</h2>
                 </div>
             </div>
             <div class="carrusel__slide">
-                <img src="{{ asset('img/slide02.png') }}" alt="Slide 3" class="carrusel__img">
+                <img src="{{ asset('img/slide02.png') }}" alt="Slide 2" class="carrusel__img">
             </div>
             <div class="carrusel__slide">
-                <img src="{{ asset('img/slider02.png') }}" alt="Slide 2" class="carrusel__img">
+                <img src="{{ asset('img/slider02.png') }}" alt="Slide 3" class="carrusel__img">
                 <div class="carrusel__text__02">
-                    <h2>LA PRIMERA EMPRESA JUNIOR QUE COTIZA EN BOLSA</h2>
+                    <h2>{{ __('messages.Carrusel_Empresa_Bolsa') }}</h2>
                 </div>
             </div>
             <div class="carrusel__slide">
-                <img src="{{ asset('img/slide04.png') }}" alt="Slide 3" class="carrusel__img">
+                <img src="{{ asset('img/slide04.png') }}" alt="Slide 4" class="carrusel__img">
             </div>
             <div class="carrusel__slide">
-                <img src="{{ asset('img/slide05.png') }}" alt="Slide 3" class="carrusel__img">
+                <img src="{{ asset('img/slide05.png') }}" alt="Slide 5" class="carrusel__img">
                 <div class="carrusel__text__03 carrusel__text__right">
-                    <h2>EL ÉXITO SE CONSTRUYE CON BUENAS ACCIONES</h2>
+                    <h2>{{ __('messages.Carrusel_Exito_Acciones') }}</h2>
                 </div>
             </div>
         </div>
@@ -36,7 +36,7 @@
     </div>
 
     <div class="informacion__container">
-        <h1>Conviértete en Socio, conoce nuestro modelo de negocio</h1>
+        <h1>{{ __('messages.Carrusel_Informacion') }}</h1>
     </div>
 </div>
 

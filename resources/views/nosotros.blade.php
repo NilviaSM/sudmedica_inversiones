@@ -16,42 +16,31 @@
         <img src="{{asset('img/sudmedica01.png')}}" alt="" class="imagen">
     </picture>
         <div class="directorio">
-            <p class="historia container">La creación de Sudmédica se remonta al año 2017, cuando el <b>Médico Cirujano, Mauricio Cortés y él Ingeniero Comercial, César Mendoza</b>, detectaron una falta de infraestructura creciente del área salud en regiones de Chile y América, por lo que propusieron construir una red de clínicas, idea que compartieron con el <b>Ingeniero Civil Industrial Ian Couso</b> (con amplia experiencia en el sector inmobiliario). En el año 2018, estos tres socios gestores constituyen la sociedad <b>Sudmédica Quillota S.A.</b></p>
-            <h1 class="directorio__titulo titulo container">
-                Directorio
-            </h1>
+            <p class="historia container">{!! __('messages.Nosotros_Historia') !!}</p>
+            <h1 class="directorio__titulo titulo container">{{ __('messages.Nosotros_Directorio') }}</h1>
             <div class="directorio__cards cards">
             <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/Ángel_Trujillo_López_Vicepresidente 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Ángel Trujillo López</h5>
-                        <h5 class="card__ocupation">PRESIDENTE</h5>
-                        <p class="card__description">Andritz Certified Site Manager, Andritz Global Site Operations (GSO), Austria. 
-                            Certificate Project Management Professional (PMP N°1930249), Project 
-                            Management Institute. Magister en gestión e Negocios, 
-                            Universidad Adolfo Ibañez, Chile. Ingeniero Mecánico, Universidad 
-                            Nacional Experimental Politécnica 
-                        </p>
+                        <h5 class="card__ocupation angel_ocupation">{{ __('messages.Directorio_Card_Angel_Ocupation') }}</h5>
+                        <p class="card__description angel_description">{{ __('messages.Directorio_Card_Angel_Description') }}</p>
                         <a class="card__button" href="#"
                             data-name="Ángel Trujillo López" 
-                            data-ocupation="PRESIDENTE" 
-                            data-description="Andritz Certified Site Manager, Andritz Global Site Operations (GSO), Austria. Certificate Project Management Professional (PMP N°1930249), Project Management Institute.<br><br> Magister en gestión e Negocios, Universidad Adolfo Ibañez, Chile. Ingeniero Mecánico, Universidad Nacional Experimental Politécnica Antonio José de Sucre, Venezuela. Experiencia en Gerencia de Proyectos y Contratos para Empresas Transnacionales (Andritz Chile ltda, Tractebel Engineering Chile S.A., entre otras), en la industria de Generación de Energías Renovables en Venezuela, Brasil y Chile. Director de Constructora Red Médica SpA.">Ver más...</a>
+                            data-ocupation="{{ __('messages.Directorio_Card_Angel_Ocupation') }}" 
+                            data-description="{{ __('messages.Directorio_Card_Angel_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                    </div>
                 </div>
                 <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/Freddy_Hurtado_Presidente 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Freddy Hurtado</h5>
-                        <h5 class="card__ocupation">DIRECTOR</h5>
-                        <p class="card__description">Ingeniero Comercial de la Universidad de Chile, y con dos MBA en la Pontificia Universidad Católica. En su dilatada trayectoria profesional 
-                            ocupó altos cargos ejecutivos en Antofagasta Minerals: Finanzas, Control de Gestión y 
-                            Controller; y tuvo una activa participación en el Comité de Financiamiento del Proyecto 
-                            Los Pelambres. Fue responsable
-                        </p>
-                        <a class="card__button" href="#" 
-                           data-name="Freddy Hurtado" 
-                           data-ocupation="DIRECTOR" 
-                           data-description="Ingeniero Comercial de la Universidad de Chile, y con dos MBA en la Pontificia Universidad Católica. En su dilatada trayectoria profesional ocupó altos cargos ejecutivos en Antofagasta Minerals: Finanzas, Control de Gestión y Controller; y tuvo una activa participación en el Comité de Financiamiento del Proyecto Los Pelambres.<br><br> Fue responsable de dirigir la Gerencia General de ZOFRI S.A., empresa listada en la Bolsa de Valores y supervisada por la CMF, en donde desarrolló e implementó un nuevo plan estratégico posterior al retiro de las AFPs como accionistas por la Ley Arica.<br><br> Siendo Gerente de Finanzas en CAPEL creó y fundó la Cooperativa de ahorro y Créditos Chilecoop, siendo su primer Gerente General y posteriormente Director y Presidente hasta su reciente retiro. Es CEO-Founder de As-Consulting.cl empresa enfocada en consultoría corporativa y financiera, con casi 30 años de trayectoria.">Ver más...</a>
+                        <h5 class="card__ocupation freddy_ocupation">{{ __('messages.Directorio_Card_Freddy_Ocupation') }}</h5>
+                        <p class="card__description freddy_description">{{ __('messages.Directorio_Card_Freddy_Description') }}</p>
+                        <a class="card__button" href="#"
+                            data-name="Freddy Hurtado" 
+                            data-ocupation="{{ __('messages.Directorio_Card_Freddy_Ocupation') }}" 
+                            data-description="{{ __('messages.Directorio_Card_Freddy_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
                 </div>
                 
@@ -59,49 +48,36 @@
                     <img class="directorio__card__img card__img" src="{{asset('img/maria_soledad_Lopez_Secretaria 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">María Soledad López Tapia</h5>
-                        <h5 class="card__ocupation">DIRECTORA</h5>
-                        <p class="card__description">Ingeniero Comercial de la Universidad Autónoma de Chile; Contador Auditor 
-                            de la Universidad Tecnológica Metropolitana; Licenciatura en 
-                            Educación de la Universidad Miguel de Cervantes. Especialista en 
-                            investigación de delitos económicos, exoficial de la policía de 
-                            investigaciones de Chile, Actualmente se 
-                        </p>
+                        <h5 class="card__ocupation maria_ocupation">{{ __('messages.Directorio_Card_Maria_Ocupation') }}</h5>
+                        <p class="card__description maria_description">{{ __('messages.Directorio_Card_Maria_Description') }}</p>
                         <a class="card__button" href="#"
                             data-name="María Soledad López Tapia" 
-                            data-ocupation="DIRECTORA" 
-                            data-description="Ingeniero Comercial de la Universidad Autónoma de Chile; Contador Auditor de la Universidad Tecnológica Metropolitana; Licenciatura en Educación de la Universidad Miguel de Cervantes. <br><br>Especialista en investigación de delitos económicos, exoficial de la policía de investigaciones de Chile, Actualmente se desempeña como empresaria en el sector inmobiliario y en el sector educación. Fue Directora en Sociedad Educacional Camilo Henríquez S.S., El Almendral S.A., Sembrando Futuro S.A., Corporación Educacional Altos del Huerto S.A.. Educacional">Ver más...</a>
+                            data-ocupation="{{ __('messages.Directorio_Card_Maria_Ocupation') }}" 
+                            data-description="{{ __('messages.Directorio_Card_Maria_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
                 </div>
                 <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/Felipe_Oelckers_Aljaro_Director 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Felipe Oelckers Aljaro</h5>
-                        <h5 class="card__ocupation">DIRECTOR</h5>
-                        <p class="card__description">Ha desarrollado su carrera en Chile, Alemania, México, Estados Unidos, 
-                            Ecuador, Israel, India y España. Empresario. Ph.D. en Competitividad, 
-                            Innovación y Emprendimiento Deusto Business School, País Vasco, España. 
-                            MBA de EGADE Business School del Tecnológico de Monterrey, Campus  
-                        </p>
+                        <h5 class="card__ocupation felipe_ocupation">{{ __('messages.Directorio_Card_Felipe_Ocupation') }}</h5>
+                        <p class="card__description felipe_description">{{ __('messages.Directorio_Card_Felipe_Description') }}</p>
                         <a class="card__button" href="#"
                             data-name="Felipe Oelckers Aljaro" 
-                            data-ocupation="DIRECTOR" 
-                            data-description="Ha desarrollado su carrera en Chile, Alemania, México, Estados Unidos, Ecuador, Israel, India y España. Empresario. Ph.D. en Competitividad, Innovación y Emprendimiento Deusto Business School, País Vasco, España.<br><br> MBA de EGADE Business School del Tecnológico de Monterrey, Campus Monterrey y University of North Carolina at Chapel Hill, Kenan Flagler Business School, México/Estados Unidos. M.Sc. Máster of Science en Marketing, Ingeniero Comercial y Licenciado en Administración de Empresas de la Escuela de Negocios de la Universidad Adolfo Ibáñez.">Ver más...</a>
+                            data-ocupation="{{ __('messages.Directorio_Card_Felipe_Ocupation') }}" 
+                            data-description="{{ __('messages.Directorio_Card_Felipe_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
                 </div>
                 <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/Fernando_Marcelo_Aguiar_Rosales_Director 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Fernando Marcelo Aguiar Rosales</h5>
-                        <h5 class="card__ocupation">DIRECTOR</h5>
-                        <p class="card__description">Ingeniero Civil Químico de la Pontificia Universidad Católica de Valparaíso y 
-                            Master of Business Administration de la Universidad Adolfo Ibañez. 
-                            Ha desarrollado su carrera profesional en la gran minería del cobre 
-                            principalmente en las áreas de planificación y operaciones mineras.  
-                        </p>
+                        <h5 class="card__ocupation fernando_ocupation">{{ __('messages.Directorio_Card_Fernando_Ocupation') }}</h5>
+                        <p class="card__description fernando_description">{{ __('messages.Directorio_Card_Fernando_Description') }}</p>
                         <a class="card__button" href="#"
                             data-name="Fernando Marcelo Aguiar Rosales" 
-                            data-ocupation="DIRECTOR" 
-                            data-description="Ingeniero Civil Químico de la Pontificia Universidad Católica de Valparaíso y Master of Business Administration de la Universidad Adolfo Ibañez. <br><br>Ha desarrollado su carrera profesional en la gran minería del cobre principalmente en las áreas de planificación y operaciones mineras. Ha sido responsable de puestas en marcha de operaciones greenfield y también en negocios consolidados. <br><br>Su conocimiento y trayectoria le permitió desempeñarse tanto en la industrial estatal Codelco Divisones El Salvador y Gabriela Mistral y privada SCMMLCC Caserones, AMSA y Glencore, desempeñando cargos ejecutivos y teniendo siempre el objetivo atender la seguridad de las personas y la creación de valor al accionista.">Ver más...</a>
+                            data-ocupation="{{ __('messages.Directorio_Card_Fernando_Ocupation') }}" 
+                            data-description="{{ __('messages.Directorio_Card_Fernando_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
                 </div>
                 <div id="popup" class="popup">
@@ -172,27 +148,20 @@
             </div>
         </div> -->
         <div class="cards__details container" style="margin-top:2rem;">
-            <p>El equipo de Sudmédica está compuesto por un grupo multidisciplinario de profesionales, entre los que se incluyen ingenieros industriales, ingenieros comerciales, médicos, arquitectos, entre otros. La compañía respalda su expansión mediante estudios de mercado que avalan su capacidad para construir en Chile y en varios países de América.<br><br>
-                Aunque actualmente se encuentra en una fase de estudio y planificación, Sudmédica ya ha alcanzado un importante avance con la materialización de su primer proyecto en la región de Valparaíso, específicamente en la ciudad de Quillota. Esta clínica, que se proyecta como un centro de mediana-alta y alta complejidad, tendrá un impacto significativo en la región, con la meta de contar con la 
-                mayor cantidad de médicos de planta al momento de su apertura.<br><br>Un aspecto clave de este modelo es que los médicos, además de ser accionistas de la compañía, son propietarios de sus consultas, las cuales se adquirieron por especialidades. El edificio contará con 73 consultas médicas, 7 quirófanos, una infraestructura de imagenología completa, servicios de hospitalización, laboratorio clínico y áreas dedicadas a la toma de muestras. Este enfoque innovador no solo garantiza un servicio de alta calidad, sino que también presenta una oportunidad atractiva para los inversionistas que busquen participar en el crecimiento de un proyecto con gran potencial en el sector de la salud.
-            </p>
+            <p>{!! __('messages.Nosotros_Equipo') !!}</p>
         </div>
         <div class="carrusel__container">
             <img src="{{asset('img/edificio0102.png')}}" alt="" class="imagen">
         </div>
         <div class="details__edificio container">
             <ul>
-                <li>Edificio de 6 pisos.</li>
-                <li>Médicos y profesionales de la salud de distintas especialidades dueños de sus consultas.</li>
-                <li>SUDMedica S.A. realiza las prestaciones que los médicos derivan.</li>
-                <li>Estacionamiento para pacientes.</li>
-                <li>Todos nuestros profesionales del área se encuentran inscritos en la Superintendencia de Salud.</li>
-                <li>Estándares de alta calidad.</li>
+                @foreach(__('messages.Nosotros_Edificio_Detalles') as $detalle)
+                    <li>{{ $detalle }}</li>
+                @endforeach
             </ul>
         </div>
         <div class="details__ubicacion container">
-            <p class="">El edificio clínico de SUDMÉDICA ubicado en Quillota, consideró en su construcción 73 oficinas médicas (box de atención), 7 quirófanos, espacios para servicios de imagenologías que incluirá resonador magnético, rayos X, mamografía, tomografía axial computarizada (TAC) y 4 ecógrafos. Además, dispondrá de 40 camas de hospitalización, áreas para toma de muestras, y laboratorio clínico propio, lo que permitirá entregar diagnósticos oportunos y tratamientos eficaces. Todo esto en una instalación moderna, diseñada para responder a las necesidades de salud de la comunidad con tecnología de última generación. 
-            </p>
+            <p>{!! __('messages.Nosotros_Edificio') !!}</p>
         </div>
 </div>
     @include("snipets.contacto")

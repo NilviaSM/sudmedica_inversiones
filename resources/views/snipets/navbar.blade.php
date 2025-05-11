@@ -4,14 +4,19 @@
         <img src="{{asset('img/logo_sudmedica_inversiones.svg')}}" alt="">
     </div>
     <div class="nav__menu__data">
-        <p>Lenguaje: <b id="language-label">Español</b></p>
+        <p>
+            {{ __('messages.Lenguaje') }} 
+            <b id="language-label" style="cursor: pointer;" onclick="toggleLanguage()">
+                {{ App::currentLocale() == 'es' ? 'Español' : 'English' }}
+            </b>
+        </p>
         <div class="nav__opciones">
             <ul class="nav__links">
-                <li class="nav__list"><a href="{{url('')}}" class="nav__link {{ Request::url() == url('') ? 'nav__link__active' : '' }}">Inicio</a></li>
-                <li class="nav__list"><a href="{{url('nosotros')}}" class="nav__link {{ Request::url() == url('/nosotros') ? 'nav__link__active' : '' }}">Nosotros</a></li>
-                <li class="nav__list"><a href="{{url('noticias')}}" class="nav__link {{ Request::url() == url('/noticias') ? 'nav__link__active' : '' }}">Noticias</a></li>
-                <li class="nav__list"><a href="{{url('documentos')}}" class="nav__link {{ Request::url() == url ('/documentos')? 'nav__link__active' : '' }}">Documentos</a></li>
-                <li class="nav__list"><a href="{{url('contacto')}}" class="nav__link {{ Request::url() == url('/contacto') ? 'nav__link__active' : '' }}">Contacto</a></li>
+                <li class="nav__list"><a href="{{url('')}}" class="nav__link {{ Request::url() == url('') ? 'nav__link__active' : '' }}">{{__('messages.Inicio')}}</a></li>
+                <li class="nav__list"><a href="{{url('nosotros')}}" class="nav__link {{ Request::url() == url('/nosotros') ? 'nav__link__active' : '' }}">{{__('messages.Nosotros')}}</a></li>
+                <li class="nav__list"><a href="{{url('noticias')}}" class="nav__link {{ Request::url() == url('/noticias') ? 'nav__link__active' : '' }}">{{__('messages.Noticias')}}</a></li>
+                <li class="nav__list"><a href="{{url('documentos')}}" class="nav__link {{ Request::url() == url ('/documentos')? 'nav__link__active' : '' }}">{{__('messages.Documentos')}}</a></li>
+                <li class="nav__list"><a href="{{url('contacto')}}" class="nav__link {{ Request::url() == url('/contacto') ? 'nav__link__active' : '' }}">{{__('messages.Contacto')}}</a></li>
             </ul>
             <ul class="nav__sociales">
                 <li class="nav__list">
@@ -48,5 +53,13 @@
     <a href="#nav" class="nav__hamburger">
         <img src="{{asset('img/hamburger__icon.svg')}}" width="50px" alt="" class="nav__img">
     </a>
+
+    <script>
+    function toggleLanguage() {
+        const currentLanguage = "{{ App::currentLocale() }}";
+        const newLanguage = currentLanguage === 'es' ? 'en' : 'es';
+        window.location.href = `{{ url('/change-language') }}/${newLanguage}`;
+    }
+</script>
   
 </nav>
