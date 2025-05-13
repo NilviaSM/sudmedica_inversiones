@@ -29,7 +29,7 @@ class ContactanosMailable extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address("armandoroger007@gmail.com", "rchan"),
+            from: new Address("sudmedicaquillota@gmail.com", "Sudmedica Quillota"),
             subject: 'Contactanos Sudmedica',
         );
     }
