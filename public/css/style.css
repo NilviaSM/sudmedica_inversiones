@@ -779,6 +779,10 @@ li{
         .directorio .historia{
             column-count: 1;
         }
+
+        .noticias__texto{
+            column-count: 1;
+        }
         
         .noticias__imagen{
             max-width:527px;
