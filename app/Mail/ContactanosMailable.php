@@ -29,7 +29,9 @@ class ContactanosMailable extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: new Address("sudmedicaquillota@gmail.com", "Sudmedica Quillota"),
+
+            from: new Address("sudmedicaquillota@gmail.com", "SUDMedica"),
+
             subject: 'Contactanos Sudmedica',
         );
     }
