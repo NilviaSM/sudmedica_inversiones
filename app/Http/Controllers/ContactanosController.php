@@ -21,7 +21,7 @@ class ContactanosController extends Controller
                 'email' => 'required|email',
             ]);
 
-            Mail::to("contacto@sudmedica.com")->send(new ContactanosMailable($request->all()));
+            Mail::to("sudmedicaquillota@gmail.com")->send(new ContactanosMailable($request->all()));
             Mail::to($request['email'])->send(new ContactanosReturnMailable());
             session()->flash('info', '¡Mensaje enviado con éxito!');
             return redirect()->back();
