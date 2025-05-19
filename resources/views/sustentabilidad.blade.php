@@ -41,7 +41,28 @@
                     </div>
                 </div>
             </div>
-                        <div class="sustentabilidad__card">
+            <div class="sustentabilidad__card">
+                <div class="sustentabilidad__card__photo">
+                    <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
+                    <div class="sustentabilidad__card__title">
+                        <h4>Mejora en la calidad de vida</h4>
+                    </div>
+                    <div class="sustentabilidad__card__content">
+                        <p>
+                            Incluirán un angiógrafo, 2 salas 
+                            de endoscopía, una unidad de 
+                            anatomía patológica, sala de 
+                            hemodiálisis, 6 cunas de 
+                            neonatología, unidad de 
+                            quimioterapia, y box 
+                            especializados en oncología 
+                            y nefrología. En imagenología, 
+                            dispondrán de 6 ecógrafos, 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="sustentabilidad__card">
                 <div class="sustentabilidad__card__photo">
                     <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
                     <div class="sustentabilidad__card__title">
@@ -62,7 +83,7 @@
                     </div>
                 </div>
             </div>
-                        <div class="sustentabilidad__card">
+           <div class="sustentabilidad__card">
                 <div class="sustentabilidad__card__photo">
                     <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
                     <div class="sustentabilidad__card__title">
@@ -83,11 +104,11 @@
                     </div>
                 </div>
             </div>
-                        <div class="sustentabilidad__card">
+            <div class="sustentabilidad__card">
                 <div class="sustentabilidad__card__photo">
                     <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
                     <div class="sustentabilidad__card__title">
-                        <h4>Generacion de empleo</h4>
+                        <h4>Mejora en la calidad de vida</h4>
                     </div>
                     <div class="sustentabilidad__card__content">
                         <p>
@@ -97,35 +118,14 @@
                             hemodiálisis, 6 cunas de 
                             neonatología, unidad de 
                             quimioterapia, y box 
-                            especializados en oncología y 
-                            nefrología. En imagenología, 
+                            especializados en oncología 
+                            y nefrología. En imagenología, 
                             dispondrán de 6 ecógrafos, 
                         </p>
                     </div>
                 </div>
             </div>
-                        <div class="sustentabilidad__card">
-                <div class="sustentabilidad__card__photo">
-                    <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
-                    <div class="sustentabilidad__card__title">
-                        <h4>Generacion de empleo</h4>
-                    </div>
-                    <div class="sustentabilidad__card__content">
-                        <p>
-                            Incluirán un angiógrafo, 2 salas 
-                            de endoscopía, una unidad de 
-                            anatomía patológica, sala de 
-                            hemodiálisis, 6 cunas de 
-                            neonatología, unidad de 
-                            quimioterapia, y box 
-                            especializados en oncología y 
-                            nefrología. En imagenología, 
-                            dispondrán de 6 ecógrafos, 
-                        </p>
-                    </div>
-                </div>
-            </div>
-                        <div class="sustentabilidad__card">
+            <div class="sustentabilidad__card">
                 <div class="sustentabilidad__card__photo">
                     <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
                     <div class="sustentabilidad__card__title">
