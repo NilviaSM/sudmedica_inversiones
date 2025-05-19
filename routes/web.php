@@ -38,6 +38,10 @@ Route::middleware([SetLocale::class])->group(function () {
     Route::get('/documentos', function () {
         return view('documentos');
     });
+    
+        Route::get('/sustentabilidad', function () {
+        return view('sustentabilidad');
+    });
 
     Route::get('/contacto', function () {
         return view('contacto');

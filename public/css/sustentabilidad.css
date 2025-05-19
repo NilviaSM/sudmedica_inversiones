@@ -1,0 +1,58 @@
+.sustentabilidad__main__image{
+    max-height: 451px;
+}
+
+.sustentabilidad__container{
+    font-family: lato;
+    color: var(--sud-blue);
+    margin-top: 5rem;
+}
+
+.sustentabilidad__title{
+    margin-top: 5rem;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.sustentabilidad__subtitle{
+    margin-top: 4rem;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.sustentabilidad__cards{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.sustentabilidad__card{
+    max-width: 276px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.sustentabilidad__card__photo{
+    overflow: hidden;
+}
+
+.sustentabilidad__card__photo img{
+    max-width: 276px;
+    max-height: 276px;
+}
+
+.sustentabilidad__card__title{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.sustentabilidad__subtitle{
+    font-size: 21px;
+}

@@ -5,6 +5,7 @@ return [
     'Inicio' => 'Home',
     'Nosotros' => 'About Us',
     'Noticias' => 'News',
+    'Sustentabilidad'=>'Sustainability',
     'Documentos' => 'Documents',
     'Contacto' => 'Contact',
     'Carrusel_Primera_Clinica' => 'OUR FIRST CLINIC',

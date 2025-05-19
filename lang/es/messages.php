@@ -7,6 +7,7 @@ return [
     'Inicio' => 'Inicio',
     'Nosotros' => 'Nosotros',
     'Noticias' => 'Noticias',
+    'Sustentabilidad' =>'Sustentabilidad',
     'Documentos' => 'Documentos',
     'Contacto' => 'Contacto',
     'Carrusel_Primera_Clinica' => 'NUESTRA PRIMERA CLÍNICA',
