@@ -17,135 +17,16 @@
         <img src="{{asset('img/white-fluffy-clouds-in-blue-sky-background.png')}}" alt="" class="imagen">
     </picture>
     <div class="sustentabilidad__container container">
-        <h1 class="sustentabilidad__title">SUSTENTABILIDAD</h1>
-        <h2 class="sustentabilidad__subtitle">COMPROMETIDOS CON MÁS DE UNA CAUSA.</h2>
-        <div class="sustentabilidad__cards">
-            <div class="sustentabilidad__card">
-                <div class="sustentabilidad__card__photo">
-                    <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
-                    <div class="sustentabilidad__card__title">
-                        <h4>Generacion de empleo</h4>
-                    </div>
-                    <div class="sustentabilidad__card__content">
-                        <p>
-                            Incluirán un angiógrafo, 2 salas 
-                            de endoscopía, una unidad de 
-                            anatomía patológica, sala de 
-                            hemodiálisis, 6 cunas de 
-                            neonatología, unidad de 
-                            quimioterapia, y box 
-                            especializados en oncología y 
-                            nefrología. En imagenología, 
-                            dispondrán de 6 ecógrafos, 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="sustentabilidad__card">
-                <div class="sustentabilidad__card__photo">
-                    <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
-                    <div class="sustentabilidad__card__title">
-                        <h4>Mejora en la calidad de vida</h4>
-                    </div>
-                    <div class="sustentabilidad__card__content">
-                        <p>
-                            Incluirán un angiógrafo, 2 salas 
-                            de endoscopía, una unidad de 
-                            anatomía patológica, sala de 
-                            hemodiálisis, 6 cunas de 
-                            neonatología, unidad de 
-                            quimioterapia, y box 
-                            especializados en oncología 
-                            y nefrología. En imagenología, 
-                            dispondrán de 6 ecógrafos, 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="sustentabilidad__card">
-                <div class="sustentabilidad__card__photo">
-                    <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
-                    <div class="sustentabilidad__card__title">
-                        <h4>Generacion de empleo</h4>
-                    </div>
-                    <div class="sustentabilidad__card__content">
-                        <p>
-                            Incluirán un angiógrafo, 2 salas 
-                            de endoscopía, una unidad de 
-                            anatomía patológica, sala de 
-                            hemodiálisis, 6 cunas de 
-                            neonatología, unidad de 
-                            quimioterapia, y box 
-                            especializados en oncología y 
-                            nefrología. En imagenología, 
-                            dispondrán de 6 ecógrafos, 
-                        </p>
-                    </div>
-                </div>
-            </div>
-           <div class="sustentabilidad__card">
-                <div class="sustentabilidad__card__photo">
-                    <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
-                    <div class="sustentabilidad__card__title">
-                        <h4>Generacion de empleo</h4>
-                    </div>
-                    <div class="sustentabilidad__card__content">
-                        <p>
-                            Incluirán un angiógrafo, 2 salas 
-                            de endoscopía, una unidad de 
-                            anatomía patológica, sala de 
-                            hemodiálisis, 6 cunas de 
-                            neonatología, unidad de 
-                            quimioterapia, y box 
-                            especializados en oncología y 
-                            nefrología. En imagenología, 
-                            dispondrán de 6 ecógrafos, 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="sustentabilidad__card">
-                <div class="sustentabilidad__card__photo">
-                    <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
-                    <div class="sustentabilidad__card__title">
-                        <h4>Mejora en la calidad de vida</h4>
-                    </div>
-                    <div class="sustentabilidad__card__content">
-                        <p>
-                            Incluirán un angiógrafo, 2 salas 
-                            de endoscopía, una unidad de 
-                            anatomía patológica, sala de 
-                            hemodiálisis, 6 cunas de 
-                            neonatología, unidad de 
-                            quimioterapia, y box 
-                            especializados en oncología 
-                            y nefrología. En imagenología, 
-                            dispondrán de 6 ecógrafos, 
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="sustentabilidad__card">
-                <div class="sustentabilidad__card__photo">
-                    <img src="{{ asset('img/empleo.png') }}" alt="Foto de referencia">
-                    <div class="sustentabilidad__card__title">
-                        <h4>Generacion de empleo</h4>
-                    </div>
-                    <div class="sustentabilidad__card__content">
-                        <p>
-                            Incluirán un angiógrafo, 2 salas 
-                            de endoscopía, una unidad de 
-                            anatomía patológica, sala de 
-                            hemodiálisis, 6 cunas de 
-                            neonatología, unidad de 
-                            quimioterapia, y box 
-                            especializados en oncología y 
-                            nefrología. En imagenología, 
-                            dispondrán de 6 ecógrafos, 
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="sustentabilidad__column__01">
+        <h1>{{ __("messages.sustentabilidad_title") }}</h1><br>
+        <p>{!!  __("messages.sustentabilidad_column_01") !!}
+        </p>    
+        </div>
+        <div class="sustentabilidad__column__02">
+        <p>
+        {!!  __("messages.sustentabilidad_column_02") !!}
+        </p>    
         </div>
     </div>
+    @include("snipets.contacto")
 </html>

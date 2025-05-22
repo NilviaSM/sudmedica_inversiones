@@ -3,9 +3,26 @@
 }
 
 .sustentabilidad__container{
+    min-height: 800px;
     font-family: lato;
     color: var(--sud-blue);
     margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10rem;
+}
+
+.sustentabilidad__column__01 h1{
+    font-size: 32px;
+}
+
+.sustentabilidad__column__01 p{
+    font-size: 21px;
+}
+
+.sustentabilidad__column__02 p{
+    margin-top: 9.9rem;
+    font-size: 21px;
 }
 
 .sustentabilidad__title{
@@ -22,38 +39,14 @@
     margin-bottom: 2rem;
 }
 
-.sustentabilidad__cards{
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 5rem;
-    justify-content: center;
-    align-items: center;
-}
+@media screen and (max-width:836px){
+    .sustentabilidad__container{
+        grid-template-columns: 1fr;
+        gap: 0.5em;
+    }
 
-.sustentabilidad__card{
-    margin: auto;
-    max-width: 276px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-.sustentabilidad__card__photo{
-    overflow: hidden;
-}
-
-.sustentabilidad__card__photo img{
-    max-width: 276px;
-    max-height: 276px;
-}
-
-.sustentabilidad__card__title{
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.sustentabilidad__subtitle{
-    font-size: 21px;
+    .sustentabilidad__column__02 p{
+        margin: 0;
+        margin-bottom: 5rem;
+    }
 }
