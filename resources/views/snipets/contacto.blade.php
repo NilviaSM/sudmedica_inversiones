@@ -43,7 +43,7 @@
             <p>
                 {{ __('messages.Contacto_Whatsapp') }}
             </p>
-            <a href="https://wa.me/56979622807" class="btn__form btn__form__whatssap"><i class="fa-brands fa-whatsapp"></i> {{ __('messages.Contacto_Enviar_Mensaje') }}</a>
+            <a href="https://wa.me/56932442452" class="btn__form btn__form__whatssap"><i class="fa-brands fa-whatsapp"></i> {{ __('messages.Contacto_Enviar_Mensaje') }}</a>
             <a href="tel:+56322186995" class="btn__form btn__form__call"><i class="fa fa-phone" aria-hidden="true"></i> {{ __('messages.Contacto_Llamar') }}</a>
         </div>
     </div>
