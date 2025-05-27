@@ -265,11 +265,17 @@ body{
     gap: 1rem;
 }
 
-input[type="text"]{
+input[type="text"], textarea{
     height: 1rem;
     border-radius: .5rem;
     border: none;
     padding: .5rem;
+}
+
+textarea{
+    font-family: lato;
+    height: 8rem;
+    resize:none;
 }
 
 input[type="submit"]{
@@ -653,7 +659,7 @@ li{
         display: grid;
         grid-auto-flow: column;
         justify-content: space-between;
-        gap:3rem;
+        gap:2rem;
         padding-right: 7rem;
         padding-right: 2rem;
 

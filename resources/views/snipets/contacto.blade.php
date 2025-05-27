@@ -12,6 +12,7 @@
             <input type="text" placeholder="{{ __('messages.Contacto_Nombre') }}" name="nombre">
             <input type="text" placeholder="{{ __('messages.Contacto_Telefono') }}" name="telefono">
             <input type="text" placeholder="{{ __('messages.Contacto_Email') }}" name="email">
+            <textarea placeholder="{{ __('messages.Contacto_Mensaje') }}" name="mensaje"></textarea>
             <input type="submit" value="{{ __('messages.Contacto_Enviar') }}">
         </form>
         <div class="loading-popup" id="loading-popup">

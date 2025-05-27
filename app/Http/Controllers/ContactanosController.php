@@ -19,6 +19,7 @@ class ContactanosController extends Controller
                 'nombre' => 'required|string',
                 'telefono' => 'required|string',
                 'email' => 'required|email',
+                'mensaje' =>'required|string',
             ]);
 
             Mail::to("sudmedicaquillota@gmail.com")->send(new ContactanosMailable($request->all()));

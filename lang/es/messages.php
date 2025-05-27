@@ -18,6 +18,7 @@ return [
     'Contacto_Nombre' => 'Nombre...',
     'Contacto_Telefono' => 'Teléfono...',
     'Contacto_Email' => 'Correo electrónico...',
+    'Contacto_Mensaje' => 'Escribir mensaje...',
     'Contacto_Enviar' => 'Enviar',
     'Contacto_Enviando' => 'Enviando tu mensaje, por favor espera...',
     'Contacto_Error' => 'Error',

@@ -17,6 +17,7 @@ return [
     'Contacto_Telefono' => 'Phone...',
     'Contacto_Email' => 'Email...',
     'Contacto_Enviar' => 'Send',
+    'Contacto_Mensaje' => 'Write a message...',
     'Contacto_Enviando' => 'Sending your message, please wait...',
     'Contacto_Error' => 'Error',
     'Contacto_Confirmacion' => 'Confirmation',

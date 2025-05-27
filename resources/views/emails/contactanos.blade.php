@@ -10,6 +10,7 @@
     <p>Correo electronico enviado desde la pagina principal</p>
     <p><strong>Nombre:</strong>{{$data['nombre']}}</p>
     <p><strong>Telefono:</strong>{{$data['telefono']}}</p>
-    <p><strong>correo:</strong>{{$data['email']}}</p>
+    <p><strong>Correo:</strong>{{$data['email']}}</p>
+    <p><strong>Mensaje:</strong>{{$data['mensaje']}}</p>
 </body>
 </html>
