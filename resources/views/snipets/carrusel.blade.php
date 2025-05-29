@@ -38,6 +38,9 @@
     <div class="informacion__container">
         <h1>{{ __('messages.Carrusel_Informacion') }}</h1>
     </div>
+    <div class="alerta">
+        <img src="{{ asset('img/alerta.jpeg') }}" alt="">
+    </div>
 </div>
 
 <script>
@@ -195,6 +198,19 @@
         }
     }
 
+        
+    .alerta{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+
+    }
+    .alerta img{
+        width:50%;
+        border-radius: 10px;
+        box-shadow: 0px 10px 10px -6px rgba(0, 0, 0, 0.3);
+    }
+
     /* Media Queries para pantallas más pequeñas */
     @media (max-width: 768px) {
         .carrusel__container {
@@ -225,6 +241,10 @@
         .carrusel__text__02 p,
         .carrusel__text__03 p {
             font-size: 3vw; /* Aumenta el tamaño del párrafo en pantallas pequeñas */
+        }
+
+        .alerta img{
+            width: 75%;
         }
     }
 
@@ -277,6 +297,10 @@
         .informacion__container p {
             font-size: 4vw; /* Ajusta el tamaño del párrafo para pantallas pequeñas */
             line-height: 1.5; /* Mejora la legibilidad */
+        }
+
+        .alerta img{
+            width: 90%;
         }
     }
 </style>
