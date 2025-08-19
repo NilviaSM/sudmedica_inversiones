@@ -7,6 +7,7 @@ use App\Mail\ContactanosMailable;
 use Illuminate\Support\Facades\App;
 use App\Http\Middleware\SetLocale;
 
+
 Route::get('/change-language/{locale}', function (string $locale) {
     if (!in_array($locale, ['en', 'es'])) {
         abort(400);
@@ -39,6 +40,12 @@ Route::middleware([SetLocale::class])->group(function () {
         return view('documentos');
     });
     
+
+    Route::get('/resumen', function () {
+        return view('resumen');
+    })->name('resumen');
+
+    
         Route::get('/sustentabilidad', function () {
         return view('sustentabilidad');
     });
@@ -58,6 +65,22 @@ Route::get('/documentos/memoria', function () {
 
     return response()->download($filePath, "MEMORIA_2024_10.04.pdf", ['Content-Type'=>'application/pdf']);
 })->name("memoriaPdf");
+
+
+
+Route::get('/documentos/Reporte_Partes_Relacionadas', function () {
+    $filePath = public_path('documents/Reporte_Partes_Relacionadas_NCG501_Sem1_2025.xls');
+    if (!file_exists($filePath)) {
+        abort(404, 'El archivo no existe.');
+    }
+
+    return response()->download($filePath, "Reporte_Partes_Relacionadas_NCG501_Sem1_2025.xls", ['Content-Type'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet']);
+})->name("Reporte_Partes_Relacionadas");
+
+
+
+
+
 
 Route::get('/documentos/memoria2023', function () {
     $filePath = public_path('documents/MEMORIA_2023.pdf');

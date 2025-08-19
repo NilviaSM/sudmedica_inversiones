@@ -17,6 +17,7 @@
                 <li class="nav__list"><a href="{{url('noticias')}}" class="nav__link {{ Request::url() == url('/noticias') ? 'nav__link__active' : '' }}">{{__('messages.Noticias')}}</a></li>
                 <li class="nav__list"><a href="{{url('sustentabilidad')}}" class="nav__link {{ Request::url() == url('/sustentabilidad') ? 'nav__link__active' : '' }}">{{__('messages.Sustentabilidad')}}</a></li>
                 <li class="nav__list"><a href="{{url('documentos')}}" class="nav__link {{ Request::url() == url ('/documentos')? 'nav__link__active' : '' }}">{{__('messages.Documentos')}}</a></li>
+                <li class="nav__list"><a href="{{url('resumen')}}" class="nav__link {{ Request::url() == url ('/resumen')? 'nav__link__active' : '' }}">{{__('messages.Resumen')}}</a></li>
                 <li class="nav__list"><a href="{{url('contacto')}}" class="nav__link {{ Request::url() == url('/contacto') ? 'nav__link__active' : '' }}">{{__('messages.Contacto')}}</a></li>
             </ul>
             <ul class="nav__sociales">
