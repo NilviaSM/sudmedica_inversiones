@@ -7,7 +7,7 @@ return [
     'Noticias' => 'News',
     'Sustentabilidad'=>'Sustainability',
     'Documentos' => 'Documents',
-    'Resumen' => 'Summary <br> NCG501',
+    'Resumen' => 'Summary \n NCG501',
     'Contacto' => 'Contact',
     'Carrusel_Primera_Clinica' => 'OUR FIRST CLINIC',
     'Carrusel_Empresa_Bolsa' => 'THE FIRST JUNIOR COMPANY LISTED ON THE STOCK EXCHANGE',

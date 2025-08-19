@@ -9,7 +9,7 @@ return [
     'Noticias' => 'Noticias',
     'Sustentabilidad' =>'Sustentabilidad',
     'Documentos' => 'Documentos',
-    'Resumen' => 'Resumen <br> NCG501',
+    'Resumen' => 'Resumen \n NCG501',
     'Contacto' => 'Contacto',
     'Carrusel_Primera_Clinica' => 'NUESTRA PRIMERA CLÍNICA',
     'Carrusel_Empresa_Bolsa' => 'LA PRIMERA EMPRESA JUNIOR QUE COTIZA EN BOLSA',
