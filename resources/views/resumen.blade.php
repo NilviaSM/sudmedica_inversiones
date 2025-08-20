@@ -15,10 +15,12 @@
     <div class="documentos">
         <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs2.png')}}" alt="" class="documentos__img">
-            <div class="documentos__texto">
-                <h1 class="documentos__texto__titulo">{{ __('messages.Primer_semestre_2025') }}</h1>
-                <h2 class="documentos__texto__titulo">{{ __('messages.Resumen_transacciones') }}</h2>
-                <a href="{{route('Reporte_Partes_Relacionadas')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
+            <div class="resumen__texto">
+                <div class="resumen_textos">
+                    <h1 class="resumen__texto__uno">{{ __('messages.Primer_semestre_2025') }}</h1>
+                    <h2 class="resumen__texto__dos">{{ __('messages.Resumen_transacciones') }}</h2>
+                </div>
+                <a href="{{route('Reporte_Partes_Relacionadas')}}" class="boton__resumen">{{ __('messages.Documentos_Descargar') }}</a>
             </div>
         </picture>
         
