@@ -31,7 +31,7 @@
                             data-description="{{ __('messages.Directorio_Card_Angel_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                    </div>
                 </div>
-                <div class="directorio__card card">
+                <!-- <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/Freddy_Hurtado_Presidente 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Freddy Hurtado</h5>
@@ -42,7 +42,7 @@
                             data-ocupation="{{ __('messages.Directorio_Card_Freddy_Ocupation') }}" 
                             data-description="{{ __('messages.Directorio_Card_Freddy_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
-                </div>
+                </div> -->
                 
                 <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/maria_soledad_Lopez_Secretaria 1.png')}}" alt="">
@@ -56,7 +56,7 @@
                             data-description="{{ __('messages.Directorio_Card_Maria_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
                 </div>
-                <div class="directorio__card card">
+                <!-- <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/Felipe_Oelckers_Aljaro_Director 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Felipe Oelckers Aljaro</h5>
@@ -67,7 +67,7 @@
                             data-ocupation="{{ __('messages.Directorio_Card_Felipe_Ocupation') }}" 
                             data-description="{{ __('messages.Directorio_Card_Felipe_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
-                </div>
+                </div> -->
                 <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/Fernando_Marcelo_Aguiar_Rosales_Director 1.png')}}" alt="">
                     <div class="card__info">
