@@ -53,6 +53,8 @@ return [
     'Directorio_Card_VerMas' => 'Ver más...',
     'Documentos_Memoria_2024' => 'Memoria 2024 Pdf',
     'Documentos_Operaciones_2024' => 'REPORTE DE OPERACIONES CON PARTES RELACIONADAS 2024',
+    'Resumen_transacciones' => 'Resumen de transacciones con partes relacionadas (NCG501)',
+    'Primer_semestre_2025' => 'Primer semestre 2025',
     'Documentos_Resumen_transacciones' => 'Resumen de transacciones con partes relacionadas (NCG501)',
     'Documentos_EEFF_Consolidado' => 'EEFF Consolidado Pdf',
     'Documentos_Memoria_2023' => 'Memoria 2023 Pdf',

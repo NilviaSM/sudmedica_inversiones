@@ -52,6 +52,8 @@ return [
     'Documentos_Memoria_2024' => '2024 Report Pdf',
     'Documentos_Resumen_transacciones' => 'Related Party Transactions Summary (NCG501)',
     'Documentos_Operaciones_2024' => 'RELATED PARTY TRANSACTIONS REPORT 2024',
+    'Resumen_transacciones' => 'Related Party Transactions Summary (NCG501)',
+    'Primer_semestre_2025' => 'First Semester 2025',
     'Documentos_EEFF_Consolidado' => 'Consolidated Financial Statements Pdf',
     'Documentos_Memoria_2023' => '2023 Report Pdf',
     'Documentos_Descargar' => 'Download',
