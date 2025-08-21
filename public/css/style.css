@@ -734,6 +734,7 @@ li{
         transform: translate(75%, -50%);
         overflow: hidden;
     }
+
 }
     
     
@@ -857,7 +858,26 @@ li{
             margin:auto;
         }
 
+        .documentos__container{
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .resumen__texto{
+            width: 90%;
+            gap:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: translate(5%, -50%);
+        }
+
+        .resumen_textos{
+            max-width: 90%;
+        }
+
         .boton__resumen{
-            min-width: 300px;
+            min-width: 90%;
+            border-radius: 1rem;
         }
 }
