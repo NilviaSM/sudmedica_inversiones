@@ -38,9 +38,9 @@
     <div class="informacion__container">
         <h1>{{ __('messages.Carrusel_Informacion') }}</h1>
     </div>
-    <div class="alerta">
+    <!-- <div class="alerta">
         <img src="{{ asset('img/alerta.jpeg') }}" alt="">
-    </div>
+    </div> -->
 </div>
 
 <script>
