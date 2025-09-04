@@ -24,6 +24,7 @@
     @include('snipets.video')
     @include('snipets.contacto')
     @include('volver_inicio')
+    @include('snipets.popup')
 <script src="{{asset('js/script.js')}}"></script>
     
 </body>
