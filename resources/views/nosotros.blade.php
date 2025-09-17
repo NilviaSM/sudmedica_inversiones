@@ -31,18 +31,18 @@
                             data-description="{{ __('messages.Directorio_Card_Angel_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                    </div>
                 </div>
-                <!-- <div class="directorio__card card">
-                    <img class="directorio__card__img card__img" src="{{asset('img/Freddy_Hurtado_Presidente 1.png')}}" alt="">
+                <div class="directorio__card card">
+                    <img class="directorio__card__img card__img" src="{{asset('img/GERSON GARCES.jpeg')}}" alt="">
                     <div class="card__info">
-                        <h5 class="card__name">Freddy Hurtado</h5>
-                        <h5 class="card__ocupation freddy_ocupation">{{ __('messages.Directorio_Card_Freddy_Ocupation') }}</h5>
-                        <p class="card__description freddy_description">{{ __('messages.Directorio_Card_Freddy_Description') }}</p>
+                        <h5 class="card__name">GERSON GARCES</h5>
+                        <h5 class="card__ocupation freddy_ocupation">{{ __('messages.Directorio_Card_Gerson_Ocupation') }}</h5>
+                        <p class="card__description freddy_description">{{ __('messages.Directorio_Card_Gerson_Description') }}</p>
                         <a class="card__button" href="#"
-                            data-name="Freddy Hurtado" 
-                            data-ocupation="{{ __('messages.Directorio_Card_Freddy_Ocupation') }}" 
-                            data-description="{{ __('messages.Directorio_Card_Freddy_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
+                            data-name="GERSON GARCES" 
+                            data-ocupation="{{ __('messages.Directorio_Card_Gerson_Ocupation') }}" 
+                            data-description="{{ __('messages.Directorio_Card_Gerson_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
-                </div> -->
+                </div> 
                 
                 <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/maria_soledad_Lopez_Secretaria 1.png')}}" alt="">
@@ -56,18 +56,18 @@
                             data-description="{{ __('messages.Directorio_Card_Maria_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
                 </div>
-                <!-- <div class="directorio__card card">
-                    <img class="directorio__card__img card__img" src="{{asset('img/Felipe_Oelckers_Aljaro_Director 1.png')}}" alt="">
+                 <div class="directorio__card card">
+                    <img class="directorio__card__img card__img" src="{{asset('img/CLAUDIO MALDONADO.jpeg')}}" alt="">
                     <div class="card__info">
-                        <h5 class="card__name">Felipe Oelckers Aljaro</h5>
-                        <h5 class="card__ocupation felipe_ocupation">{{ __('messages.Directorio_Card_Felipe_Ocupation') }}</h5>
-                        <p class="card__description felipe_description">{{ __('messages.Directorio_Card_Felipe_Description') }}</p>
+                        <h5 class="card__name">Claudio Enrique Maldonado Naveas</h5>
+                        <h5 class="card__ocupation felipe_ocupation">{{ __('messages.Directorio_Card_Claudio_Ocupation') }}</h5>
+                        <p class="card__description felipe_description">{{ __('messages.Directorio_Card_Claudio_Description') }}</p>
                         <a class="card__button" href="#"
-                            data-name="Felipe Oelckers Aljaro" 
-                            data-ocupation="{{ __('messages.Directorio_Card_Felipe_Ocupation') }}" 
-                            data-description="{{ __('messages.Directorio_Card_Felipe_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
+                            data-name="Claudio Enrique Maldonado Naveas" 
+                            data-ocupation="{{ __('messages.Directorio_Card_Claudio_Ocupation') }}" 
+                            data-description="{{ __('messages.Directorio_Card_Claudio_Ocupation') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
-                </div> -->
+                </div> 
                 <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/Fernando_Marcelo_Aguiar_Rosales_Director 1.png')}}" alt="">
                     <div class="card__info">
@@ -80,7 +80,7 @@
                             data-description="{{ __('messages.Directorio_Card_Fernando_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
                 </div>
-                <div id="popup" class="popup">
+                <!-- <div id="popup" class="popup">
                     <div class="popup__content">
                         <span class="popup__close" aria-label="Cerrar">&times;</span>
                         <div class="popup__info">
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
