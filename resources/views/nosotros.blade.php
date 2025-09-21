@@ -34,7 +34,7 @@
                 <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/GERSON GARCES.jpeg')}}" alt="">
                     <div class="card__info">
-                        <h5 class="card__name">GERSON GARCES</h5>
+                        <h5 class="card__name">Gerson Daniel Garcés Grandon</h5>
                         <h5 class="card__ocupation freddy_ocupation">{{ __('messages.Directorio_Card_Gerson_Ocupation') }}</h5>
                         <p class="card__description freddy_description">{{ __('messages.Directorio_Card_Gerson_Description') }}</p>
                         <a class="card__button" href="#"
