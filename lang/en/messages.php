@@ -50,6 +50,8 @@ return [
     'Directorio_Card_Fernando_Description' => 'Chemical Civil Engineer from Pontificia Universidad Católica de Valparaíso and Master of Business Administration from Universidad Adolfo Ibañez. He has developed his professional career in large-scale copper mining, mainly in the areas of planning and mining operations. He has been responsible for commissioning greenfield operations and also in consolidated businesses. His knowledge and career allowed him to work in both the state-owned industry (Codelco Divisions El Salvador and Gabriela Mistral) and the private sector (SCMMLCC Caserones, AMSA, and Glencore), holding executive positions and always aiming to ensure the safety of people and create shareholder value.',
     'Directorio_Card_VerMas' => 'See more...',
     'Documentos_Memoria_2024' => '2024 Report Pdf',
+    'Jea_RMSI2025' => 'Act 06/09/25',
+    'Jea_RMSI' => 'Act 05/07/2025',
     'Documentos_Resumen_transacciones' => 'Related Party Transactions Summary (NCG501)',
     'Documentos_Operaciones_2024' => 'RELATED PARTY TRANSACTIONS REPORT 2024',
     'Resumen_transacciones' => 'Related Party Transactions Summary (NCG501)',

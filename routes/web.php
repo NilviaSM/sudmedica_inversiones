@@ -66,6 +66,24 @@ Route::get('/documentos/memoria', function () {
     return response()->download($filePath, "MEMORIA_2024_10.04.pdf", ['Content-Type'=>'application/pdf']);
 })->name("memoriaPdf");
 
+Route::get('/documentos/jearmsi2025', function () {
+    $filePath = public_path('documents/JEA_RMSI_2025.pdf');
+    if (!file_exists($filePath)) {
+        abort(404, 'El archivo no existe.');
+    }
+
+    return response()->download($filePath, "JEA_RMSI_2025.pdf", ['Content-Type'=>'application/pdf']);
+})->name("jearmsi2025");
+
+Route::get('/documentos/jearmsi', function () {
+    $filePath = public_path('documents/JEA_RMSI.pdf');
+    if (!file_exists($filePath)) {
+        abort(404, 'El archivo no existe.');
+    }
+
+    return response()->download($filePath, "JEA_RMSI.pdf", ['Content-Type'=>'application/pdf']);
+})->name("jearmsi");
+
 
 
 Route::get('/documentos/Reporte_Partes_Relacionadas', function () {
