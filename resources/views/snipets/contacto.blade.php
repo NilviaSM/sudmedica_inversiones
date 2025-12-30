@@ -111,7 +111,7 @@
         opacity: 1;
     }
 
-    .popup-content {
+    .popup-content-contacto {
         background-color: white;
         padding: 20px;
         border-radius: 8px;
