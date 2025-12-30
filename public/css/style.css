@@ -707,10 +707,12 @@ li{
 
 .btn-overlay{
   position:absolute; left:50%; transform:translateX(-50%);
-  bottom:11%;                  
+  bottom:25%;                  
   box-shadow:0 4px 12px rgba(0,0,0,.25);
   margin:0;
 }
+.btn{ display:flex; align-items:center; justify-content:center; gap:10px; }
+.btn-icon{ width:20px; height:20px; fill:currentColor; display:block; }
 
 @media (max-width:480px){
   .btn-overlay{ bottom:13%; }
