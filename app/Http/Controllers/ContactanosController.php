@@ -22,7 +22,7 @@ class ContactanosController extends Controller
                 'mensaje' =>'required|string',
             ]);
 
-            Mail::to("sudmedicaquillota@gmail.com")->send(new ContactanosMailable($request->all()));
+            Mail::to("nilvia.sepulveda@sudmedica.com")->send(new ContactanosMailable($request->all()));
             Mail::to($request['email'])->send(new ContactanosReturnMailable());
             session()->flash('info', '¡Mensaje enviado con éxito!');
             return redirect()->back();
