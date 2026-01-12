@@ -678,8 +678,10 @@ li{
   max-width:90vw; max-height:90vh;
 }
 
-.popup-body{ position:relative; display:inline-block; }
-
+.popup-body{ 
+    position:relative; 
+    display:inline-block; 
+}
 
 .popup-img{
   display:block;
@@ -702,15 +704,28 @@ li{
   font-size:16px; font-weight:600; letter-spacing:.5px;
   background:#42b72a; color:#fff; text-decoration:none;
   border-radius:6px; text-align:center; white-space:nowrap;
+  font-family: lato;
 }
 .btn:hover{ background:#369d22; }
 
 .btn-overlay{
-  position:absolute; left:50%; transform:translateX(-50%);
-  bottom:25%;                  
+  position:absolute; 
+  left:50%; 
+  transform:translateX(-50%);
+  bottom:30%;                  
   box-shadow:0 4px 12px rgba(0,0,0,.25);
   margin:0;
 }
+
+.btn-overlay-2{
+  position:absolute; 
+  left:50%; 
+  transform:translateX(-50%);
+  bottom:20%;                  
+  box-shadow:0 4px 12px rgba(0,0,0,.25);
+  margin:0;
+}
+
 .btn{ display:flex; align-items:center; justify-content:center; gap:10px; }
 .btn-icon{ width:20px; height:20px; fill:currentColor; display:block; }
 
