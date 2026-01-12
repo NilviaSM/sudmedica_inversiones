@@ -136,6 +136,15 @@ Route::get('/documentos/reporte_operaciones', function () {
     return response()->download($filePath, "REPORTE_DE_OPERACIONES_CON_PARTES_RELACIONADAS_II_2024.xlsx", ['Content-Type'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet']);
 })->name("operacionesxlsx");
 
+Route::get('/documentos/citacion_jea', function () {
+    $filePath = public_path('documents/CITACIÓN_JEA_17012026.pdf');
+    if (!file_exists($filePath)) {
+        abort(404, 'El archivo no existe.');
+    }
+
+    return response()->download($filePath, "CITACIÓN_JEA_17012026.pdf", ['Content-Type'=>'application/pdf']);
+})->name("citacionjea");
+
 Route::get('/documentos/poder_ja', function () {
     $filePath = public_path('documents/Poder_JA.docx');
     if (!file_exists($filePath)) {
