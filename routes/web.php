@@ -84,6 +84,14 @@ Route::get('/documentos/jearmsi', function () {
     return response()->download($filePath, "JEA_RMSI.pdf", ['Content-Type'=>'application/pdf']);
 })->name("jearmsi");
 
+Route::get('/documentos/tasacion_urbana', function () {
+    $filePath = public_path('documents/tasacion_urbana.pdf');
+    if (!file_exists($filePath)) {
+        abort(404, 'El archivo no existe.');
+    }
+
+    return response()->download($filePath, "tasacion_urbana.pdf", ['Content-Type'=>'application/pdf']);
+})->name("tasacion_urbana");
 
 
 Route::get('/documentos/Reporte_Partes_Relacionadas', function () {
