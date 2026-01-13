@@ -22,17 +22,17 @@ class ContactanosController extends Controller
                 'mensaje' =>'required|string',
             ]);
 
-            Mail::to("nilvia.sepulveda@sudmedica.com")->send(new ContactanosMailable($request->all()));
+            Mail::to("contacto@sudmedica.com")->send(new ContactanosMailable($request->all()));
             Mail::to($request['email'])->send(new ContactanosReturnMailable());
             session()->flash('info', '¡Mensaje enviado con éxito!');
             return redirect()->back();
         } 
         catch (Swift_TransportException $e) {
             // Captura errores relacionados con el transporte de correos
-            return redirect()->back()->withErrors(['error' => 'No se pudo enviar el correo. Problema con el servidor de correo.']);
+            return redirect()->back()->withErrors(['error' => 'No se pudo enviar el correo. Problema con el servidor de correo.'.$e]);
         } catch (\Exception $e) {
             // Captura cualquier otro error
-            return redirect()->back()->withErrors(['error' => 'Ocurrió un error inesperado. Inténtalo nuevamente.']);
+            return redirect()->back()->withErrors(['error' => 'Ocurrió un error inesperado. Inténtalo nuevamente.'.$e]);
         }
         
     }
