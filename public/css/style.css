@@ -795,6 +795,23 @@ li{
 
 /* responsive */
 @media (max-width: 560px){
+
+  .popup-img{
+    height: 100%;
+  }
+  .popup-content{
+    height: 60%;
+  }
+
+  .btn-overlay, .btn-overlay-2{
+    font-size: 10px;
+    bottom: 20%;
+  }
+
+  .btn-overlay-2{
+    bottom: 5%;
+  }
+
   .popup-actions{
     grid-template-columns: 1fr;
   }
