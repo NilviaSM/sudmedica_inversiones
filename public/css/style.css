@@ -267,22 +267,7 @@ body{
   gap: 1rem;
 }
 
-<<<<<<< HEAD
-=======
-input[type="text"], textarea{
-  height: 1rem;
-  border-radius: .5rem;
-  border: none;
-  padding: .5rem;
-}
 
-textarea{
-  font-family: lato;
-  height: 8rem;
-  resize: none;
-}
-
->>>>>>> 8a5439f862c4105e103ccffcb4379507bba401f5
 input[type="submit"]{
   font-family: lato;
   font-size: 1rem;
