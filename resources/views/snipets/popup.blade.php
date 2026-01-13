@@ -3,13 +3,17 @@
     <div class="popup-body">
       <button class="close" aria-label="Cerrar">&times;</button>
       <img src="{{ asset('img/popup.jpeg') }}" alt="Junta de Accionistas" class="popup-img">
-      <a href="https://sudmedica-my.sharepoint.com/:b:/p/nilvia_sepulveda/IQDZ0rR4FireSYi5pcNpEJ49ARjFl7kVZvHKl7ldnkLPWr8?e=7zKdBz"
-         class="btn btn-overlay">
-          <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" aria-hidden="true" focusable="false">
-    <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
-  </svg>
+      <a href="{{route('citacionjea')}}" class="btn btn-overlay">
+      <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" aria-hidden="true" focusable="false">
+        <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
+      </svg>
         DESCARGAR INVITACIÓN Y PODER
       </a>
+      <a href="{{route('poderjadocx')}}" class="btn btn-overlay-2">
+      <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" aria-hidden="true" focusable="false">
+        <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
+      </svg>  
+      DESCARGAR PODER JA</a>
     </div>
   </div>
 </div>

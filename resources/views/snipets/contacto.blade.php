@@ -9,10 +9,20 @@
         </div>
         <form id="contact-form" action="{{route('contactanos.store')}}" method="post">
             @csrf
-            <input type="text" placeholder="{{ __('messages.Contacto_Nombre') }}" name="nombre">
-            <input type="text" placeholder="{{ __('messages.Contacto_Telefono') }}" name="telefono">
-            <input type="text" placeholder="{{ __('messages.Contacto_Email') }}" name="email">
-            <textarea placeholder="{{ __('messages.Contacto_Mensaje') }}" name="mensaje"></textarea>
+            <input type="text" placeholder="{{ __('messages.Contacto_Nombre') }}" name="nombre" required=True>
+            <div class="selected_country">
+                <select name="" id="country">
+                    <option value="+56">Chile</option>
+                    <option value="+52">Mexico</option>
+                    <option value="+1">USA</option>
+                    <option value="+1">Canada</option>
+                    <option value="+55">Brazil</option>
+                    <option value="+54">Argentina</option>
+                </select>
+                <input type="tel" name="telefono" id="phone" placeholder="{{ __('messages.Contacto_Telefono')  }}" required=True value="+56 ">
+            </div>
+            <input type="text" placeholder="{{ __('messages.Contacto_Email') }}" name="email" required=True>
+            <textarea placeholder="{{ __('messages.Contacto_Mensaje') }}" name="mensaje" required=True></textarea>
             <input type="submit" value="{{ __('messages.Contacto_Enviar') }}">
         </form>
         <div class="loading-popup" id="loading-popup">
@@ -106,6 +116,17 @@
         transition: visibility 0s, opacity 0.3s ease-in-out;
     }
 
+    .popup-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        max-width: 400px;
+        width: 90%;
+        font-family:lato;
+    }
+
     .custom-popup.show {
         visibility: visible; /* Muestra el popup */
         opacity: 1;
@@ -150,6 +171,39 @@
         border: 1px solid black;
     }
 
+    .selected_country{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap:0.5rem;
+    
+    }
+
+    select{
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: None;
+    padding: 0.5rem;
+    background-color: white;
+    color:var(--sud-blue)
+    }
+
+    select:focus{
+        outline: none;
+    }
+
+    input[type="text"], input[type="tel"], input[type="email"], textarea{
+    height: 1rem;
+    border-radius: .5rem;
+    border: none;
+    padding: .5rem;
+    }
+
+    textarea{
+    font-family: lato;
+    height: 8rem;
+    resize:none;
+    }
+
     @keyframes spin {
         0% {
             transform: rotate(0deg);
@@ -189,5 +243,12 @@
         });
     }
 })
+
+var val = document.querySelector("#country");
+    val.addEventListener("change", ()=>{
+        var input_telefono = document.querySelector("#phone");
+        input_telefono.value = val.value + " " 
+        input_telefono.focus();
+    })
     </script>
 </div>

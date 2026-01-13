@@ -694,12 +694,9 @@ li{
   box-shadow: 0 22px 60px rgba(0,0,0,.35);
 }
 
-/* estructura */
-.popup-body{
-  position: relative;
-  display: grid;
-  grid-template-rows: auto auto; /* imagen + acciones */
-  background: #fff;
+.popup-body{ 
+    position:relative; 
+    display:inline-block;
 }
 
 /* botón cerrar */
@@ -769,16 +766,49 @@ li{
   box-shadow: 0 10px 22px rgba(0,0,0,.16);
 }
 
+<<<<<<< HEAD
 .popup-actions .btn:hover{
   filter: brightness(.95);
+=======
+.btn{
+  display:inline-block;
+  padding:12px 22px;
+  font-size:16px; font-weight:600; letter-spacing:.5px;
+  background:#42b72a; color:#fff; text-decoration:none;
+  border-radius:6px; text-align:center; white-space:nowrap;
+  font-family: lato;
+>>>>>>> 06ed00bd5abd266cbf48a981a1723a0a61ca9799
 }
 
+<<<<<<< HEAD
 .popup-actions .btn-icon{
   width: 20px;
   height: 20px;
   fill: currentColor;
   flex: 0 0 auto;
 }
+=======
+.btn-overlay{
+  position:absolute; 
+  left:50%; 
+  transform:translateX(-50%);
+  bottom:30%;                  
+  box-shadow:0 4px 12px rgba(0,0,0,.25);
+  margin:0;
+}
+
+.btn-overlay-2{
+  position:absolute; 
+  left:50%; 
+  transform:translateX(-50%);
+  bottom:20%;                  
+  box-shadow:0 4px 12px rgba(0,0,0,.25);
+  margin:0;
+}
+
+.btn{ display:flex; align-items:center; justify-content:center; gap:10px; }
+.btn-icon{ width:20px; height:20px; fill:currentColor; display:block; }
+>>>>>>> 06ed00bd5abd266cbf48a981a1723a0a61ca9799
 
 .popup-actions .btn span{
   display: block;
