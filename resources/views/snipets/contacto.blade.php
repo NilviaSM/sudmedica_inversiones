@@ -175,7 +175,6 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap:0.5rem;
-    
     }
 
     select{
@@ -192,7 +191,6 @@
     }
 
     input[type="text"], input[type="tel"], input[type="email"], textarea{
-    height: 1rem;
     border-radius: .5rem;
     border: none;
     padding: .5rem;
