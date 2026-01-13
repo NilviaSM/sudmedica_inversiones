@@ -215,6 +215,20 @@
         font-size: 16px;
         color: #555;
     }
+
+    @media screen and (max-width: 836px){
+    .selected_country{
+        display:flex;
+        flex-direction:column;
+        gap: 1rem;
+        width: 95%;
+    }
+
+    .selected_country input{
+        width: 100%;
+    }
+
+    }
     </style>
     <script>
     document.addEventListener("DOMContentLoaded", (event) => {

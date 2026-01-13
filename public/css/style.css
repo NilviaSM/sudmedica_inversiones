@@ -926,6 +926,29 @@ body.popup-open{
     place-items: center;
   }
 
+
+    .contacto__title p{
+    font-size: 1.2rem;
+  }
+
+    .contacto__form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input, textarea{
+    width: 95%;
+  }
+
+
+  .contacto__whatsapp{
+  width: 95%;
+  margin: auto;
+  }
+
+
   .cards{
     justify-content: center;
     gap: 3rem;
