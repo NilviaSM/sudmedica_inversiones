@@ -766,10 +766,7 @@ li{
   box-shadow: 0 10px 22px rgba(0,0,0,.16);
 }
 
-<<<<<<< HEAD
-.popup-actions .btn:hover{
-  filter: brightness(.95);
-=======
+
 .btn{
   display:inline-block;
   padding:12px 22px;
@@ -777,17 +774,9 @@ li{
   background:#42b72a; color:#fff; text-decoration:none;
   border-radius:6px; text-align:center; white-space:nowrap;
   font-family: lato;
->>>>>>> 06ed00bd5abd266cbf48a981a1723a0a61ca9799
 }
 
-<<<<<<< HEAD
-.popup-actions .btn-icon{
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-  flex: 0 0 auto;
-}
-=======
+
 .btn-overlay{
   position:absolute; 
   left:50%; 
@@ -808,7 +797,7 @@ li{
 
 .btn{ display:flex; align-items:center; justify-content:center; gap:10px; }
 .btn-icon{ width:20px; height:20px; fill:currentColor; display:block; }
->>>>>>> 06ed00bd5abd266cbf48a981a1723a0a61ca9799
+
 
 .popup-actions .btn span{
   display: block;
