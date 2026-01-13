@@ -115,7 +115,7 @@ body{
 }
 
 .nav__menu__data{
-  min-height: 40rem;
+  min-height: 100vh;
   position: absolute;
   top: 5rem;
   left: 0;
@@ -180,6 +180,7 @@ body{
   text-decoration: none;
   color: var(--sud-blue);
 }
+
 
 .nav__link__active{
   font-weight: bolder;
@@ -902,12 +903,8 @@ body.popup-open{
     padding: 0;
   }
 
-  .nav__sociales .nav__list{
-    padding: .3rem;
-  }
 
   .nav__sociales .nav__list .nav__link{
-    padding-top: .2rem;
     margin: auto;
   }
 
