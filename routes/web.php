@@ -154,6 +154,15 @@ Route::get('/documentos/poder_ja', function () {
     return response()->download($filePath, "PODER_JA.docx", ['Content-Type'=>'application/vnd.openxmlformats-officedocument.wordprocessingml.document']);
 })->name("poderjadocx");
 
+Route::get('/documentos/hecho_esencial_14', function () {
+    $filePath = public_path('documents/Hecho_Esencial_No_14.pdf');
+    if (!file_exists($filePath)) {
+        abort(404, 'El archivo no existe.');
+    }
+
+    return response()->download($filePath, "Hecho_Esencial_No_14.pdf", ['Content-Type'=>'application/pdf']);
+})->name("hechoesencial14");
+
 Route::get('/contactanos', function(){
     Mail::to('contacto@sudmedica.com')->send(new ContactanosMailable);
     return "Mensaje enviado";
