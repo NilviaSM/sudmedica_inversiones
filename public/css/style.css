@@ -768,6 +768,7 @@ li{
 
 
 .btn-overlay{
+  font-size: 13px;
   position:absolute; 
   left:50%; 
   transform:translateX(-50%);
@@ -777,6 +778,7 @@ li{
 }
 
 .btn-overlay-2{
+  font-size: 13px;
   position:absolute; 
   left:50%; 
   transform:translateX(-50%);
@@ -786,6 +788,7 @@ li{
 }
 
 .btn-overlay-3{
+  font-size: 13px;
   position:absolute; 
   left:50%; 
   transform:translateX(-50%);
