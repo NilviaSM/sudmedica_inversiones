@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos Sudmedica Inversiones</title>
-</head>
-<body>
-    <p>Hola</p><br>
-    <p>Gracias por tu interés en Sudmedica Inversiones</p>
-    <p>Hemos recibido tu mensaje y muy pronto uno de nuestros ejecutivos se pondrá en contacto contigo para entregarte toda la información que necesitas.</p><br>
-    
-    <p>Un cordial saludo,</p>
-    <p><strong>Sudmedica Inversiones</strong></p>
+<html lang="es">
+<body style="margin:0; padding:0; font-family: Arial, Helvetica, sans-serif;">
+
+    <img src="{{ $message->embed(public_path('img/email-header.jpeg')) }}">
+
+    <div style="max-width:600px; margin:0 auto; padding:20px;">
+        <p style="font-size:14px; color:#333;">
+            Recibimos su consulta. La derivamos para entregarle una orientación clara y completa.
+            Un/a especialista de nuestro equipo se pondrá en contacto con usted.
+        </p>
+
+        <p style="font-size:14px; color:#333;">
+            Gracias por su mensaje.
+        </p>
+    </div>
+
+    <img src="{{ $message->embed(public_path('img/email-footer.jpeg')) }}">
+
 </body>
 </html>
