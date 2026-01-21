@@ -23,8 +23,12 @@
             </div>
             <input type="text" placeholder="{{ __('messages.Contacto_Email') }}" name="email" required=True>
             <textarea placeholder="{{ __('messages.Contacto_Mensaje') }}" name="mensaje" required=True></textarea>
+            <!-- Aquí va el reCAPTCHA -->
+             <div class="g-recaptcha" data-sitekey="6Ld8MlIsAAAAAF2TbGGkaGRg-EM40GF9ZjrDh3TR"></div> 
             <input type="submit" value="{{ __('messages.Contacto_Enviar') }}">
         </form>
+        <!-- Script de Google --> 
+         <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
         <div class="loading-popup" id="loading-popup">
             <div class="loading-content">
                 <div class="spinner"></div>

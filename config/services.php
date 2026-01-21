@@ -14,6 +14,8 @@ return [
     |
     */
 
+    'recaptcha' => [ 'site' => env('RECAPTCHA_SITE'), 'secret' => env('RECAPTCHA_SECRET'), ],
+
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
     ],

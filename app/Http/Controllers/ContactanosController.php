@@ -21,6 +21,19 @@ class ContactanosController extends Controller
                 'mensaje'  => 'required|string',
             ]);
 
+            $recaptcha = $request->input('g-recaptcha-response');
+            $secret = env('RECAPTCHA_SECRET_KEY');
+
+            $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$recaptcha");
+            $data = json_decode($response);
+
+            if (!$data->success) {
+                return back()->withErrors([
+                    'error' => 'Verificación reCAPTCHA fallida. Intenta de nuevo.'
+                ]);
+            }
+
+
             Mail::to('nilvia.sepulveda@sudmedica.com')
                 ->send(new ContactanosMailable($request->all()));
 
