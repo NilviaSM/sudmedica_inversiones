@@ -21,10 +21,10 @@ class ContactanosController extends Controller
                 'mensaje'  => 'required|string',
             ]);
 
-            Mail::to('contacto@sudmedica.com')
+            Mail::to('nilvia.sepulveda@sudmedica.com')
                 ->send(new ContactanosMailable($request->all()));
 
-            Mail::to($request->email)
+            Mail::to($request->input('email'))
                 ->send(new ContactanosReturnMailable());
 
             return back()->with('info', '¡Mensaje enviado con éxito!');

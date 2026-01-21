@@ -50,4 +50,5 @@ class ContactanosReturnMailable extends Mailable
     {
         return [];
     }
+
 }
