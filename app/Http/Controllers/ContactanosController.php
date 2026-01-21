@@ -34,7 +34,7 @@ class ContactanosController extends Controller
             }
 
 
-            Mail::to('nilvia.sepulveda@sudmedica.com')
+            Mail::to('contactanos@sudmedica.com')
                 ->send(new ContactanosMailable($request->all()));
 
             Mail::to($request->input('email'))
