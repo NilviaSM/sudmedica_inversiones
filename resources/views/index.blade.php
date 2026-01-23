@@ -16,7 +16,7 @@
 
     gtag('config', 'G-TPTJBP0EWH');
     </script>
-    <title>Sudmedica</title>
+    <title>Sudmédica</title>
 </head>
 <body>
     @include('snipets.navbar')
