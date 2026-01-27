@@ -241,7 +241,8 @@ body{
 
 .contacto__form{
   max-width: 22rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacto__title{
@@ -265,7 +266,8 @@ body{
 .contacto__form form{
   padding: 2rem;
   background-color: var(--sud-grayTwo);
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -803,6 +805,22 @@ li{
 
 .popup-actions .btn span{
   display: block;
+}
+
+.recaptcha-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.recaptcha-wrapper > div {
+    transform-origin: 0 0;
+}
+
+.recaptcha-error {
+    display: none;
+    color: #c62828;
+    font-size: 14px;
+    margin-top: 0.5rem;
 }
 
 /* responsive */
