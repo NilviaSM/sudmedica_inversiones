@@ -81,9 +81,6 @@
              <div class="recaptcha-wrapper">
                 <div class="g-recaptcha" data-sitekey="6Ld8MlIsAAAAAF2TbGGkaGRg-EM40GF9ZjrDh3TR"></div> 
             </div>
-            <p class="recaptcha-error" id="recaptcha-error">
-                ⚠️ Por favor confirma que no eres un robot.
-            </p>
             <input type="submit" value="{{ __('messages.Contacto_Enviar') }}">
         </form>
         <!-- Script de Google --> 
