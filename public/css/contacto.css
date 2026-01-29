@@ -1,0 +1,52 @@
+.selected_country{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:0.8rem;
+}
+
+select{
+    height: 2rem;
+    border-radius: 0.5rem;
+    border: None;
+    padding: 0.5rem;
+    background-color: white;
+    color:var(--sud-blue)
+}
+
+select:focus{
+    outline: none;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea{
+    border-radius: .5rem;
+    border: none;
+    padding: .5rem;
+}
+
+textarea{
+    font-family: lato;
+    height: 8rem;
+    resize:none;
+}
+
+.recaptcha-error {
+    display: none;
+    font-family: lato;
+    color: #c62828;
+    font-size: 14px;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 836px){
+    .selected_country{
+        display:flex;
+        flex-direction:column;
+        gap: 1rem;
+        width: 95%;
+    }
+
+    .selected_country input{
+        width: 100%;
+    }
+
+}

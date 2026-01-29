@@ -16,7 +16,8 @@ class ContactanosController extends Controller
 
             $request->validate([
                 'nombre'   => 'required|string',
-                'telefono' => 'required|string',
+                'codigo_pais' => 'required|string',
+                'telefono' => 'required|numeric',
                 'email'    => 'required|email',
                 'mensaje'  => 'required|string',
             ]);
@@ -58,4 +59,5 @@ class ContactanosController extends Controller
         }
     }
 }
+
 

@@ -73,7 +73,7 @@
                     <option value="+234">Nigeria</option>
                     <option value="+254">Kenia</option>
                 </select>
-                <input type="tel" name="telefono" id="phone" placeholder="{{ __('messages.Contacto_Telefono')  }}" required=True value="+56 ">
+                <input type="tel" name="telefono" id="phone" placeholder="{{ __('messages.Contacto_Telefono')  }}" required=True inputmode="numeric">
             </div>
             <input type="text" placeholder="{{ __('messages.Contacto_Email') }}" name="email" required=True>
             <textarea placeholder="{{ __('messages.Contacto_Mensaje') }}" name="mensaje" required=True></textarea>
@@ -81,6 +81,9 @@
              <div class="recaptcha-wrapper">
                 <div class="g-recaptcha" data-sitekey="6Ld8MlIsAAAAAF2TbGGkaGRg-EM40GF9ZjrDh3TR"></div> 
             </div>
+            <p id="recaptcha-error" class="recaptcha-error">
+                Debes confirmar que no eres un robot
+            </p>
             <input type="submit" value="{{ __('messages.Contacto_Enviar') }}">
         </form>
         <!-- Script de Google --> 
@@ -117,215 +120,9 @@
             <a href="tel:+56322186995" class="btn__form btn__form__call"><i class="fa fa-phone" aria-hidden="true"></i> {{ __('messages.Contacto_Llamar') }}</a>
         </div>
     </div>
-    <style>
-        .loading-popup {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-        visibility: hidden; /* Oculta el popup por defecto */
-        opacity: 0;
-        transition: visibility 0s, opacity 0.3s ease-in-out;
-    }
-
-    .loading-popup.show {
-        visibility: visible; /* Muestra el popup */
-        opacity: 1;
-    }
-
-    .loading-content {
-        background-color: white;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        max-width: 400px;
-        width: 90%;
-        font-family:lato;
-    }
-
-    .loading-content .spinner {
-        width: 40px;
-        height: 40px;
-        border: 4px solid #ccc;
-        border-top: 4px solid #114071;
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        margin: 0 auto 10px auto;
-    }
-
-    .custom-popup {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 1000;
-        visibility: hidden; /* Oculta el popup por defecto */
-        opacity: 0;
-        transition: visibility 0s, opacity 0.3s ease-in-out;
-    }
-
-    .popup-content {
-        background-color: white;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        max-width: 400px;
-        width: 90%;
-        font-family:lato;
-    }
-
-    .custom-popup.show {
-        visibility: visible; /* Muestra el popup */
-        opacity: 1;
-    }
-
-    .popup-content-contacto {
-        background-color: white;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        max-width: 400px;
-        width: 90%;
-        font-family: lato;
-    }
-
-    .popup-content h2 {
-        margin-bottom: 10px;
-        font-size: 24px;
-        color: #333;
-    }
-
-    .popup-content p {
-        margin-bottom: 20px;
-        font-size: 16px;
-        color: #555;
-    }
-
-    .popup-close {
-        background-color: #114071;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-    }
-
-    .popup-close:hover {
-        background-color: var(--white);
-        color: black;
-        border: 1px solid black;
-    }
-
-    .selected_country{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap:0.8rem;
-    }
-
-    select{
-        height: 2rem;
-        border-radius: 0.5rem;
-        border: None;
-        padding: 0.5rem;
-        background-color: white;
-        color:var(--sud-blue)
-    }
-
-    select:focus{
-        outline: none;
-    }
-
-    input[type="text"], input[type="tel"], input[type="email"], textarea{
-    border-radius: .5rem;
-    border: none;
-    padding: .5rem;
-    }
-
-    textarea{
-    font-family: lato;
-    height: 8rem;
-    resize:none;
-    }
-
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-    .loading-content p {
-        font-size: 16px;
-        color: #555;
-    }
-
-    @media screen and (max-width: 836px){
-    .selected_country{
-        display:flex;
-        flex-direction:column;
-        gap: 1rem;
-        width: 95%;
-    }
-
-    .selected_country input{
-        width: 100%;
-    }
-
-    }
-    </style>
-    <script>
-    document.addEventListener("DOMContentLoaded", (event) => {
-    const form = document.getElementById("contact-form");
-    const loadingPopup = document.getElementById("loading-popup");
-
-    if (form) {
-        form.addEventListener("submit", (event) => {
-            // Muestra el popup de carga
-            loadingPopup.classList.add("show");
-        });
-    }
-
-    const popup = document.getElementById("custom-popup");
-    const closeButton = document.getElementById("popup-close");
-
-    if (popup) {
-        
-        // Mostrar el popup automáticamente si existe
-        popup.classList.add("show");
-
-        // Cerrar el popup al hacer clic en el botón
-        closeButton.addEventListener("click", () => {
-            popup.classList.remove("show");
-        });
-    }
-})
-
-var val = document.querySelector("#country");
-    val.addEventListener("change", ()=>{
-        var input_telefono = document.querySelector("#phone");
-        input_telefono.value = val.value + " " 
-        input_telefono.focus();
-    })
-    </script>
-
-    <script>
+</div>
+<script>
+    //No se logro colocar en un script aparte, produce error, dejar este script aqui.
     function scaleRecaptcha() {
         const recaptcha = document.querySelector('.g-recaptcha');
         const wrapper = document.querySelector('.recaptcha-wrapper');
@@ -335,14 +132,10 @@ var val = document.querySelector("#country");
         const wrapperWidth = wrapper.offsetWidth;
         const recaptchaWidth = 304; // ancho fijo de Google reCAPTCHA
 
-        const scale = wrapperWidth < recaptchaWidth
-            ? wrapperWidth / recaptchaWidth
-            : 1;
-
+        const scale = wrapperWidth < recaptchaWidth ? wrapperWidth / recaptchaWidth : 1;
         recaptcha.style.transform = `scale(${scale})`;
     }
 
     window.addEventListener('load', scaleRecaptcha);
     window.addEventListener('resize', scaleRecaptcha);
 </script>
-</div>

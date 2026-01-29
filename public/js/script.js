@@ -14,15 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 window.onload = function() {
-  const popup = document.getElementById("popup");
+  const popup2 = document.getElementById("popup");
   const closeBtn = document.querySelector(".popup .close");
 
-  popup.style.display = "flex";
+  popup2.style.display = "flex";
   document.body.classList.add('popup-open');
 
   const close = () => { popup.style.display = "none"; document.body.classList.remove('popup-open'); };
 
   closeBtn.onclick = close;
-  popup.addEventListener('click', (e) => { if (e.target === popup) close(); });
+  popup2.addEventListener('click', (e) => { if (e.target === popup) close(); });
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
 };
