@@ -5,12 +5,13 @@
 }
 
 select{
+    font-family: sans-serif;
     height: 2rem;
     border-radius: 0.5rem;
     border: None;
     padding: 0.5rem;
     background-color: white;
-    color:var(--sud-blue)
+    color:var(--sud-blue);
 }
 
 select:focus{

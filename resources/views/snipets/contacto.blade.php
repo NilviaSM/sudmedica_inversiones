@@ -12,66 +12,45 @@
             <input type="text" placeholder="{{ __('messages.Contacto_Nombre') }}" name="nombre" required=True>
             <div class="selected_country">
                 <select name="codigo_pais" id="country">
-                    <option value="+56">Chile</option>
-                    <option value="+52">México</option>
-                    <option value="+1">Estados Unidos</option>
-                    <option value="+1">Canadá</option>
-                    <option value="+54">Argentina</option>
-                    <option value="+55">Brasil</option>
-                    <option value="+57">Colombia</option>
-                    <option value="+51">Perú</option>
-                    <option value="+58">Venezuela</option>
-                    <option value="+593">Ecuador</option>
-                    <option value="+591">Bolivia</option>
-                    <option value="+598">Uruguay</option>
-                    <option value="+595">Paraguay</option>
-                    <option value="+506">Costa Rica</option>
-                    <option value="+507">Panamá</option>
-                    <option value="+502">Guatemala</option>
-                    <option value="+503">El Salvador</option>
-                    <option value="+504">Honduras</option>
-                    <option value="+505">Nicaragua</option>
-                    <option value="+53">Cuba</option>
-                    <option value="+1809">República Dominicana</option>
-                    <option value="+1876">Jamaica</option>
+                    <option value="+56">🇨🇱 Chile (+56)</option>
+                    <option value="+52">🇲🇽 México (+52)</option>
+                    <option value="+1">🇺🇸 Estados Unidos (+1)</option>
+                    <option value="+1">🇨🇦 Canadá (+1)</option>
+                    <option value="+54">🇦🇷 Argentina (+54)</option>
+                    <option value="+55">🇧🇷 Brasil (+55)</option>
+                    <option value="+57">🇨🇴 Colombia (+57)</option>
+                    <option value="+51">🇵🇪 Perú (+51)</option>
+                    <option value="+58">🇻🇪 Venezuela (+58)</option>
+                    <option value="+593">🇪🇨 Ecuador (+593)</option>
+                    <option value="+591">🇧🇴 Bolivia (+591)</option>
+                    <option value="+598">🇺🇾 Uruguay (+598)</option>
+                    <option value="+595">🇵🇾 Paraguay (+595)</option>
+                    <option value="+506">🇨🇷 Costa Rica (+506)</option>
+                    <option value="+507">🇵🇦 Panamá (+507)</option>
+                    <option value="+502">🇬🇹 Guatemala (+502)</option>
+                    <option value="+503">🇸🇻 El Salvador (+503)</option>
+                    <option value="+504">🇭🇳 Honduras (+504)</option>
+                    <option value="+505">🇳🇮 Nicaragua (+505)</option>
+                    <option value="+53">🇨🇺 Cuba (+53)</option>
+                    <option value="+1809">🇩🇴 República Dominicana (+1)</option>
+                    <option value="+1876">🇯🇲 Jamaica (+1)</option>
 
-                    <option value="+34">España</option>
-                    <option value="+33">Francia</option>
-                    <option value="+49">Alemania</option>
-                    <option value="+39">Italia</option>
-                    <option value="+44">Reino Unido</option>
-                    <option value="+351">Portugal</option>
-                    <option value="+31">Países Bajos</option>
-                    <option value="+32">Bélgica</option>
-                    <option value="+41">Suiza</option>
-                    <option value="+43">Austria</option>
-                    <option value="+45">Dinamarca</option>
-                    <option value="+46">Suecia</option>
-                    <option value="+47">Noruega</option>
-                    <option value="+48">Polonia</option>
-                    <option value="+30">Grecia</option>
+                    <option value="+34">🇪🇸 España (+34)</option>
+                    <option value="+33">🇫🇷 Francia (+33)</option>
+                    <option value="+49">🇩🇪 Alemania (+49)</option>
+                    <option value="+39">🇮🇹 Italia (+39)</option>
+                    <option value="+44">🇬🇧 Reino Unido (+44)</option>
+                    <option value="+351">🇵🇹 Portugal (+351)</option>
 
-                    <option value="+7">Rusia</option>
-                    <option value="+90">Turquía</option>
-                    <option value="+81">Japón</option>
-                    <option value="+82">Corea del Sur</option>
-                    <option value="+86">China</option>
-                    <option value="+91">India</option>
-                    <option value="+62">Indonesia</option>
-                    <option value="+63">Filipinas</option>
-                    <option value="+66">Tailandia</option>
-                    <option value="+84">Vietnam</option>
-                    <option value="+65">Singapur</option>
-                    <option value="+60">Malasia</option>
+                    <option value="+81">🇯🇵 Japón (+81)</option>
+                    <option value="+82">🇰🇷 Corea del Sur (+82)</option>
+                    <option value="+86">🇨🇳 China (+86)</option>
+                    <option value="+91">🇮🇳 India (+91)</option>
 
-                    <option value="+61">Australia</option>
-                    <option value="+64">Nueva Zelanda</option>
+                    <option value="+61">🇦🇺 Australia (+61)</option>
+                    <option value="+64">🇳🇿 Nueva Zelanda (+64)</option>
 
-                    <option value="+27">Sudáfrica</option>
-                    <option value="+20">Egipto</option>
-                    <option value="+212">Marruecos</option>
-                    <option value="+234">Nigeria</option>
-                    <option value="+254">Kenia</option>
+                    <option value="+27">🇿🇦 Sudáfrica (+27)</option>
                 </select>
                 <input type="tel" name="telefono" id="phone" placeholder="{{ __('messages.Contacto_Telefono')  }}" required=True inputmode="numeric">
             </div>
