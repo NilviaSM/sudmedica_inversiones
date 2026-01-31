@@ -16,7 +16,13 @@
     @include("snipets.navbar")
     <div class="documentos">
         
-
+      <picture class="documentos__container">
+            <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
+            <div class="documentos__texto">
+                <h1 class="documentos__texto__titulo">{{ __('messages.reporte_2025') }}</h1>
+                <a href="{{route('reporte_2025')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
+            </div>
+        </picture>
      <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
