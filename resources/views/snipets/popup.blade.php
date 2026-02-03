@@ -1,7 +1,7 @@
-<div id="popup2" class="popup">
+<div id="popup_onload" class="popup">
   <div class="popup-content" role="dialog" aria-modal="true">
     <div class="popup-body">
-      <button class="close" aria-label="Cerrar">&times;</button>
+      <button id="popup_onload_btn_close" class="close" aria-label="Cerrar">&times;</button>
       <img src="{{ asset('img/popup_dos.jpeg') }}" alt="Junta de Accionistas" class="popup-img">
       <a href="{{route('citacionjea')}}" class="btn btn-overlay">
       <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" aria-hidden="true" focusable="false">

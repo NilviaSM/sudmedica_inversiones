@@ -860,6 +860,9 @@ body.popup-open{
   overflow: hidden;
 }
 
+.popup-open {
+    overflow: hidden;
+}
 
 /* =========================
    MEDIA >= 1200

@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/3a008cc3c3.js" crossorigin="anonymous"></script>
+
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TPTJBP0EWH"></script>
     <script>
@@ -27,6 +28,7 @@
     @include('snipets.contacto')
     @include('volver_inicio')
     <!-- @include('snipets.popup') -->
+<script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
 <script src="{{asset('js/script.js')}}"></script>
 <script src="{{asset('js/contacto.js')}}"></script>
 </body>
