@@ -163,6 +163,16 @@ Route::get('/documentos/hecho_esencial_14', function () {
     return response()->download($filePath, "Hecho_Esencial_No_14.pdf", ['Content-Type'=>'application/pdf']);
 })->name("hechoesencial14");
 
+Route::get('/documentos/reporte_2025', function () {
+    $filePath = public_path('documents/reporte_2025.xlsx');
+    if (!file_exists($filePath)) {
+        abort(404, 'El archivo no existe.');
+    }
+
+    return response()->download($filePath, "reporte_2025.xlsx", ['Content-Type'=>'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet']);
+})->name("reporte_2025");
+
+
 Route::get('/contactanos', function(){
     Mail::to('contacto@sudmedica.com')->send(new ContactanosMailable);
     return "Mensaje enviado";
