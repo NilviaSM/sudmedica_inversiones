@@ -181,7 +181,6 @@ body{
   color: var(--sud-blue);
 }
 
-
 .nav__link__active{
   font-weight: bolder;
 }
@@ -270,7 +269,6 @@ body{
   flex-direction: column;
   gap: 1rem;
 }
-
 
 input[type="submit"]{
   font-family: lato;
@@ -536,13 +534,21 @@ li{
   object-fit: cover;
 }
 
+/* COMO ESTABA ANTES: texto a la derecha, sin caja */
 .documentos__texto{
   max-width: 350px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(75%, -50%);
   overflow: hidden;
+
+  /* asegurar que no quede “caja” */
+  width: auto;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  backdrop-filter: none;
 }
 
 .documentos__texto__titulo{
@@ -569,6 +575,70 @@ li{
   text-align: center;
   padding: 1rem;
   background-color: rgba(141, 198, 63, 1);
+}
+
+/* =========================
+   NCG501 (solo este bloque)
+   ========================= */
+.documentos__section{
+  display: grid;
+  gap: 1.6rem;
+}
+
+.documentos__section__title{
+  margin: 0;
+  font-family: lato;
+  font-weight: 900;
+  font-size: 2.4rem;
+  color: var(--sud-blue);
+  text-align: center;
+}
+
+/* SOLO NCG501: caja centrada y 2 botones */
+.documentos__section .documentos__texto{
+  width: min(92%, 560px);
+  max-width: none;
+  transform: translate(-50%, -50%);
+  padding: 18px 18px 20px;
+  border-radius: 16px;
+  background: rgba(0,0,0,.35);
+}
+
+.documentos__section .documentos__texto__titulo{
+  font-size: 1.8rem;
+  line-height: 1.15;
+  margin: 0 0 14px 0;
+}
+
+.documentos__periodos{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.documentos__periodo{
+  display: grid;
+  gap: 10px;
+  align-items: start;
+}
+
+.documentos__periodo__label{
+  margin: 0;
+  font-family: lato;
+  font-weight: 800;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.documentos__section .boton__documentos{
+  min-width: 0;
+  width: 100%;
+  max-width: 360px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .imagen__container{
@@ -686,9 +756,9 @@ li{
   box-shadow: 0 22px 60px rgba(0,0,0,.35);
 }
 
-.popup-body{ 
-    position:relative; 
-    display:inline-block;
+.popup-body{
+  position:relative;
+  display:inline-block;
 }
 
 /* botón cerrar */
@@ -715,7 +785,7 @@ li{
   display: block;
   width: 100%;
   height: auto;
-  max-height: 78vh; /* evita modal gigante */
+  max-height: 78vh;
   object-fit: contain;
   background: #fff;
 }
@@ -724,7 +794,6 @@ li{
 .popup-actions{
   position: static !important;
   transform: none !important;
-
   padding: 18px 18px 22px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -733,97 +802,98 @@ li{
   border-top: 1px solid rgba(17,64,113,.12);
 }
 
-/* botones */
-.popup-actions .btn{
-  width: 100%;
-  min-height: 58px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-
-  padding: 14px 16px;
-  border-radius: 14px;
-
-  background: var(--sud-green);
-  color: #fff;
-  text-decoration: none;
-
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 1.1;
-  text-align: center;
-
-  box-shadow: 0 10px 22px rgba(0,0,0,.16);
-}
-
-
+/* Botón base (una sola definición, para evitar que se pise) */
 .btn{
-  display:inline-block;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
   padding:12px 22px;
-  font-size:16px; font-weight:600; letter-spacing:.5px;
-  background:#42b72a; color:#fff; text-decoration:none;
-  border-radius:6px; text-align:center; white-space:nowrap;
+  font-size:16px;
+  font-weight:600;
+  letter-spacing:.5px;
+  background:#42b72a;
+  color:#fff;
+  text-decoration:none;
+  border-radius:6px;
+  text-align:center;
+  white-space:nowrap;
   font-family: lato;
 }
 
+.btn-icon{
+  width:20px;
+  height:20px;
+  fill:currentColor;
+  display:block;
+}
 
+/* Botones del popup: estilo pro por encima del .btn base */
+.popup-actions .btn{
+  width: 100%;
+  min-height: 58px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--sud-green);
+  color: #fff;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.1;
+  box-shadow: 0 10px 22px rgba(0,0,0,.16);
+}
+
+.popup-actions .btn span{
+  display: block;
+}
+
+/* overlay buttons (si los usa en alguna imagen antigua) */
 .btn-overlay{
   font-size: 13px;
-  position:absolute; 
-  left:50%; 
+  position:absolute;
+  left:50%;
   transform:translateX(-50%);
-  bottom:31%;                  
+  bottom:31%;
   box-shadow:0 4px 12px rgba(0,0,0,.25);
   margin:0;
 }
 
 .btn-overlay-2{
   font-size: 13px;
-  position:absolute; 
-  left:50%; 
+  position:absolute;
+  left:50%;
   transform:translateX(-50%);
-  bottom:21%;                  
+  bottom:21%;
   box-shadow:0 4px 12px rgba(0,0,0,.25);
   margin:0;
 }
 
 .btn-overlay-3{
   font-size: 13px;
-  position:absolute; 
-  left:50%; 
+  position:absolute;
+  left:50%;
   transform:translateX(-50%);
-  bottom:11%;                  
+  bottom:11%;
   box-shadow:0 4px 12px rgba(0,0,0,.25);
   margin:0;
 }
 
-.btn{ display:flex; align-items:center; justify-content:center; gap:10px; }
-.btn-icon{ width:20px; height:20px; fill:currentColor; display:block; }
-
-
-.popup-actions .btn span{
-  display: block;
+.recaptcha-wrapper{
+  width: 100%;
+  overflow: hidden;
 }
 
-.recaptcha-wrapper {
-    width: 100%;
-    overflow: hidden;
+.recaptcha-wrapper > div{
+  transform-origin: 0 0;
 }
 
-.recaptcha-wrapper > div {
-    transform-origin: 0 0;
+.recaptcha-error{
+  display: none;
+  color: #c62828;
+  font-size: 14px;
+  margin-top: 0.5rem;
 }
 
-.recaptcha-error {
-    display: none;
-    color: #c62828;
-    font-size: 14px;
-    margin-top: 0.5rem;
-}
-
-/* responsive */
+/* responsive popup */
 @media (max-width: 560px){
 
   .popup-img{
@@ -854,14 +924,9 @@ li{
   }
 }
 
-
 /* Bloqueo scroll cuando está abierto */
 body.popup-open{
   overflow: hidden;
-}
-
-.popup-open {
-    overflow: hidden;
 }
 
 /* =========================
@@ -916,15 +981,6 @@ body.popup-open{
     border-radius: 50%;
     text-align: left;
   }
-
-  .documentos__texto{
-    max-width: 350px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(75%, -50%);
-    overflow: hidden;
-  }
 }
 
 /* =========================
@@ -957,7 +1013,6 @@ body.popup-open{
     padding: 0;
   }
 
-
   .nav__sociales .nav__list .nav__link{
     margin: auto;
   }
@@ -980,12 +1035,11 @@ body.popup-open{
     place-items: center;
   }
 
-
-    .contacto__title p{
+  .contacto__title p{
     font-size: 1.2rem;
   }
 
-    .contacto__form form{
+  .contacto__form form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -996,12 +1050,10 @@ body.popup-open{
     width: 95%;
   }
 
-
   .contacto__whatsapp{
-  width: 95%;
-  margin: auto;
+    width: 95%;
+    margin: auto;
   }
-
 
   .cards{
     justify-content: center;
@@ -1068,6 +1120,11 @@ body.popup-open{
   .documentos__container{
     width: 100%;
     overflow: hidden;
+  }
+
+  /* NCG501 en 1 columna (solo este bloque) */
+  .documentos__section .documentos__periodos{
+    grid-template-columns: 1fr;
   }
 
   .resumen__texto{

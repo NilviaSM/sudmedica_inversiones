@@ -1,13 +1,23 @@
 <?php
 
+// lang/en/messages.php
+
 return [
     'Lenguaje' => 'Language',
     'Inicio' => 'Home',
     'Nosotros' => 'About Us',
     'Noticias' => 'News',
-    'Sustentabilidad'=>'Sustainability',
+    'Sustentabilidad' => 'Sustainability',
     'Documentos' => 'Documents',
+
+    // Menu / section
     'Resumen' => 'Summary <br> NCG501',
+
+    // NEW KEYS (for the NCG501 section and periods)
+    'Resumen_NCG501_Titulo' => 'Related Party Transactions Summary',
+    'Resumen_NCG501_Primer_Semestre_2025' => 'First Semester 2025',
+    'Resumen_NCG501_Segundo_Semestre_2025' => 'Second Semester 2025',
+
     'Contacto' => 'Contact',
     'Carrusel_Primera_Clinica' => 'OUR FIRST CLINIC',
     'Carrusel_Empresa_Bolsa' => 'THE FIRST JUNIOR COMPANY LISTED ON THE STOCK EXCHANGE',
@@ -25,11 +35,16 @@ return [
     'Contacto_Whatsapp' => 'You can also contact us via Whatsapp:',
     'Contacto_Enviar_Mensaje' => 'Send message',
     'Contacto_Llamar' => 'Call',
+
     'Nosotros_Historia' => 'The creation of Sudmédica dates back to 2017, when <b>Surgeon Mauricio Cortés and Commercial Engineer César Mendoza</b> identified a growing lack of infrastructure in the health sector in regions of Chile and America. They proposed building a network of clinics, an idea they shared with <b>Industrial Civil Engineer Ian Couso</b> (with extensive experience in the real estate sector). In 2018, these three managing partners established the company <b>Sudmédica Quillota S.A.</b>',
+
     'Nosotros_Directorio' => 'Directory',
+
     'Nosotros_Equipo' => 'The Sudmédica team is made up of a multidisciplinary group of professionals, including industrial engineers, commercial engineers, doctors, architects, among others. The company supports its expansion through market studies that validate its ability to build in Chile and several countries in America.<br><br>
         Although it is currently in a study and planning phase, Sudmédica has already made significant progress with the materialization of its first project in the Valparaíso region, specifically in the city of Quillota. This clinic, projected as a medium-high and high-complexity center, will have a significant impact on the region, with the goal of having the largest number of in-house doctors at the time of its opening.<br><br>A key aspect of this model is that doctors, in addition to being shareholders of the company, are owners of their offices, which were acquired by specialties. The building will have 73 medical offices, 7 operating rooms, a complete imaging infrastructure, hospitalization services, a clinical laboratory, and areas dedicated to sample collection. This innovative approach not only guarantees high-quality service but also presents an attractive opportunity for investors looking to participate in the growth of a high-potential project in the health sector.',
+
     'Nosotros_Edificio' => 'The SUDMÉDICA clinical building located in Quillota considered in its construction 73 medical offices (consultation rooms), 7 operating rooms, spaces for imaging services that will include an MRI scanner, X-rays, mammography, computed axial tomography (CAT), and 4 ultrasound machines. In addition, it will have 40 hospitalization beds, areas for sample collection, and its own clinical laboratory, which will allow timely diagnoses and effective treatments. All this in a modern facility designed to meet the health needs of the community with state-of-the-art technology.',
+
     'Nosotros_Edificio_Detalles' => [
         '6-story building.',
         'Doctors and health professionals from various specialties own their offices.',
@@ -38,10 +53,11 @@ return [
         'All our professionals in the area are registered with the Superintendency of Health.',
         'High-quality standards.',
     ],
+
     'Directorio_Card_Angel_Ocupation' => 'PRESIDENT',
     'Directorio_Card_Angel_Description' => 'Andritz Certified Site Manager, Andritz Global Site Operations (GSO), Austria. Certificate Project Management Professional (PMP N°1930249), Project Management Institute. Master in Business Management, Universidad Adolfo Ibañez, Chile. Mechanical Engineer, Universidad Nacional Experimental Politécnica Antonio José de Sucre, Venezuela. Experience in Project and Contract Management for Transnational Companies (Andritz Chile ltda, Tractebel Engineering Chile S.A., among others), in the Renewable Energy Generation industry in Venezuela, Brazil, and Chile. Director of Constructora Red Médica SpA.',
     'Directorio_Card_Gerson_Ocupation' => 'DIRECTOR',
-    'Directorio_Card_Gerson_Description' => 'Medical Doctor from the University of Chile, specialized under Law 16.744, with experience in emergency services, outpatient clinics, occupational medicine, and elderly care. Skill',
+    'Directorio_Card_Gerson_Description' => 'Medical Doctor from the University of Chile, specialized under Law 16.744, with experience in emergency services, outpatient clinics, occupational medicine, and elderly care.',
     'Directorio_Card_Maria_Ocupation' => 'DIRECTOR',
     'Directorio_Card_Maria_Description' => 'Commercial Engineer from the Autonomous University of Chile; Auditor Accountant from the Metropolitan Technological University; Bachelor of Education from the Miguel de Cervantes University. Specialist in economic crime investigation, former officer of the Chilean Investigative Police, currently working as a businesswoman in the real estate and education sectors. She was Director at Sociedad Educacional Camilo Henríquez S.S., El Almendral S.A., Sembrando Futuro S.A., Corporación Educacional Altos del Huerto S.A.',
     'Directorio_Card_Claudio_Ocupation' => 'DIRECTOR',
@@ -49,20 +65,30 @@ return [
     'Directorio_Card_Fernando_Ocupation' => 'DIRECTOR',
     'Directorio_Card_Fernando_Description' => 'Chemical Civil Engineer from Pontificia Universidad Católica de Valparaíso and Master of Business Administration from Universidad Adolfo Ibañez. He has developed his professional career in large-scale copper mining, mainly in the areas of planning and mining operations. He has been responsible for commissioning greenfield operations and also in consolidated businesses. His knowledge and career allowed him to work in both the state-owned industry (Codelco Divisions El Salvador and Gabriela Mistral) and the private sector (SCMMLCC Caserones, AMSA, and Glencore), holding executive positions and always aiming to ensure the safety of people and create shareholder value.',
     'Directorio_Card_VerMas' => 'See more...',
+
     'Documentos_Memoria_2024' => '2024 Report Pdf',
     'Jea_RMSI2025' => 'Act 06/09/25',
     'Jea_RMSI' => 'Act 05/07/2025',
+
+    // Existing labels (keep)
     'Documentos_Resumen_transacciones' => 'Related Party Transactions Summary (NCG501)',
     'Documentos_Operaciones_2024' => 'RELATED PARTY TRANSACTIONS REPORT 2024',
     'Resumen_transacciones' => 'Related Party Transactions Summary (NCG501)',
     'Primer_semestre_2025' => 'First Semester 2025',
+
     'Documentos_EEFF_Consolidado' => 'Consolidated Financial Statements Pdf',
     'Documentos_Memoria_2023' => '2023 Report Pdf',
     'Documentos_Descargar' => 'Download',
-    "volver_inicio"=> "Back to Home",
-    "sustentabilidad_title"=>"Health, Employment and Territory: Our Sustainable Commitment",
-    "sustentabilidad_column_01"=>"Our clinic project in Quillota has a useful life of 60 years and will create 350 new direct jobs (not including medical professionals). This means that an employee could easily work at our institution from the beginning of their career until retirement, which represents a high possibility of job stability. Furthermore, the clinic's operation will require many services that will be outsourced, benefiting the city's entrepreneurs and creating indirect sources of employment. <br><br>Quillota will have one of the three largest clinics in the Valparaíso Region, which will imply an increase in the appreciation of land and real estate in the city, a situation that has already been seen, especially in the entire area adjacent to the project, which has experienced sustained growth. <br><br>The building includes 73 medical offices, allowing it to serve approximately 2,628 users daily, with a potential for 840,000 visits per year.",
-    "sustentabilidad_column_02"=>"coming from different points in the Valparaíso Region and the closest cities in the Coquimbo Region. We expect a total turnover of 2 million people per year, including users, companions and beneficiaries of the clinical area, which will strengthen the city's tourism sector. <br><br>Without a doubt, Quillota will be one of the cities with the largest number of specialist and subspecialist doctors, allowing the middle-class population to opt for top-quality healthcare services at an affordable price. Another strength that allows the city to maintain its position in the current Quality of Life Ranking in the region, surpassed only by the commune of Concón and above that of Viña del Mar.",
+    "volver_inicio" => "Back to Home",
+
+    "sustentabilidad_title" => "Health, Employment and Territory: Our Sustainable Commitment",
+    "sustentabilidad_column_01" => "Our clinic project in Quillota has a useful life of 60 years and will create 350 new direct jobs (not including medical professionals). This means that an employee could easily work at our institution from the beginning of their career until retirement, which represents a high possibility of job stability. Furthermore, the clinic's operation will require many services that will be outsourced, benefiting the city's entrepreneurs and creating indirect sources of employment. <br><br>Quillota will have one of the three largest clinics in the Valparaíso Region, which will imply an increase in the appreciation of land and real estate in the city, a situation that has already been seen, especially in the entire area adjacent to the project, which has experienced sustained growth. <br><br>The building includes 73 medical offices, allowing it to serve approximately 2,628 users daily, with a potential for 840,000 visits per year.",
+    "sustentabilidad_column_02" => "coming from different points in the Valparaíso Region and the closest cities in the Coquimbo Region. We expect a total turnover of 2 million people per year, including users, companions and beneficiaries of the clinical area, which will strengthen the city's tourism sector. <br><br>Without a doubt, Quillota will be one of the cities with the largest number of specialist and subspecialist doctors, allowing the middle-class population to opt for top-quality healthcare services at an affordable price. Another strength that allows the city to maintain its position in the current Quality of Life Ranking in the region, surpassed only by the commune of Concón and above that of Viña del Mar.",
+
     "tasacion_urbana" => "Urban Appraisal Report Pdf",
-    "reporte_2025" => "2025 Report Pdf",
+
+    // IMPORTANT:
+    // Previously it said "RESUME NCG501" (typo + wrong meaning for this key).
+    // This key seems to be used as a document title in the Documents page.
+    "reporte_2025" => "Related Party Transactions Report 2025",
 ];

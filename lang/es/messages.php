@@ -7,9 +7,17 @@ return [
     'Inicio' => 'Inicio',
     'Nosotros' => 'Nosotros',
     'Noticias' => 'Noticias',
-    'Sustentabilidad' =>'Sustentabilidad',
+    'Sustentabilidad' => 'Sustentabilidad',
     'Documentos' => 'Documentos',
+
+    // Menú / sección NCG501
     'Resumen' => 'Resumen <br> NCG501',
+
+    // NUEVAS CLAVES (para la sección y períodos)
+    'Resumen_NCG501_Titulo' => 'Resumen de Transacciones con Partes Relacionadas',
+    'Resumen_NCG501_Primer_Semestre_2025' => 'Primer Semestre 2025',
+    'Resumen_NCG501_Segundo_Semestre_2025' => 'Segundo Semestre 2025',
+
     'Contacto' => 'Contacto',
     'Carrusel_Primera_Clinica' => 'NUESTRA PRIMERA CLÍNICA',
     'Carrusel_Empresa_Bolsa' => 'LA PRIMERA EMPRESA JUNIOR QUE COTIZA EN BOLSA',
@@ -27,11 +35,16 @@ return [
     'Contacto_Whatsapp' => 'También puedes comunicarte a través de Whatsapp:',
     'Contacto_Enviar_Mensaje' => 'Enviar mensaje',
     'Contacto_Llamar' => 'Llamar',
+
     'Nosotros_Historia' => 'La creación de Sudmédica se remonta al año 2017, cuando el <b>Médico Cirujano, Mauricio Cortés y el Ingeniero Comercial, César Mendoza</b>, detectaron una falta de infraestructura creciente del área salud en regiones de Chile y América, por lo que propusieron construir una red de clínicas, idea que compartieron con el <b>Ingeniero Civil Industrial Ian Couso</b> (con amplia experiencia en el sector inmobiliario). En el año 2018, estos tres socios gestores constituyen la sociedad <b>Sudmédica Quillota S.A.</b>',
+
     'Nosotros_Directorio' => 'Directorio',
+
     'Nosotros_Equipo' => 'El equipo de Sudmédica está compuesto por un grupo multidisciplinario de profesionales, entre los que se incluyen ingenieros industriales, ingenieros comerciales, médicos, arquitectos, entre otros. La compañía respalda su expansión mediante estudios de mercado que avalan su capacidad para construir en Chile y en varios países de América.<br><br>
         Aunque actualmente se encuentra en una fase de estudio y planificación, Sudmédica ya ha alcanzado un importante avance con la materialización de su primer proyecto en la región de Valparaíso, específicamente en la ciudad de Quillota. Esta clínica, que se proyecta como un centro de mediana-alta y alta complejidad, tendrá un impacto significativo en la región, con la meta de contar con la mayor cantidad de médicos de planta al momento de su apertura.<br><br>Un aspecto clave de este modelo es que los médicos, además de ser accionistas de la compañía, son propietarios de sus consultas, las cuales se adquirieron por especialidades. El edificio contará con 73 consultas médicas, 7 quirófanos, una infraestructura de imagenología completa, servicios de hospitalización, laboratorio clínico y áreas dedicadas a la toma de muestras. Este enfoque innovador no solo garantiza un servicio de alta calidad, sino que también presenta una oportunidad atractiva para los inversionistas que busquen participar en el crecimiento de un proyecto con gran potencial en el sector de la salud.',
+
     'Nosotros_Edificio' => 'El edificio clínico de SUDMÉDICA ubicado en Quillota, consideró en su construcción 73 oficinas médicas (box de atención), 7 quirófanos, espacios para servicios de imagenologías que incluirá resonador magnético, rayos X, mamografía, tomografía axial computarizada (TAC) y 4 ecógrafos. Además, dispondrá de 40 camas de hospitalización, áreas para toma de muestras, y laboratorio clínico propio, lo que permitirá entregar diagnósticos oportunos y tratamientos eficaces. Todo esto en una instalación moderna, diseñada para responder a las necesidades de salud de la comunidad con tecnología de última generación.',
+
     'Nosotros_Edificio_Detalles' => [
         'Edificio de 6 pisos.',
         'Médicos y profesionales de la salud de distintas especialidades dueños de sus consultas.',
@@ -40,6 +53,7 @@ return [
         'Todos nuestros profesionales del área se encuentran inscritos en la Superintendencia de Salud.',
         'Estándares de alta calidad.',
     ],
+
     'Directorio_Card_Angel_Ocupation' => 'PRESIDENTE',
     'Directorio_Card_Angel_Description' => 'Andritz Certified Site Manager, Andritz Global Site Operations (GSO), Austria. Certificate Project Management Professional (PMP N°1930249), Project Management Institute. Magister en gestión e Negocios, Universidad Adolfo Ibañez, Chile. Ingeniero Mecánico, Universidad Nacional Experimental Politécnica Antonio José de Sucre, Venezuela. Experiencia en Gerencia de Proyectos y Contratos para Empresas Transnacionales (Andritz Chile ltda, Tractebel Engineering Chile S.A., entre otras), en la industria de Generación de Energías Renovables en Venezuela, Brasil y Chile. Director de Constructora Red Médica SpA.',
     'Directorio_Card_Gerson_Ocupation' => 'DIRECTOR',
@@ -47,24 +61,36 @@ return [
     'Directorio_Card_Maria_Ocupation' => 'DIRECTORA',
     'Directorio_Card_Maria_Description' => 'Ingeniero Comercial de la Universidad Autónoma de Chile; Contador Auditor de la Universidad Tecnológica Metropolitana; Licenciatura en Educación de la Universidad Miguel de Cervantes. Especialista en investigación de delitos económicos, exoficial de la policía de investigaciones de Chile, Actualmente se desempeña como empresaria en el sector inmobiliario y en el sector educación. Fue Directora en Sociedad Educacional Camilo Henríquez S.S., El Almendral S.A., Sembrando Futuro S.A., Corporación Educacional Altos del Huerto S.A.',
     'Directorio_Card_Claudio_Ocupation' => 'DIRECTOR',
-    'Directorio_Card_Claudio_Description' => 'Graduado como Guardiamarina en la  Escuela Naval "Arturo Prat". Se especializó en Aviación Naval y Estado Mayor. Magister en Ciencias Navales y Marítimas de la Academia de Guerra Naval, Magister en Dirección Estratégica de la Universidad Adolfo Ibáñez y de la Academia de Guerra Naval. Fue Comandante de la Lancha Misilera "Serrano", la Barcaza "Rancagua", la Fragata "Almirante Williams", buque insignia de la Escuadra Nacional, y el Buque Escuela "Esmeralda”. Se desempeñó como Agregado de Defensa a la Embajada de Chile en la República de Corea, y con motivo del Estado de Excepción Constitucional de Catástrofe, a raíz de la pandemia por Covid-19, se desempeñó como Director de Operaciones Conjuntas en la Jefatura de la Defensa para la Región de Valparaíso.  Sus destinaciones incluyen la responsabilidad y dirección como comandante de la Aviación Naval, Comandante en Jefe de la Cuarta Zona Naval, Comandante de Operaciones Navales y finalmente y con el grado de Vicealmirante de la Armada de Chile, se acoge a retiro el año 2025.',
+    'Directorio_Card_Claudio_Description' => 'Graduado como Guardiamarina en la  Escuela Naval "Arturo Prat". Se especializó en Aviación Naval y Estado Mayor. Magister en Ciencias Navales y Marítimas de la Academia de Guerra Naval, Magister en Dirección Estratégica de la Universidad Adolfo Ibáñez y de la Academia de Guerra Naval. Fue Comandante de la Lancha Misilera "Serrano", la Barcaza "Rancagua", la Fragata "Almirante Williams", buque insignia de la Escuadra Nacional, y el Buque Escuela "Esmeralda”. Se desempeñó como Agregado de Defensa a la Embajada de Chile en la República de Corea, y con motivo del Estado de Excepción Constitucional de Catástrofe, a raíz de la pandemia por Covid-19, se desempeñó como Director de Operaciones Conjuntas en la Jefatura de la Defensa para la Región de Valparaíso.  Sus destinaciones incluyen la responsabilidad y dirección como comandante de la Aviación Naval, Comandante en Jefe de la Cuarta Zona Naval, Comandante de Operaciones Navales y finalmente y con el grado de Vicealmirante de la Armada de Chile, se acoge a retiro el año 2025.',
     'Directorio_Card_Fernando_Ocupation' => 'DIRECTOR',
     'Directorio_Card_Fernando_Description' => 'Ingeniero Civil Químico de la Pontificia Universidad Católica de Valparaíso y Master of Business Administration de la Universidad Adolfo Ibañez. Ha desarrollado su carrera profesional en la gran minería del cobre principalmente en las áreas de planificación y operaciones mineras. Ha sido responsable de puestas en marcha de operaciones greenfield y también en negocios consolidados. Su conocimiento y trayectoria le permitió desempeñarse tanto en la industria estatal Codelco Divisiones El Salvador y Gabriela Mistral como en la privada SCMMLCC Caserones, AMSA y Glencore, desempeñando cargos ejecutivos y teniendo siempre el objetivo de atender la seguridad de las personas y la creación de valor al accionista.',
     'Directorio_Card_VerMas' => 'Ver más...',
+
     'Documentos_Memoria_2024' => 'Memoria 2024 Pdf',
     'Jea_RMSI2025' => 'Acta 06/09/25',
     'Jea_RMSI' => 'Acta 05/07/2025',
+
+    // Esto sigue siendo 2024 (NO NCG501)
     'Documentos_Operaciones_2024' => 'REPORTE DE OPERACIONES CON PARTES RELACIONADAS 2024',
+
+    // Si ya no se usa, puede dejarlo o eliminarlo después de validar dónde lo consumen
     'Resumen_transacciones' => 'Resumen de transacciones con partes relacionadas (NCG501)',
     'Primer_semestre_2025' => 'Primer semestre 2025',
     'Documentos_Resumen_transacciones' => 'Resumen de transacciones con partes relacionadas (NCG501)',
+
     'Documentos_EEFF_Consolidado' => 'EEFF Consolidado Pdf',
     'Documentos_Memoria_2023' => 'Memoria 2023 Pdf',
     'Documentos_Descargar' => 'Descargar',
-    "volver_inicio"=> "Volver al Inicio",
-    "sustentabilidad_title"=>"Salud, Empleo y Territorio: Nuestro Compromiso Sustentable",
-    "sustentabilidad_column_01"=>"Nuestro proyecto clínico en Quillota tiene una vida útil de 60 años y creará 350 nuevos puestos de trabajo directos (sin considerar a los profesionales médicos). Esto implica que un colaborador podría perfectamente trabajar desde el inicio de su carrera hasta su jubilación en nuestra institución, lo que representa una alta posibilidad de estabilidad laboral. Además, la operación de la clínica requerirá de muchos servicios que se externalizarán, favoreciendo a los empresarios de la ciudad y creando fuentes indirectas de trabajo.<br><br>Quillota contará con una de las 3 clínicas de mayor envergadura de la Región de Valparaíso, lo que implicará un aumento en la valorización de los terrenos e inmuebles en la ciudad, situación que ya se ha estado visualizando, en especial en todo el territorio colindante al proyecto, que ha vivido un crecimiento sostenido.<br><br>El edificio considera 73 oficinas médicas, lo que permite atender aproximadamente a 2.628 usuarios diarios, con un potencial de 840.000 atenciones anuales,",
-    "sustentabilidad_column_02"=>"provenientes de distintos puntos de la Región de Valparaíso y las ciudades más cercanas de la Región de Coquimbo. Esperamos una rotación total de 2 millones de personas al año, entre usuarios, acompañantes y beneficiarios del área clínica, lo que fortalecerá el sector turístico de la ciudad.<br><br>Sin duda alguna, Quillota será una de las ciudades con mayor cantidad de médicos especialistas y subespecialistas, permitiendo a la población de clase media optar por prestaciones de salud de primera calidad a un precio accesible. Otra fortaleza que admite a la ciudad mantener su puesto en el actual “Ranking de Calidad de Vida” de la región, sólo superada por la comuna de Concón y por sobre la de Viña del Mar.",
+    "volver_inicio" => "Volver al Inicio",
+
+    "sustentabilidad_title" => "Salud, Empleo y Territorio: Nuestro Compromiso Sustentable",
+    "sustentabilidad_column_01" => "Nuestro proyecto clínico en Quillota tiene una vida útil de 60 años y creará 350 nuevos puestos de trabajo directos (sin considerar a los profesionales médicos). Esto implica que un colaborador podría perfectamente trabajar desde el inicio de su carrera hasta su jubilación en nuestra institución, lo que representa una alta posibilidad de estabilidad laboral. Además, la operación de la clínica requerirá de muchos servicios que se externalizarán, favoreciendo a los empresarios de la ciudad y creando fuentes indirectas de trabajo.<br><br>Quillota contará con una de las 3 clínicas de mayor envergadura de la Región de Valparaíso, lo que implicará un aumento en la valorización de los terrenos e inmuebles en la ciudad, situación que ya se ha estado visualizando, en especial en todo el territorio colindante al proyecto, que ha vivido un crecimiento sostenido.<br><br>El edificio considera 73 oficinas médicas, lo que permite atender aproximadamente a 2.628 usuarios diarios, con un potencial de 840.000 atenciones anuales,",
+    "sustentabilidad_column_02" => "provenientes de distintos puntos de la Región de Valparaíso y las ciudades más cercanas de la Región de Coquimbo. Esperamos una rotación total de 2 millones de personas al año, entre usuarios, acompañantes y beneficiarios del área clínica, lo que fortalecerá el sector turístico de la ciudad.<br><br>Sin duda alguna, Quillota será una de las ciudades con mayor cantidad de médicos especialistas y subespecialistas, permitiendo a la población de clase media optar por prestaciones de salud de primera calidad a un precio accesible. Otra fortaleza que admite a la ciudad mantener su puesto en el actual “Ranking de Calidad de Vida” de la región, sólo superada por la comuna de Concón y por sobre la de Viña del Mar.",
+
     "tasacion_urbana" => "Tasación Urbana Pdf",
-    "reporte_2025" => "REPORTE DE OPERACIONES CON PARTES RELACIONADAS 2025"
+
+    // IMPORTANTE:
+    // Antes estaba apuntando a "RESUMEN NCG501" lo que causaba confusión, porque ya existe la sección Resumen/NCG501.
+    // Si este texto se muestra en Documentos, cámbielo a algo consistente con el PDF real.
+    "reporte_2025" => "Reporte de Operaciones con Partes Relacionadas 2025",
 ];

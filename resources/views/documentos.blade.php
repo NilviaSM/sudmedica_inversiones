@@ -14,22 +14,60 @@
 </head>
 <body>
     @include("snipets.navbar")
+
     <div class="documentos">
-        
-      <picture class="documentos__container">
+
+        {{-- =========================
+            RESUMEN NCG501 (nuevo)
+           ========================= --}}
+        <section class="documentos__section" aria-label="RESUMEN NCG501">
+            <h1 class="documentos__section__title">{!! __('messages.Resumen') !!}</h1>
+
+            <picture class="documentos__container">
+                <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
+                <div class="documentos__texto">
+                    <h1 class="documentos__texto__titulo">{{ __('messages.Resumen_NCG501_Titulo') }}</h1>
+
+                    <div class="documentos__periodos">
+                        <div class="documentos__periodo">
+                            <p class="documentos__periodo__label">{{ __('messages.Resumen_NCG501_Primer_Semestre_2025') }}</p>
+                            <a href="{{ route('resumen_ncg501_primer_semestre_2025') }}" class="boton__documentos">
+                                {{ __('messages.Documentos_Descargar') }}
+                            </a>
+                        </div>
+
+                        <div class="documentos__periodo">
+                            <p class="documentos__periodo__label">{{ __('messages.Resumen_NCG501_Segundo_Semestre_2025') }}</p>
+                            <a href="{{ route('resumen_ncg501_segundo_semestre_2025') }}" class="boton__documentos">
+                                {{ __('messages.Documentos_Descargar') }}
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </picture>
+        </section>
+
+        {{-- =========================
+            DOCUMENTOS (existente)
+           ========================= --}}
+
+        <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
                 <h1 class="documentos__texto__titulo">{{ __('messages.reporte_2025') }}</h1>
                 <a href="{{route('reporte_2025')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
             </div>
         </picture>
-     <picture class="documentos__container">
+
+        <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
                 <h1 class="documentos__texto__titulo">{{ __('messages.tasacion_urbana') }}</h1>
                 <a href="{{route('tasacion_urbana')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
             </div>
         </picture>
+
         <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
@@ -37,15 +75,15 @@
                 <a href="{{route('jearmsi')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
             </div>
         </picture>
-        
-         <picture class="documentos__container">
+
+        <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
                 <h1 class="documentos__texto__titulo">{{ __('messages.Jea_RMSI2025') }}</h1>
                 <a href="{{route('jearmsi2025')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
             </div>
         </picture>
-        
+
         <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
@@ -53,6 +91,7 @@
                 <a href="{{route('memoriaPdf')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
             </div>
         </picture>
+
         <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
@@ -60,6 +99,7 @@
                 <a href="{{route('operacionesxlsx')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
             </div>
         </picture>
+
         <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
@@ -67,6 +107,7 @@
                 <a href="{{route('consolidadoPdf')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
             </div>
         </picture>
+
         <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
@@ -74,9 +115,12 @@
                 <a href="{{route('memoria2023Pdf')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
             </div>
         </picture>
+
     </div>
+
     @include('snipets.contacto')
     @include('volver_inicio')
+
     <script src="{{asset('js/script.js')}}"></script>
     <script src="{{asset('js/contacto.js')}}"></script>
 </body>
