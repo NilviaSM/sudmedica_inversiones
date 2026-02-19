@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('css/popup.css') }}">
   <link rel="stylesheet" href="{{ asset('css/contacto.css') }}">
+  {{-- Recomendado: si crea css/resumen.css, cargarlo al final --}}
+  {{-- <link rel="stylesheet" href="{{ asset('css/resumen.css') }}"> --}}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +22,7 @@
   @include("snipets.navbar")
 
   <div class="documentos">
-    <picture class="documentos__container">
+    <div class="documentos__container">
       <img src="{{ asset('img/sudmedica_docs2.png') }}" alt="" class="documentos__img">
 
       <div class="resumen__texto">
@@ -28,10 +30,7 @@
         <div class="resumen_textos">
           <p class="resumen__tag">RESUMEN NCG501</p>
 
-          <!-- IMPORTANTE:
-               NO agregue "(NCG501)" manualmente acá si su traducción ya lo trae.
-               Deje el título "limpio" y el NCG501 lo muestra el tag.
-          -->
+          {{-- Deje el título “limpio” para que traducciones no dupliquen (NCG501) --}}
           <h1 class="resumen__titulo">
             {{ __('messages.Resumen_transacciones') }}
           </h1>
@@ -41,20 +40,20 @@
         <div class="resumen-ncg501__links" aria-label="Descargas NCG501">
           <div class="resumen-ncg501__row">
             <span class="resumen-ncg501__periodo">Segundo Semestre 2025</span>
-            <a class="resumen-ncg501__download" href="{{route('reporte_2025')}}">
+            <a class="resumen-ncg501__download" href="{{ route('reporte_2025') }}">
               Descargar
             </a>
           </div>
 
           <div class="resumen-ncg501__row">
             <span class="resumen-ncg501__periodo">Primer Semestre 2025</span>
-            <a class="resumen-ncg501__download" href="{{route('Reporte_Partes_Relacionadas')}}">
+            <a class="resumen-ncg501__download" href="{{ route('Reporte_Partes_Relacionadas') }}">
               Descargar
             </a>
           </div>
         </div>
       </div>
-    </picture>
+    </div>
   </div>
 
   @include('snipets.contacto')
