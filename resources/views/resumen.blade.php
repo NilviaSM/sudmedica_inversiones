@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
   <link rel="stylesheet" href="{{ asset('css/popup.css') }}">
   <link rel="stylesheet" href="{{ asset('css/contacto.css') }}">
-  {{-- Recomendado: si crea css/resumen.css, cargarlo al final --}}
-  {{-- <link rel="stylesheet" href="{{ asset('css/resumen.css') }}"> --}}
+  <link rel="stylesheet" href="{{ asset('css/resumen.css') }}"> 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
