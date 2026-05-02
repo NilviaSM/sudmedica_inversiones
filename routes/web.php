@@ -59,6 +59,15 @@ Route::middleware([SetLocale::class])->group(function () {
     Route::get('/noticias', [NoticiasController::class, 'index'])->name('noticias.index');
 });
 
+Route::get('/documentos/memoria25', function () {
+    $filePath = public_path('documents/SUDMEDICA_MEMORIA_2025.pdf');
+    if (!file_exists($filePath)) {
+        abort(404, 'El archivo no existe.');
+    }
+
+    return response()->download($filePath, 'SUDMEDICA_MEMORIA_2025.pdf', ['Content-Type' => 'application/pdf']);
+})->name('memoria2025Pdf');
+
 Route::get('/documentos/memoria', function () {
     $filePath = public_path('documents/MEMORIA_2024_10.04.pdf');
     if (!file_exists($filePath)) {

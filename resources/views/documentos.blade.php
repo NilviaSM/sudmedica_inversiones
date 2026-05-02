@@ -37,6 +37,13 @@
         <picture class="documentos__container">
             <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
             <div class="documentos__texto">
+                <h1 class="documentos__texto__titulo">{{ __('messages.Documentos_Memoria_2025') }}</h1>
+                <a href="{{route('memoria2025Pdf')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
+            </div>
+        </picture>
+        <picture class="documentos__container">
+            <img src="{{asset('img/sudmedica_docs.png')}}" alt="" class="documentos__img">
+            <div class="documentos__texto">
                 <h1 class="documentos__texto__titulo">{{ __('messages.Documentos_Memoria_2024') }}</h1>
                 <a href="{{route('memoriaPdf')}}" class="boton__documentos">{{ __('messages.Documentos_Descargar') }}</a>
             </div>

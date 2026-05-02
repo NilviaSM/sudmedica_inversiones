@@ -52,6 +52,7 @@ return [
     'Directorio_Card_Fernando_Description' => 'Ingeniero Civil Químico de la Pontificia Universidad Católica de Valparaíso y Master of Business Administration de la Universidad Adolfo Ibañez. Ha desarrollado su carrera profesional en la gran minería del cobre principalmente en las áreas de planificación y operaciones mineras. Ha sido responsable de puestas en marcha de operaciones greenfield y también en negocios consolidados. Su conocimiento y trayectoria le permitió desempeñarse tanto en la industria estatal Codelco Divisiones El Salvador y Gabriela Mistral como en la privada SCMMLCC Caserones, AMSA y Glencore, desempeñando cargos ejecutivos y teniendo siempre el objetivo de atender la seguridad de las personas y la creación de valor al accionista.',
     'Directorio_Card_VerMas' => 'Ver más...',
     'Documentos_Memoria_2024' => 'Memoria 2024 Pdf',
+    'Documentos_Memoria_2025' => 'Memoria 2025 Pdf',
     'EEFF_Consolidado_Sudmedica_2025-2024' => 'EEFF Consolidado Sudmédica 2025-2024 Pdf',
     'Jea_RMSI2025' => 'Acta 06/09/25',
     'Jea_RMSI' => 'Acta 05/07/2025',
