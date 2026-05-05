@@ -201,6 +201,35 @@ Route::get('/documentos/reporte_2025', function () {
     );
 })->name('reporte_2025');
 
+Route::get('/documentos/citacion-jea-052026', function () {
+    $filePath = public_path('documents/CITACION-JEA052026.pdf');
+
+    if (!file_exists($filePath)) {
+        abort(404, 'El archivo no existe.');
+    }
+
+    return response()->download(
+        $filePath,
+        'CITACION-JEA052026.pdf',
+        ['Content-Type' => 'application/pdf']
+    );
+})->name('citacionJEA052026');
+
+
+Route::get('/documentos/poder-jea-16052026', function () {
+    $filePath = public_path('documents/PODER _JEA_16052026.pdf');
+
+    if (!file_exists($filePath)) {
+        abort(404, 'El archivo no existe.');
+    }
+
+    return response()->download(
+        $filePath,
+        'PODER _JEA_16052026.pdf',
+        ['Content-Type' => 'application/pdf']
+    );
+})->name('poderJEA16052026');
+
 Route::get('/contactanos', function () {
     Mail::to('contacto@sudmedica.com')->send(new ContactanosMailable);
     return 'Mensaje enviado';
