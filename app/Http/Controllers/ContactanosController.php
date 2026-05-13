@@ -43,10 +43,10 @@ class ContactanosController extends Controller
 
             $data = $response->json();
 
-            Log::info('Respuesta reCAPTCHA', [
-                'recaptcha_response' => $data,
-                'ip' => $request->ip(),
-            ]);
+            // Log::info('Respuesta reCAPTCHA', [
+            //     'recaptcha_response' => $data,
+            //     'ip' => $request->ip(),
+            // ]);
 
             if (!$response->successful()) {
                 Log::error('Error consultando servicio de reCAPTCHA', [

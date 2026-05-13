@@ -809,8 +809,11 @@ li{
 }
 
 .recaptcha-wrapper {
-  width: 100%;
-  overflow: hidden;
+  display: block;
+  width: 304px;
+  min-height: 78px;
+  overflow: visible;
+  margin-top: 10px;
 }
 
 .recaptcha-wrapper > div {

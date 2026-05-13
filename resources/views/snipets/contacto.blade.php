@@ -56,8 +56,10 @@
             </div>
             <input type="text" placeholder="{{ __('messages.Contacto_Email') }}" name="email" required=True>
             <textarea placeholder="{{ __('messages.Contacto_Mensaje') }}" name="mensaje" required=True></textarea>
-            <!-- Aquí va el reCAPTCHA -->
-             <div class="recaptcha-wrapper">
+            
+             <!-- <p style="color:red; font-weight:bold;">TEST RECAPTCHA</p> -->
+
+            <div class="recaptcha-wrapper">
                 <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.site') }}"></div>
             </div>
             <p id="recaptcha-error" class="recaptcha-error">
