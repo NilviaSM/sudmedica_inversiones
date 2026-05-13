@@ -58,7 +58,7 @@
             <textarea placeholder="{{ __('messages.Contacto_Mensaje') }}" name="mensaje" required=True></textarea>
             <!-- Aquí va el reCAPTCHA -->
              <div class="recaptcha-wrapper">
-                <div class="g-recaptcha" data-sitekey="6Ld8MlIsAAAAAF2TbGGkaGRg-EM40GF9ZjrDh3TR"></div> 
+                <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.site') }}"></div>
             </div>
             <p id="recaptcha-error" class="recaptcha-error">
                 Debes confirmar que no eres un robot

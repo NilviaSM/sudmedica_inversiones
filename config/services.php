@@ -13,11 +13,9 @@ return [
     | a conventional file to locate the various service credentials.
     |
     */
-
-    'recaptcha' => [ 'site' => env('RECAPTCHA_SITE'), 'secret' => env('RECAPTCHA_SECRET'), ],
-
-    'postmark' => [
-        'token' => env('POSTMARK_TOKEN'),
+    'recaptcha' => [
+        'site' => env('RECAPTCHA_SITE_KEY'),
+        'secret' => env('RECAPTCHA_SECRET_KEY'),
     ],
 
     'ses' => [
