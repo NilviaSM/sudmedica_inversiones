@@ -42,7 +42,59 @@
   /* =========================================================
    DEBUG + FIX MOBILE
 ========================================================= */
+/* FIX IOS / IPHONE GRANDE */
+#popup_onload .popup-debug {
+    display: none !important;
+}
 
+#popup_onload .popup-body {
+    align-items: center !important;
+}
+
+#popup_onload .popup-img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+#popup_onload .popup-actions {
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+    align-items: center !important;
+}
+
+#popup_onload .popup-actions .btn {
+    width: 100% !important;
+}
+
+@media screen and (max-width: 768px) {
+    #popup_onload .popup-content {
+        width: 88vw !important;
+        max-width: 420px !important;
+        padding: 16px !important;
+    }
+
+    #popup_onload .popup-img {
+        width: 100% !important;
+        max-width: 320px !important;
+        max-height: 32vh !important;
+    }
+
+    #popup_onload .popup-actions {
+        max-width: 320px !important;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    #popup_onload .popup-img {
+        max-width: 300px !important;
+        max-height: 30vh !important;
+    }
+
+    #popup_onload .popup-actions {
+        max-width: 300px !important;
+    }
+}
 .popup-debug {
     background: red;
     color: white;
