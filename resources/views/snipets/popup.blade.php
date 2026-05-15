@@ -13,10 +13,7 @@
                  alt="Junta de Accionistas"
                  class="popup-img">
 
-            {{-- DEBUG VISUAL --}}
-            <div class="popup-debug">
-                BOTONES ACTIVOS
-            </div>
+           
 
             <div class="popup-actions">
 
