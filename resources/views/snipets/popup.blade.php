@@ -18,6 +18,9 @@
         </svg>  
         DESCARGAR PODER JOA
       </a>
+      <a href="{{ url('/documentos') }}" class="btn btn-overlay">
+    POSTULANTES DIRECTORIO
+</a>
     </div>
   </div>
 </div>
