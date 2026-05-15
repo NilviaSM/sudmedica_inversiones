@@ -35,7 +35,11 @@
     margin: 0 auto 16px auto;
 }
 
-/* BOTONES */
+/* Botones */
+#popup_onload .popup-actions {
+    width: 100%;
+}
+
 #popup_onload .btn-overlay,
 #popup_onload .btn-overlay-2,
 #popup_onload .btn-postulantes {
@@ -78,7 +82,7 @@
     fill: currentColor;
 }
 
-/* BOTÓN CERRAR */
+/* Botón cerrar */
 #popup_onload .close {
     position: absolute;
     top: 12px;
@@ -99,15 +103,18 @@
     padding: 0;
 }
 
-/* TABLET / MOBILE */
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media screen and (max-width: 768px) {
     #popup_onload {
         display: flex !important;
         align-items: flex-start !important;
         justify-content: center !important;
         overflow-y: auto !important;
-        padding-top: 16px !important;
-        padding-bottom: 16px !important;
+        padding-top: 12px !important;
+        padding-bottom: 170px !important;
     }
 
     #popup_onload .popup-content {
@@ -116,9 +123,10 @@
         height: auto !important;
         max-height: none !important;
         overflow: visible !important;
-        margin-top: 16px !important;
-        margin-bottom: 16px !important;
+        margin-top: 12px !important;
+        margin-bottom: 12px !important;
         padding: 12px !important;
+        padding-bottom: 12px !important;
     }
 
     #popup_onload .popup-body {
@@ -130,30 +138,52 @@
     #popup_onload .popup-img {
         width: 100% !important;
         height: auto !important;
-        max-height: 28vh !important;
+        max-height: 32vh !important;
         object-fit: contain !important;
         margin-bottom: 10px !important;
     }
 
-    #popup_onload .btn-overlay,
-    #popup_onload .btn-overlay-2,
-    #popup_onload .btn-postulantes {
-        display: flex !important;
+    #popup_onload .popup-actions {
+        position: fixed !important;
+        left: 50% !important;
+        bottom: 14px !important;
+        transform: translateX(-50%) !important;
+        width: 86vw !important;
+        max-width: 430px !important;
+        z-index: 999999 !important;
+        background: #ffffff !important;
+        padding: 10px !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35) !important;
+        box-sizing: border-box !important;
+    }
+
+    #popup_onload .popup-actions .btn {
         width: 100% !important;
-        min-height: 40px !important;
-        margin-top: 8px !important;
-        margin-bottom: 0 !important;
-        padding: 10px 8px !important;
+        min-height: 38px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 0 0 8px 0 !important;
+        padding: 9px 8px !important;
+        background: #37b821 !important;
+        color: #ffffff !important;
         font-size: 12px !important;
-        flex-shrink: 0 !important;
-        position: relative !important;
-        z-index: 99999 !important;
+        font-weight: 700 !important;
+        line-height: 1.2 !important;
+        border-radius: 8px !important;
+        text-decoration: none !important;
+        box-shadow: none !important;
+    }
+
+    #popup_onload .popup-actions .btn:last-child {
+        margin-bottom: 0 !important;
     }
 
     #popup_onload .btn-icon {
-        width: 16px !important;
-        height: 16px !important;
-        min-width: 16px !important;
+        width: 15px !important;
+        height: 15px !important;
+        min-width: 15px !important;
     }
 
     #popup_onload .close {
@@ -165,16 +195,14 @@
     }
 }
 
-/* MÓVILES PEQUEÑOS */
 @media screen and (max-width: 420px) {
     #popup_onload .popup-img {
-        max-height: 24vh !important;
+        max-height: 30vh !important;
     }
 
-    #popup_onload .btn-overlay,
-    #popup_onload .btn-overlay-2,
-    #popup_onload .btn-postulantes {
+    #popup_onload .popup-actions .btn {
+        min-height: 36px !important;
         font-size: 11px !important;
-        padding: 9px 6px !important;
+        padding: 8px 6px !important;
     }
 }
