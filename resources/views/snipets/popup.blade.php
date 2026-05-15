@@ -39,125 +39,102 @@
     </div>
 </div>
 <style>
- #popup_onload.popup {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow-y: auto;
-    padding: 20px;
-    box-sizing: border-box;
-}
+  /* =========================================================
+   DEBUG + FIX MOBILE
+========================================================= */
 
-#popup_onload .popup-content {
-    width: 430px;
-    max-width: calc(100vw - 32px);
-    background: #ffffff;
-    border-radius: 18px;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-#popup_onload .popup-body {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#popup_onload .popup-img {
-    width: 100%;
-    max-width: 360px;
-    height: auto;
-    display: block;
-    margin: 0 auto 18px auto;
-}
-
-#popup_onload .popup-actions {
-    width: 100%;
-    max-width: 360px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-#popup_onload .btn-overlay,
-#popup_onload .btn-overlay-2,
-#popup_onload .btn-postulantes {
-    width: 100%;
-    min-height: 56px;
-    padding: 12px 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #2fc21f;
-    color: #ffffff !important;
-    border-radius: 9px;
-    border: none;
-    font-size: 15px;
-    font-weight: 700;
+.popup-debug {
+    background: red;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
     text-align: center;
-    text-decoration: none !important;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.22);
-    box-sizing: border-box;
 }
 
-#popup_onload .close {
-    position: absolute;
-    top: 14px;
-    right: 14px;
-    z-index: 10;
-    width: 42px;
-    height: 42px;
-    border: none;
-    border-radius: 50%;
-    background: #ffffff;
-    color: #222222;
-    font-size: 32px;
-    line-height: 1;
-    cursor: pointer;
+.popup-actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 @media screen and (max-width: 768px) {
-    #popup_onload.popup {
-        align-items: flex-start;
-        padding: 18px 12px;
+
+    #popup_onload {
+        overflow-y: auto !important;
+        padding: 16px 0 !important;
+        align-items: flex-start !important;
     }
 
     #popup_onload .popup-content {
-        width: 340px !important;
-        max-width: calc(100vw - 32px) !important;
-        padding: 16px !important;
-        margin: 24px auto !important;
+        width: 92vw !important;
+        max-width: 92vw !important;
+
+        height: auto !important;
+        max-height: none !important;
+
+        overflow: visible !important;
+
+        padding: 12px !important;
+
+        margin-top: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    #popup_onload .popup-body {
+        overflow: visible !important;
+        height: auto !important;
     }
 
     #popup_onload .popup-img {
-        max-width: 280px !important;
-        margin-bottom: 16px !important;
+        width: 100% !important;
+        height: auto !important;
+
+        max-height: 24vh !important;
+
+        object-fit: contain !important;
+
+        margin-bottom: 10px !important;
     }
 
     #popup_onload .popup-actions {
-        max-width: 280px !important;
-        gap: 10px !important;
+        display: flex !important;
+        flex-direction: column !important;
+
+        width: 100% !important;
+
+        position: relative !important;
+
+        z-index: 999999 !important;
     }
 
-    #popup_onload .btn-overlay,
-    #popup_onload .btn-overlay-2,
-    #popup_onload .btn-postulantes {
-        min-height: 52px !important;
-        font-size: 13px !important;
-        padding: 11px 8px !important;
-    }
+    #popup_onload .popup-actions .btn {
+        display: flex !important;
 
-    #popup_onload .close {
-        top: 12px !important;
-        right: 12px !important;
-        width: 38px !important;
-        height: 38px !important;
-        font-size: 30px !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: 100% !important;
+
+        background: #37b821 !important;
+        color: #ffffff !important;
+
+        padding: 12px 10px !important;
+
+        border-radius: 8px !important;
+
+        font-size: 12px !important;
+        font-weight: 700 !important;
+
+        text-decoration: none !important;
+
+        position: relative !important;
+
+        z-index: 999999 !important;
     }
 }
 </style>
