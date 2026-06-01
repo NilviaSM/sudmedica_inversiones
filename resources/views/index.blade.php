@@ -27,7 +27,7 @@
     @include('snipets.video')
     @include('snipets.contacto')
     @include('volver_inicio')
-    @include('snipets.popup')
+   
 <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
 <script src="{{asset('js/script.js')}}"></script>
 <script src="{{asset('js/contacto.js')}}"></script>
