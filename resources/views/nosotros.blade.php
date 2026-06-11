@@ -46,7 +46,7 @@
                     </div>
                 </div> 
                 
-                <div class="directorio__card card">
+                <!-- <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/maria_soledad_Lopez_Secretaria 1.png')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">María Soledad López Tapia</h5>
@@ -57,8 +57,8 @@
                             data-ocupation="{{ __('messages.Directorio_Card_Maria_Ocupation') }}" 
                             data-description="{{ __('messages.Directorio_Card_Maria_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
-                </div>
-                 <div class="directorio__card card">
+                </div> -->
+                 <!-- <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/CLAUDIO MALDONADO.jpeg')}}" alt="">
                     <div class="card__info">
                         <h5 class="card__name">Claudio Enrique Maldonado Naveas</h5>
@@ -69,7 +69,7 @@
                             data-ocupation="{{ __('messages.Directorio_Card_Claudio_Ocupation') }}" 
                             data-description="{{ __('messages.Directorio_Card_Claudio_Ocupation') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
-                </div> 
+                </div>  -->
                 <div class="directorio__card card">
                     <img class="directorio__card__img card__img" src="{{asset('img/Fernando_Marcelo_Aguiar_Rosales_Director 1.png')}}" alt="">
                     <div class="card__info">
