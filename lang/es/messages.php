@@ -55,7 +55,6 @@ return [
                                               Ha liderado iniciativas de asesoría financiera, inversión inmobiliaria y estructuración de proyectos, colaborando además en procesos de financiamiento y desarrollo para profesionales de la salud vinculados a Sudmédica.
                                               Es Contador Público y Auditor de la Universidad de Santiago de Chile y cuenta con estudios de especialización en Finanzas y Gestión Integral de Riesgos.',
     'Directorio_Card_Fernando_Ocupation' => 'DIRECTOR',
-    'Directorio_Card_Fernando_Description' => 'Ingeniero Civil Químico de la Pontificia Universidad Católica de Valparaíso y Master of Business Administration de la Universidad Adolfo Ibañez. Ha desarrollado su carrera profesional en la gran minería del cobre principalmente en las áreas de planificación y operaciones mineras. Ha sido responsable de puestas en marcha de operaciones greenfield y también en negocios consolidados. Su conocimiento y trayectoria le permitió desempeñarse tanto en la industria estatal Codelco Divisiones El Salvador y Gabriela Mistral como en la privada SCMMLCC Caserones, AMSA y Glencore, desempeñando cargos ejecutivos y teniendo siempre el objetivo de atender la seguridad de las personas y la creación de valor al accionista.',
     'Directorio_Card_VerMas' => 'Ver más...',
     'Documentos_Memoria_2024' => 'Memoria 2024 Pdf',
     'Documentos_Memoria_2025' => 'Memoria 2025 Pdf',
