@@ -51,11 +51,11 @@
                     <div class="card__info">
                         <h5 class="card__name">Fernando Aravena Pareja</h5>
                         <h5 class="card__ocupation fernando_ocupation">{{ __('messages.Directorio_Card_Fernando_Ocupation') }}</h5>
-                        <p class="card__description fernando_description">{{ __('messages.Directorio_Card_Fernando_Description') }}</p>
+                        <p class="card__description fernando_aravena_description">{{ __('messages.Directorio_Card_Fernando_aravena_Description') }}</p>
                         <a class="card__button" href="#"
                             data-name="Fernando Aravena Pareja " 
-                            data-ocupation="{{ __('messages.Directorio_Card_Fernando_Ocupation') }}" 
-                            data-description="{{ __('messages.Directorio_Card_Fernando_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
+                            data-ocupation="{{ __('messages.Directorio_Card_Fernando_aravena_Ocupation') }}" 
+                            data-description="{{ __('messages.Directorio_Card_Fernando_aravena_Description') }}">{{ __('messages.Directorio_Card_VerMas') }}</a>
                     </div>
                 </div> 
                  <div class="directorio__card card">

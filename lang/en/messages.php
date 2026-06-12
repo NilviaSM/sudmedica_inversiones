@@ -43,15 +43,15 @@ return [
     'Directorio_Card_Gerson_Ocupation' => 'DIRECTOR',
     'Directorio_Card_Gerson_Description' => 'Medical Doctor from the University of Chile, specialized under Law 16.744, with experience in emergency services, outpatient clinics, occupational medicine, and elderly care. Skill',
     'Directorio_Card_Fernando_Ocupation' => 'DIRECTOR',
-    'Directorio_Card_Fernando_Description' => 'Commercial Engineer from Universidad Andrés Bello, with a Diploma in Organizational Development and a specialized Diploma in Digital Innovation for Human Resources. He has more than 15 years of experience in People Management, Compensation, and Organizational Development in the health, education, and logistics sectors.
-
-He has developed his professional career in institutions such as RedInterclínica, Clínica Ciudad del Mar, Sociedad Educacional SIEL, and United Cargo Company, leading organizational transformation projects, performance evaluation, compensation, labor relations, and process modernization for workforces of over 1,200 employees.
-
-His experience combines strategic vision and execution capabilities, driving organizational efficiency, human talent development, and the creation of sustainable value for organizations.
-
-His background in strategic people management, cost control, and organizational development provides a comprehensive perspective focused on sustainable growth, corporate governance, and value creation for shareholders and stakeholders.',
+    'Directorio_Card_Fernando_Description' => 'Chemical Civil Engineer from Pontificia Universidad Católica de Valparaíso and Master of Business Administration from Universidad Adolfo Ibañez. He has developed his professional career in large-scale copper mining, mainly in the areas of planning and mining operations. He has been responsible for commissioning greenfield operations and also in consolidated businesses. His knowledge and career allowed him to work in both the state-owned industry (Codelco Divisions El Salvador and Gabriela Mistral) and the private sector (SCMMLCC Caserones, AMSA, and Glencore), holding executive positions and always aiming to ensure the safety of people and create shareholder value.',
     'Directorio_Card_Alvaro_Ocupation' => 'DIRECTOR',
     'Directorio_Card_Alvaro_Description' => 'Álvaro Bonich is a director of Sudmédica and founder of Propietario Feliz. He has over 20 years of experience in the financial market, risk management, corporate governance, and business development, participating in projects of national and international scope. He has led initiatives in financial advisory, real estate investment, and project structuring, also collaborating in financing and development processes for health professionals linked to Sudmédica. He is a Certified Public Accountant and Auditor from the University of Santiago de Chile and has specialization studies in Finance and Comprehensive Risk Management.',
+    'Directorio_Card_Fernando_Ocupation' => 'DIRECTOR',
+    'Directorio_Card_Fernando_aravena_Description' => 'Commercial Engineer from Universidad Andrés Bello, with a Diploma in Organizational Development and a specialized Diploma in Digital Innovation for Human Resources. He has more than 15 years of experience in People Management, Compensation, and Organizational Development in the health, education, and logistics sectors.
+                                                       He has developed his professional career in institutions such as RedInterclínica, Clínica Ciudad del Mar, Sociedad Educacional SIEL, and United Cargo Company, leading organizational transformation projects, performance evaluation, compensation, labor relations, and process modernization for workforces of over 1,200 employees.
+                                                       His experience combines strategic vision and execution capabilities, driving organizational efficiency, human talent development, and the creation of sustainable value for organizations.
+                                                       His background in strategic people management, cost control, and organizational development provides a comprehensive perspective focused on sustainable growth, corporate governance, and value creation for shareholders and stakeholders.',
+    'Directorio_Card_VerMas' => 'See more...',
     'Documentos_Memoria_2024' => '2024 Report Pdf',
     'Documentos_Memoria_2025' => '2025 Report Pdf',
     'EEFF_Consolidado_Sudmedica_2025-2024' => 'Consolidated Financial Statements Sudmédica 2025-2024 Pdf',
