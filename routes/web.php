@@ -184,6 +184,14 @@ Route::get('/documentos/citacion-joa-052026', function () {
     );
 })->name('citacionJOA052026');
 
+Route::get('/documentos/public/documents/REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026', function () {
+    return descargarDocumento(
+        'documents/public/documents/REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026.xlsx.',
+        'public/documents/REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026.xlsx',
+        'application/xlsx'
+    );
+})->name('REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026');
+
 Route::get('/documentos/poder-joa-16052026', function () {
     return descargarDocumento(
         'documents/PODER _JOA_16052026.pdf',
