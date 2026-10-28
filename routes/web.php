@@ -86,11 +86,27 @@ Route::middleware([SetLocale::class])->group(function () {
     Route::get('/noticias', [NoticiasController::class, 'index'])->name('noticias.index');
 });
 
-/*
-|--------------------------------------------------------------------------
-| Documentos - Estados Financieros Anuales
-|--------------------------------------------------------------------------
-*/
+
+/* Estados financieros consolidados */
+
+// ATENCIÓN: la ruta 2025-2024 aún apunta al PDF 2023-2022 en el archivo original.
+// Reemplazar solo cuando se confirme el nombre del PDF 2025-2024 real.
+
+Route::get('/documentos/eeff-junio-diciembre-2026', function () {
+    return descargarDocumento(
+        'documents/EEFF_Consolidado_SudMedica_junio_diciembre_2026.pdf',
+        'EEFF_Consolidado_SudMedica_junio_diciembre_2026.pdf',
+        'application/pdf'
+    );
+})->name('eeffJunioDiciembre2026');
+
+Route::get('/documentos/eeff-marzo-diciembre-2026', function () {
+    return descargarDocumento(
+        'documents/EEFF_Consolidado_SudMedica_marzo_diciembre_2026.pdf',
+        'EEFF_Consolidado_SudMedica_marzo_diciembre_2026.pdf',
+        'application/pdf'
+    );
+})->name('eeffMarzoDiciembre2026');
 
 Route::get('/documentos/consolidadoPdf2025-2024', function () {
     return descargarDocumento(
@@ -108,11 +124,8 @@ Route::get('/documentos/consolidado', function () {
     );
 })->name('consolidadoPdf');
 
-/*
-|--------------------------------------------------------------------------
-| Documentos - Memorias Anuales
-|--------------------------------------------------------------------------
-*/
+
+/* Memorias anuales */
 
 Route::get('/documentos/memoria25', function () {
     return descargarDocumento(
@@ -138,11 +151,8 @@ Route::get('/documentos/memoria2023', function () {
     );
 })->name('memoria2023Pdf');
 
-/*
-|--------------------------------------------------------------------------
-| Documentos - Actas / Juntas de Accionistas
-|--------------------------------------------------------------------------
-*/
+
+/* Actas, citaciones y poderes */
 
 Route::get('/documentos/jearmsi2025', function () {
     return descargarDocumento(
@@ -168,14 +178,6 @@ Route::get('/documentos/citacion_jea', function () {
     );
 })->name('citacionjea');
 
-Route::get('/documentos/poder_ja', function () {
-    return descargarDocumento(
-        'documents/Poder_JA.docx',
-        'PODER_JA.docx',
-        'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
-    );
-})->name('poderjadocx');
-
 Route::get('/documentos/citacion-joa-052026', function () {
     return descargarDocumento(
         'documents/CITACION-JOA052026.pdf',
@@ -184,13 +186,13 @@ Route::get('/documentos/citacion-joa-052026', function () {
     );
 })->name('citacionJOA052026');
 
-Route::get('/documentos/public/documents/REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026', function () {
+Route::get('/documentos/poder_ja', function () {
     return descargarDocumento(
-        'documents/public/documents/REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026.xlsx.',
-        'public/documents/REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026.xlsx',
-        'application/xlsx'
+        'documents/Poder_JA.docx',
+        'PODER_JA.docx',
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
     );
-})->name('REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026');
+})->name('poderjadocx');
 
 Route::get('/documentos/poder-joa-16052026', function () {
     return descargarDocumento(
@@ -200,14 +202,51 @@ Route::get('/documentos/poder-joa-16052026', function () {
     );
 })->name('poderJOA16052026');
 
-/*
-|--------------------------------------------------------------------------
-| Documentos - Candidatos Directorio
-|--------------------------------------------------------------------------
-| Archivos físicos esperados en:
-| public/documents/
-|--------------------------------------------------------------------------
-*/
+
+/* Reportes y hechos esenciales */
+
+Route::get('/documentos/public/documents/REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026', function () {
+    return descargarDocumento(
+        'documents/REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026.xlsx',
+        'REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026.xlsx',
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+    );
+})->name('REPORTE_OPERACIONES_CON_PARTES_RELACIONADAS_1ER_SEMESTRE_2026');
+
+Route::get('/documentos/Reporte_Partes_Relacionadas', function () {
+    return descargarDocumento(
+        'documents/Reporte_Partes_Relacionadas_NCG501_Sem1_2025.xls',
+        'Reporte_Partes_Relacionadas_NCG501_Sem1_2025.xls',
+        'application/vnd.ms-excel'
+    );
+})->name('Reporte_Partes_Relacionadas');
+
+Route::get('/documentos/reporte_2025', function () {
+    return descargarDocumento(
+        'documents/reporte_2025.xlsx',
+        'reporte_2025.xlsx',
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+    );
+})->name('reporte_2025');
+
+Route::get('/documentos/reporte_operaciones', function () {
+    return descargarDocumento(
+        'documents/REPORTE_DE_OPERACIONES_CON_PARTES_RELACIONADAS_II_2024.xlsx',
+        'REPORTE_DE_OPERACIONES_CON_PARTES_RELACIONADAS_II_2024.xlsx',
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+    );
+})->name('operacionesxlsx');
+
+Route::get('/documentos/hecho_esencial_14', function () {
+    return descargarDocumento(
+        'documents/Hecho_Esencial_No_14.pdf',
+        'Hecho_Esencial_No_14.pdf',
+        'application/pdf'
+    );
+})->name('hechoesencial14');
+
+
+/* Candidatos al directorio */
 
 Route::get('/documentos/candidatos-directorio/cv-raul-medina', function () {
     return descargarDocumento(
@@ -257,14 +296,18 @@ Route::get('/documentos/candidatos-directorio/cv-fernando-aguilar', function () 
     );
 })->name('cvFernandoAguilar');
 
-/*
-|--------------------------------------------------------------------------
-| Compatibilidad - URLs antiguas/directas de candidatos
-|--------------------------------------------------------------------------
-| Esto evita 404 si quedó algún enlace con:
-| /documentos/candidatos-directorio/CV_RAUL_MEDINA.pdf
-|--------------------------------------------------------------------------
-*/
+
+/* Otros documentos */
+
+Route::get('/documentos/tasacion_urbana', function () {
+    return descargarDocumento(
+        'documents/tasacion_urbana.pdf',
+        'tasacion_urbana.pdf',
+        'application/pdf'
+    );
+})->name('tasacion_urbana');
+
+/* Compatibilidad con enlaces antiguos de CV */
 
 Route::get('/documentos/candidatos-directorio/CV_RAUL_MEDINA.pdf', function () {
     return redirect()->route('cvRaulMedina');
@@ -290,57 +333,7 @@ Route::get('/documentos/candidatos-directorio/CV_FERNANDO_AGUILAR.pdf', function
     return redirect()->route('cvFernandoAguilar');
 });
 
-/*
-|--------------------------------------------------------------------------
-| Documentos - Otros
-|--------------------------------------------------------------------------
-*/
-
-Route::get('/documentos/tasacion_urbana', function () {
-    return descargarDocumento(
-        'documents/tasacion_urbana.pdf',
-        'tasacion_urbana.pdf',
-        'application/pdf'
-    );
-})->name('tasacion_urbana');
-
-Route::get('/documentos/hecho_esencial_14', function () {
-    return descargarDocumento(
-        'documents/Hecho_Esencial_No_14.pdf',
-        'Hecho_Esencial_No_14.pdf',
-        'application/pdf'
-    );
-})->name('hechoesencial14');
-
-Route::get('/documentos/Reporte_Partes_Relacionadas', function () {
-    return descargarDocumento(
-        'documents/Reporte_Partes_Relacionadas_NCG501_Sem1_2025.xls',
-        'Reporte_Partes_Relacionadas_NCG501_Sem1_2025.xls',
-        'application/vnd.ms-excel'
-    );
-})->name('Reporte_Partes_Relacionadas');
-
-Route::get('/documentos/reporte_operaciones', function () {
-    return descargarDocumento(
-        'documents/REPORTE_DE_OPERACIONES_CON_PARTES_RELACIONADAS_II_2024.xlsx',
-        'REPORTE_DE_OPERACIONES_CON_PARTES_RELACIONADAS_II_2024.xlsx',
-        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-    );
-})->name('operacionesxlsx');
-
-Route::get('/documentos/reporte_2025', function () {
-    return descargarDocumento(
-        'documents/reporte_2025.xlsx',
-        'reporte_2025.xlsx',
-        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
-    );
-})->name('reporte_2025');
-
-/*
-|--------------------------------------------------------------------------
-| Contacto
-|--------------------------------------------------------------------------
-*/
+/* Contacto y noticias (conservados) */
 
 Route::get('/contactanos', function () {
     Mail::to('contacto@sudmedica.com')->send(new ContactanosMailable);
