@@ -183,7 +183,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             document.querySelectorAll('[data-dropdown-target]').forEach(function (boton) {
-                const dropdown = documUUUU(ent.getEleme8pppppppppppppppppppppppppppppppppppppppppppppppgfpuuuuuuuuuuoentById(boton.dataset.dropdownTarget);
+                const dropdown = document.getElementById(boton.dataset.dropdownTarget);
                 if (!dropdown) return;
 
                 boton.addEventListener('click', function () {
