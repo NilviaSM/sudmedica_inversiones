@@ -97,6 +97,7 @@
                 </button>
                 <div class="dropdown-documentos" id="grupoDocumentos2">
                     <div class="dropdown-grupo">2026</div>
+                    <a href="{{ route('jeaSudmedica10112026') }}">JEA Sudmédica S.A. - 10 noviembre 2026</a>
                     <a href="{{ route('citacionjea') }}">Citación JEA - enero 2026</a>
                     <a href="{{ route('citacionJOA052026') }}">Citación JOA - mayo 2026</a>
                     <a href="{{ route('poderJOA16052026') }}">Poder JOA - mayo 2026</a>
@@ -166,6 +167,7 @@
                 </button>
                 <div class="dropdown-documentos" id="grupoDocumentos5">
                     <div class="dropdown-grupo">Documentos</div>
+                    <a href="{{ route('precioRecomiendaValorSudmedica') }}">Precio recomienda valor - Sudmédica</a>
                     <a href="{{ route('tasacion_urbana') }}">Tasación urbana</a>
                 </div>
             </div>

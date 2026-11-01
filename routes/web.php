@@ -307,6 +307,26 @@ Route::get('/documentos/tasacion_urbana', function () {
     );
 })->name('tasacion_urbana');
 
+
+/* Nuevos documentos - Octubre 2026 */
+
+Route::get('/documentos/jea-sudmedica-10112026', function () {
+    return descargarDocumento(
+        'documents/JEA SUDMEDICA S.A._10112026.pdf',
+        'JEA SUDMEDICA S.A._10112026.pdf',
+        'application/pdf'
+    );
+})->name('jeaSudmedica10112026');
+
+Route::get('/documentos/precio-recomienda-valor-sudmedica', function () {
+    return descargarDocumento(
+        'documents/PRECIO_RECOMENDA_VALOR_SUDMEDICA.pdf',
+        'PRECIO_RECOMENDA_VALOR_SUDMEDICA.pdf',
+        'application/pdf'
+    );
+})->name('precioRecomiendaValorSudmedica');
+
+
 /* Compatibilidad con enlaces antiguos de CV */
 
 Route::get('/documentos/candidatos-directorio/CV_RAUL_MEDINA.pdf', function () {
